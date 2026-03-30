@@ -25,7 +25,7 @@
 [Benjamin Klein](https://scholar.google.com/citations?user=xkX9W9QAAAAJ&hl=en)<sup>1</sup>,
 [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en)<sup>2</sup>,
 [Zhuoning Yuan](https://zhuoning.cc/)<sup>1</sup>,
-[Ta-ying Cheng](https://ttchengab.github.io/)<sup>1</sup>
+[Ta-Ying Cheng](https://ttchengab.github.io/)<sup>1</sup>
 
 <sup>1</sup>Netflix &nbsp;&nbsp; <sup>2</sup>INSAIT, Sofia University "St. Kliment Ohridski"
 
