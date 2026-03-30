@@ -1,0 +1,11 @@
+numpy
+Pillow
+tqdm
+pyyaml
+streamlit
+
+# Kubric pipeline only (kubric_variable_objects.py)
+kubric
+pybullet
+imageio
+imageio-ffmpeg

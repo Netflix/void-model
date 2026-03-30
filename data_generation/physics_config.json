@@ -1,0 +1,9457 @@
+{
+  "activating_floor_lamp_with_right_hand-485": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "add_dressing_to_mixing_bowl-592": {
+    "static_objects": [
+      "mixing_bowl",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "add_ingredients_from_deep_plate_to_mixing_bowl_with_right_hand-639": {
+    "static_objects": [
+      "deep_plate",
+      "mixing_bowl",
+      "spoon",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "mixing_bowl",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "adding_dressing_with_right_hand_to_mixing_bowl_on_table-662": {
+    "static_objects": [
+      "mixing_bowl",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "table"
+    ],
+    "notes": ""
+  },
+  "adding_vegetables_to_frying_pan_and_stirring-399": {
+    "static_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "adding_vegetables_to_frying_pan_with_hand_and_cooking-392": {
+    "static_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "adjust_light_bulb_into_floor_lamp_socket-656": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "adjusting_table_lamp_with_right_hand-704": {
+    "static_objects": [
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "arranging_orange_and_mango_in_basket_on_side_table_sitting_on_low_chair-687": {
+    "static_objects": [
+      "low_chair",
+      "shelf",
+      "side_table"
+    ],
+    "physics_objects": [
+      "orange",
+      "mango",
+      "basket"
+    ],
+    "all_objects": [
+      "basket",
+      "low_chair",
+      "mango",
+      "orange",
+      "shelf",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "arranging_tools_in_draw_organizer_tray-615": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "lint_roller",
+      "shower_squeegee",
+      "turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "lint_roller",
+      "shower_squeegee",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "baking_with_spatula_mixing_bowl_and_scooping_to_tray-244": {
+    "static_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table",
+      "tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "bend_and_drag_wash_tub-486": {
+    "static_objects": [
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "bending_and_moving_under_the_table_and_sitting-287": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "carry_basket_90_both_hands_walk_around-870": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90"
+    ],
+    "notes": ""
+  },
+  "carry_basket_90_right_hand_left_hand_walk_around-092": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90"
+    ],
+    "notes": ""
+  },
+  "carry_basket_across_room_at_chest_height-639": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90"
+    ],
+    "notes": ""
+  },
+  "carry_both_hand_walk_step_stool-096": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "carry_clothes_rack_both_hands_walk_around-116": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "carry_deep_plate_while_walking_back_and_forth-345": {
+    "static_objects": [],
+    "physics_objects": [
+      "deep_plate"
+    ],
+    "all_objects": [
+      "deep_plate"
+    ],
+    "notes": ""
+  },
+  "carry_frying_pan_both_hands_walk_around-505": {
+    "static_objects": [],
+    "physics_objects": [
+      "frying_pan"
+    ],
+    "all_objects": [
+      "frying_pan"
+    ],
+    "notes": ""
+  },
+  "carry_hold_mug_with_right_hand_below-534": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "carry_hold_plastic_bowl_with_both_hands-250": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "carry_laptop_both_hands_walk_around-619": {
+    "static_objects": [
+      "laptop",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop",
+      "table"
+    ],
+    "notes": ""
+  },
+  "carry_laptop_in_left_hand_while_walking-244": {
+    "static_objects": [
+      "laptop",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop",
+      "table"
+    ],
+    "notes": ""
+  },
+  "carry_low_chair_with_both_hands_walk_around-407": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "carry_mixing_bowl_left_hand_walk_around-229": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "carry_mixing_bowl_while_walking_around_the_room-156": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "carry_organizer_medium_left_hand_walk_around-054": {
+    "static_objects": [],
+    "physics_objects": [
+      "organizer_medium"
+    ],
+    "all_objects": [
+      "organizer_medium"
+    ],
+    "notes": ""
+  },
+  "carry_organizer_medium_with_both_hands_and_walk-351": {
+    "static_objects": [],
+    "physics_objects": [
+      "organizer_medium"
+    ],
+    "all_objects": [
+      "organizer_medium"
+    ],
+    "notes": ""
+  },
+  "carry_organizer_with_both_hands_at_chest_height-436": {
+    "static_objects": [],
+    "physics_objects": [
+      "draw_organizer_tray"
+    ],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "carry_plastic_bowl_across_room_with_both_hands-381": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "carry_plastic_bowl_stacked_in_left_hand_while_walking_across_the_room-727": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "all_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "notes": ""
+  },
+  "carry_side_table_right_hand_walk_around-476": {
+    "static_objects": [],
+    "physics_objects": [
+      "side_table"
+    ],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "carry_side_table_with_both_hands_walk_around-536": {
+    "static_objects": [],
+    "physics_objects": [
+      "side_table"
+    ],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "carry_soap_dispenser_right_hand_walk_around-572": {
+    "static_objects": [],
+    "physics_objects": [
+      "soap_dispenser"
+    ],
+    "all_objects": [
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "carry_table_lamp_left_hand_walk_around-550": {
+    "static_objects": [],
+    "physics_objects": [
+      "table_lamp"
+    ],
+    "all_objects": [
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "carry_table_lamp_return_and_readjust_hands-524": {
+    "static_objects": [],
+    "physics_objects": [
+      "table_lamp"
+    ],
+    "all_objects": [
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "carry_table_lamp_with_both_hands-912": {
+    "static_objects": [],
+    "physics_objects": [
+      "table_lamp"
+    ],
+    "all_objects": [
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "carry_the_mug_while_walking_across_the_room-938": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "carry_trash_can_with_both_hands_and_flipping-888": {
+    "static_objects": [],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "carry_trash_can_with_both_hands_walk_around-085": {
+    "static_objects": [],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "carry_tray_and_mug_with_both_arms_walk_around-196": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug",
+      "tray"
+    ],
+    "all_objects": [
+      "mug",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "carry_tray_both_hands_walk_around-479": {
+    "static_objects": [],
+    "physics_objects": [
+      "tray"
+    ],
+    "all_objects": [
+      "tray"
+    ],
+    "notes": ""
+  },
+  "carry_tray_left_hand_walk_around-604": {
+    "static_objects": [],
+    "physics_objects": [
+      "tray"
+    ],
+    "all_objects": [
+      "tray"
+    ],
+    "notes": ""
+  },
+  "carry_tray_right_hand_walk_around-772": {
+    "static_objects": [],
+    "physics_objects": [
+      "tray"
+    ],
+    "all_objects": [
+      "tray"
+    ],
+    "notes": ""
+  },
+  "carry_tray_under_right_arm_walk_around-414": {
+    "static_objects": [],
+    "physics_objects": [
+      "tray"
+    ],
+    "all_objects": [
+      "tray"
+    ],
+    "notes": ""
+  },
+  "carry_turner_one_hand_walk_around-720": {
+    "static_objects": [],
+    "physics_objects": [
+      "turner"
+    ],
+    "all_objects": [
+      "turner"
+    ],
+    "notes": ""
+  },
+  "carry_vacuum_flask_left_hand_walk_around-788": {
+    "static_objects": [],
+    "physics_objects": [
+      "vacuum_flask"
+    ],
+    "all_objects": [
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "carry_vacuum_flask_right_hand_walk_around-188": {
+    "static_objects": [],
+    "physics_objects": [
+      "vacuum_flask"
+    ],
+    "all_objects": [
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "carry_vase_both_hands_walk_around-049": {
+    "static_objects": [],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "vase"
+    ],
+    "notes": ""
+  },
+  "carry_vase_right_hand_transfer_to_left_hand_transfer_to_right_hand_walk_around-942": {
+    "static_objects": [],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "vase"
+    ],
+    "notes": ""
+  },
+  "carry_vase_right_hand_walk_around-251": {
+    "static_objects": [],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "vase"
+    ],
+    "notes": ""
+  },
+  "carry_vase_with_both_hands_and_walk_around-440": {
+    "static_objects": [],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "vase"
+    ],
+    "notes": ""
+  },
+  "carry_wok_turner_right_hand_walk_around-968": {
+    "static_objects": [],
+    "physics_objects": [
+      "wok_turner"
+    ],
+    "all_objects": [
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "carry_working_chair_from_behind_both_hands_walk_around-663": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "carry_working_chair_from_side_both_hands_walk_around-309": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "carry_woven_basket_while_walking_in_room-382": {
+    "static_objects": [],
+    "physics_objects": [
+      "woven_basket"
+    ],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "carrying_and_emptying_trash_can-831": {
+    "static_objects": [
+      "larger_bin"
+    ],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "larger_bin",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "carrying_and_standing_on_step_stool-634": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "carrying_cutting_board_with_left_hand-415": {
+    "static_objects": [],
+    "physics_objects": [
+      "cutting_board"
+    ],
+    "all_objects": [
+      "cutting_board"
+    ],
+    "notes": ""
+  },
+  "carrying_cutting_board_with_right_hand-213": {
+    "static_objects": [],
+    "physics_objects": [
+      "cutting_board"
+    ],
+    "all_objects": [
+      "cutting_board"
+    ],
+    "notes": ""
+  },
+  "carrying_deep_plate_with_left_hand-891": {
+    "static_objects": [],
+    "physics_objects": [
+      "deep_plate"
+    ],
+    "all_objects": [
+      "deep_plate"
+    ],
+    "notes": ""
+  },
+  "carrying_dining_chair_with_both_hands-737": {
+    "static_objects": ["dining_chair"],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "carrying_dining_chair_with_both_hands_and_back-660": {
+    "static_objects": ["dining_chair"],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "carrying_draw_organizer_tray_with_both_hands-695": {
+    "static_objects": [],
+    "physics_objects": [
+      "draw_organizer_tray"
+    ],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "carrying_floor_lamp_placing_on_ground-775": {
+    "static_objects": [],
+    "physics_objects": [
+      "floor_lamp"
+    ],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "carrying_frying_pan-170": {
+    "static_objects": [],
+    "physics_objects": [
+      "frying_pan"
+    ],
+    "all_objects": [
+      "frying_pan"
+    ],
+    "notes": ""
+  },
+  "carrying_frying_pan_with_left_hand-644": {
+    "static_objects": [],
+    "physics_objects": [
+      "frying_pan"
+    ],
+    "all_objects": [
+      "frying_pan"
+    ],
+    "notes": ""
+  },
+  "carrying_knife_with_right_hand-227": {
+    "static_objects": [],
+    "physics_objects": [
+      "knife"
+    ],
+    "all_objects": [
+      "knife"
+    ],
+    "notes": ""
+  },
+  "carrying_low_chair_with_left_arm-847": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "carrying_low_chair_with_right_hand-599": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "carrying_mixing_bowl_with_both_hands-134": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "carrying_mug_with_left_hand-125": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "carrying_mug_with_left_hand-757": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "carrying_mug_with_right_hand-004": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "carrying_organizer_small_with_right_hand_walk_back_and_fourth-348": {
+    "static_objects": [],
+    "physics_objects": [
+      "organizer_small"
+    ],
+    "all_objects": [
+      "organizer_small"
+    ],
+    "notes": ""
+  },
+  "carrying_peeler_with_left_hand-594": {
+    "static_objects": [],
+    "physics_objects": [
+      "peeler"
+    ],
+    "all_objects": [
+      "peeler"
+    ],
+    "notes": ""
+  },
+  "carrying_plastic_bowl_stacked_with_both_hands-328": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "all_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "notes": ""
+  },
+  "carrying_plastic_bowl_stacked_with_right_hand-987": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "all_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "notes": ""
+  },
+  "carrying_plastic_bowl_with_left-908": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "carrying_plastic_bowl_with_left_hand-492": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "carrying_plastic_bowl_with_left_hand_below_and_right_hand_on_side-615": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "carrying_plastic_bowl_with_left_hand_on_top_and_right_hand_below-147": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "all_objects": [
+      "plastic_bowl_stacked"
+    ],
+    "notes": ""
+  },
+  "carrying_serving_bowl_with_both_hands-323": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "carrying_serving_bowl_with_both_hands-409": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "carrying_serving_bowl_with_left_hand-315": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "carrying_shelf_walking_turning-812": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "carrying_shower_squeegee_and_cleaning_imaginary_glass_surface-160": {
+    "static_objects": [],
+    "physics_objects": [
+      "shower_squeegee"
+    ],
+    "all_objects": [
+      "shower_squeegee"
+    ],
+    "notes": ""
+  },
+  "carrying_side_plate_with_right_hand-983": {
+    "static_objects": [],
+    "physics_objects": [
+      "side_plate"
+    ],
+    "all_objects": [
+      "side_plate"
+    ],
+    "notes": ""
+  },
+  "carrying_side_table_with_left_hand-750": {
+    "static_objects": [],
+    "physics_objects": [
+      "side_table"
+    ],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "carrying_soup_ladle_with_right_hand-795": {
+    "static_objects": [],
+    "physics_objects": [
+      "soup_ladle"
+    ],
+    "all_objects": [
+      "soup_ladle"
+    ],
+    "notes": ""
+  },
+  "carrying_spatula_with_left_hand_and_walking-695": {
+    "static_objects": [],
+    "physics_objects": [
+      "spatula"
+    ],
+    "all_objects": [
+      "spatula"
+    ],
+    "notes": ""
+  },
+  "carrying_spoon_with_left_hand-184": {
+    "static_objects": [],
+    "physics_objects": [
+      "spoon"
+    ],
+    "all_objects": [
+      "spoon"
+    ],
+    "notes": ""
+  },
+  "carrying_step_stool_and_walking-028": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "carrying_step_stool_with_left_hand-037": {
+    "static_objects": [],
+    "physics_objects": [
+      "step_stool"
+    ],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "carrying_step_stool_with_right_hand-015": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "carrying_table_lamp_and_returning-140": {
+    "static_objects": [],
+    "physics_objects": [
+      "table_lamp"
+    ],
+    "all_objects": [
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "carrying_table_lamp_with_both_hands-609": {
+    "static_objects": [],
+    "physics_objects": [
+      "table_lamp"
+    ],
+    "all_objects": [
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "carrying_trash_can_with_both_hands-916": {
+    "static_objects": [],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "carrying_trash_can_with_left_hand-102": {
+    "static_objects": [],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "carrying_trash_can_with_right_hand-354": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "carrying_turner_with_right_hand_and_walking-039": {
+    "static_objects": [],
+    "physics_objects": [
+      "turner"
+    ],
+    "all_objects": [
+      "turner"
+    ],
+    "notes": ""
+  },
+  "carrying_utility_cart_walking_and_turning-575": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "carrying_utility_cart_with_both_hands-063": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "carrying_vase_putting_on_side_table-286": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "side_table",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "carrying_vase_with_both_hands-964": {
+    "static_objects": [],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "vase"
+    ],
+    "notes": ""
+  },
+  "carrying_wash_tub_with_both_hands-502": {
+    "static_objects": [
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "carrying_wash_tub_with_left_hand-655": {
+    "static_objects": [],
+    "physics_objects": [
+      "wash_tub"
+    ],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "carrying_whisk_with_right_hand-037": {
+    "static_objects": [],
+    "physics_objects": [
+      "whisk"
+    ],
+    "all_objects": [
+      "whisk"
+    ],
+    "notes": ""
+  },
+  "carrying_working_chair_with_both_hands-443": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "carrying_working_chair_with_right_hand-839": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "carrying_woven_basket-270": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "changing_notebook-890": {
+    "static_objects": [
+      "low_chair",
+      "notebook.001",
+      "shelf",
+      "side_table"
+    ],
+    "physics_objects": [
+      "notebook"
+    ],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "notebook.001",
+      "shelf",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "check_floor_lamp_with_right_hand-711": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "checking_floor_lamp-231": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "checking_floor_lamp_with_right_hand-024": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "checking_organizer_medium_on_table-289": {
+    "static_objects": [
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "choose_and_wear_clothes_from_clothes_rack-286": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "choose_notebook_to_read-291": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "notebook.001",
+      "shelf",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "notebook.001",
+      "shelf",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "chop_and_cut_on_cutting_board_on_the_table_using_knife-268": {
+    "static_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "notes": ""
+  },
+  "chop_small_pieces_on_cutting_board_with_knife-269": {
+    "static_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "notes": ""
+  },
+  "chopping_and_slitting_with_knife-706": {
+    "static_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "notes": ""
+  },
+  "chopping_on_cutting_board_and_transferring_to_plastic_bowl-428": {
+    "static_objects": [
+      "cutting_board",
+      "knife",
+      "plastic_bowl",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "knife",
+      "plastic_bowl",
+      "table"
+    ],
+    "notes": ""
+  },
+  "chopping_vegetable_with_right_hand-216": {
+    "static_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "knife",
+      "table"
+    ],
+    "notes": ""
+  },
+  "circling_the_room_while_holding_draw_organizer_tray_bottom_with_both_hands-657": {
+    "static_objects": [],
+    "physics_objects": [
+      "draw_organizer_tray"
+    ],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "clean_frying_pan_and_cutting_board-883": {
+    "static_objects": [
+      "cutting_board",
+      "frying_pan",
+      "kitchen_counter",
+      "knife",
+      "mug",
+      "soap_dispenser",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "frying_pan",
+      "kitchen_counter",
+      "knife",
+      "mug",
+      "soap_dispenser",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "clean_glass_with_shower_squeegee_in_right_hand-113": {
+    "static_objects": [],
+    "physics_objects": [
+      "shower_squeegee"
+    ],
+    "all_objects": [
+      "shower_squeegee"
+    ],
+    "notes": ""
+  },
+  "clean_the_walls_on_both_sides_of_the_room_using_shower_squeegee-669": {
+    "static_objects": [],
+    "physics_objects": [
+      "shower_squeegee"
+    ],
+    "all_objects": [
+      "shower_squeegee"
+    ],
+    "notes": ""
+  },
+  "clean_wall_using_shower_squeegee-349": {
+    "static_objects": [],
+    "physics_objects": [
+      "shower_squeegee"
+    ],
+    "all_objects": [
+      "shower_squeegee"
+    ],
+    "notes": ""
+  },
+  "cleaning_cutting_board_with_right_hand-656": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "cutting_board"
+    ],
+    "all_objects": [
+      "cutting_board",
+      "table"
+    ],
+    "notes": ""
+  },
+  "cleaning_cutting_board_with_soap-507": {
+    "static_objects": [
+      "cutting_board",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_deep_plate_with_soap_and_sponge-371": {
+    "static_objects": [
+      "deep_plate",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_frying_pan_with_soap_dispenser_in_sink-254": {
+    "static_objects": [
+      "frying_pan",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_glass_surface_with_shower_squeegee-740": {
+    "static_objects": [],
+    "physics_objects": [
+      "shower_squeegee"
+    ],
+    "all_objects": [
+      "shower_squeegee"
+    ],
+    "notes": ""
+  },
+  "cleaning_knife_with_soap_dispenser_in_sink-019": {
+    "static_objects": [
+      "knife",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "knife",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_mixing_bowl_with_soap_and_sponge-596": {
+    "static_objects": [
+      "mixing_bowl",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_peeler_with_soap_over_sink-679": {
+    "static_objects": [
+      "peeler",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "peeler",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_plastic_bowl_with_soap_in_sink-555": {
+    "static_objects": [
+      "plastic_bowl",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_serving_bowl_with_soap_in_sink-873": {
+    "static_objects": [
+      "serving_bowl",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "serving_bowl",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_side_plate_in_sink-660": {
+    "static_objects": [
+      "side_plate",
+      "sink",
+      "soap_dispenser"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_plate",
+      "sink",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "cleaning_spatula_with_soap_dispenser_in_sink-221": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "spatula"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "spatula"
+    ],
+    "notes": ""
+  },
+  "cleaning_spoon_with_soap-320": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "spoon"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "spoon"
+    ],
+    "notes": ""
+  },
+  "cleaning_the_room_by_picking_orange_and_hanging_clothes-146": {
+    "static_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_rack",
+      "side_table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_rack",
+      "side_table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "cleaning_tray_in_sink-843": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "cleaning_turner_with_soap-313": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "cleaning_up_work_table-692": {
+    "static_objects": [
+      "laptop_bottom",
+      "laptop_top",
+      "notebook",
+      "pen",
+      "phone",
+      "shelf",
+      "table",
+      "table_lamp",
+      "trash_can",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop_bottom",
+      "laptop_top",
+      "notebook",
+      "pen",
+      "phone",
+      "shelf",
+      "table",
+      "table_lamp",
+      "trash_can",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "cleaning_vertical_surface_with_shower_squeegee-527": {
+    "static_objects": [
+      "shelf",
+      "shower_squeegee"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "shower_squeegee"
+    ],
+    "notes": ""
+  },
+  "cleaning_wok_turner_with_soap-009": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "cloth_on_clothes_hanger_and_on_clothes_rack-385": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "cocking_and_adding_ingredients_to_frying_pan-295": {
+    "static_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table"
+    ],
+    "physics_objects": [
+      "wok_turner"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "cook_and_put_serving_bowl_on_tray-620": {
+    "static_objects": [
+      "kitchen_counter",
+      "serving_bowl",
+      "spoon",
+      "table",
+      "tray"
+    ],
+    "physics_objects": [
+      "frying_pan",
+      "wok_turner"
+    ],
+    "all_objects": [
+      "frying_pan",
+      "kitchen_counter",
+      "serving_bowl",
+      "spoon",
+      "table",
+      "tray",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "cooking_in_frying_pan_with_wok_turner-756": {
+    "static_objects": [
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "cut_food_using_knife_and_eat_with_fork-150": {
+    "static_objects": [
+      "fork",
+      "knife",
+      "mug",
+      "plastic_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "fork",
+      "knife",
+      "mug",
+      "plastic_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "darg_dining_chair_and_walk-212": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "dispensing_soap_on_left_hand_and_washing-517": {
+    "static_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "notes": ""
+  },
+  "dispensing_soap_with_left_hand_to_right_hand-455": {
+    "static_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "notes": ""
+  },
+  "dispensing_soap_with_right_hand_on_left_hand-656": {
+    "static_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "notes": ""
+  },
+  "drag_and_pick_up_fallen_working_chair-027": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "drag_clothes_rack_on_ground_while_walking_back_and_forth-522": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "drag_clothes_rack_on_ground_while_walking_in_circular_path_back_and_forth-181": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "drag_clothes_rack_towards_body-270": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "drag_clothes_rack_with_left_hand-256": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "drag_dining_chair_on_ground_while_walking-444": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "drag_floor_lamp_walk_back-386": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "drag_low_chair_walk_and_sit-506": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "drag_shelf_walk_around-103": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "drag_shelf_walk_around-628": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "drag_side_table_walk_around-994": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "drag_step_stool_walk_around-365": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "drag_utility_cart_on_ground_while_walking_back_and_forth-677": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "drag_utility_cart_on_ground_while_walking_in_circular_direction-298": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "drag_wash_tub_on_ground_while_walking-176": {
+    "static_objects": [
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "drag_working_chair_and_sit-699": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "dragging__side_table_on_ground_walking_turning-760": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "dragging_low_chair_walking_on_ground-857": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "dragging_trash_can_on_ground-106": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "dragging_turning__clothes_rack_walking_on_ground-802": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "drawing_line_and_writing_on_the_notebook_with_pen_in_right_hand-451": {
+    "static_objects": [
+      "dining_chair",
+      "notebook",
+      "pen",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "notebook",
+      "pen",
+      "table"
+    ],
+    "notes": ""
+  },
+  "drink_and_read_notebook-144": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "notebook",
+      "shelf",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "notebook",
+      "shelf",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "drink_and_sit_on_low_chair_move_side_table-086": {
+    "static_objects": [
+      "low_chair",
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "drink_and_take_notebook_with_right_hand-424": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "notebook",
+      "shelf",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "notebook",
+      "shelf",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "drink_from_mug_and_read_notebook_while_sitting_on_low_chair-369": {
+    "static_objects": [
+      "low_chair",
+      "mug",
+      "notebook",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "mug",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "drinking_from_mug1_and_talking-277": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "mug.001"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "mug.001",
+      "side_table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "drinking_from_mug_with_right_hand-815": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "drinking_while_sitting_on_low_chair_and_putting_mug_on_side_table_with_right_hand-776": {
+    "static_objects": [
+      "low_chair",
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "dropping_and_picking_spoon-898": {
+    "static_objects": [
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "dropping_blanket_and_blouse_from_clothes_rack_to_woven_basket_on_left-799": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "dry_body_in_bathroom-129": {
+    "static_objects": [
+      "bathroomsink",
+      "shelf",
+      "soap_dispenser",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bathroomsink",
+      "shelf",
+      "soap_dispenser",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "drying_head_and_soaking_imaginary_towel_in_wash_tub-436": {
+    "static_objects": [
+      "bathroomsink",
+      "shelf",
+      "soap_dispenser",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bathroomsink",
+      "shelf",
+      "soap_dispenser",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "dump_trash_from_organizer_medium_to_trash_can_with_both_hands-631": {
+    "static_objects": [
+      "organizer_medium",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "eat_with_spoon_from_plastic_bowl-680": {
+    "static_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "eat_with_spoon_pour_from_vacuum_flask_to_mug_and_drink-902": {
+    "static_objects": [
+      "deep_plate",
+      "mug",
+      "mug.001",
+      "serving_bowl",
+      "spoon",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "mug",
+      "mug.001",
+      "serving_bowl",
+      "spoon",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "eating_from_plastic_bowl_with_spoon-596": {
+    "static_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "eating_from_plastic_bowl_with_spoon-689": {
+    "static_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "eating_liquid_food_from_plastic_bowl_with_spoon-538": {
+    "static_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "empty_leftovers_into_trash_can_and_clear_table-996": {
+    "static_objects": [
+      "deep_plate",
+      "dining_chair",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "serving_bowl",
+      "spoon",
+      "table",
+      "trash_can",
+      "vase",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "dining_chair",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "serving_bowl",
+      "spoon",
+      "table",
+      "trash_can",
+      "vase",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "empty_plastic_bowl_with_spoon_into_the_trash_can-539": {
+    "static_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "emptying_content_of_deep_plate_in_trash_can-018": {
+    "static_objects": [
+      "deep_plate",
+      "deep_plate.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "serving_bowl",
+      "shelf",
+      "trash_can",
+      "vacuum_flask_body"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "deep_plate.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "serving_bowl",
+      "shelf",
+      "trash_can",
+      "vacuum_flask_body"
+    ],
+    "notes": ""
+  },
+  "emptying_content_of_plastic_bowl_in_trash_can-238": {
+    "static_objects": [
+      "plastic_bowl",
+      "shelf",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "shelf",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "emptying_cutting_board_into_trash_can-453": {
+    "static_objects": [
+      "cutting_board",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "emptying_deep_plate_in_trash_can-259": {
+    "static_objects": [
+      "deep_plate",
+      "deep_plate.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "serving_bowl",
+      "shelf",
+      "trash_can",
+      "vacuum_flask_body"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "deep_plate.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "serving_bowl",
+      "shelf",
+      "trash_can",
+      "vacuum_flask_body"
+    ],
+    "notes": ""
+  },
+  "emptying_organizer_medium_in_trash_can-875": {
+    "static_objects": [
+      "organizer_medium",
+      "shelf",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "shelf",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "emptying_serving_bowl_in_trash_can-201": {
+    "static_objects": [
+      "deep_plate",
+      "deep_plate.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "serving_bowl",
+      "shelf",
+      "trash_can",
+      "vacuum_flask_body"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "deep_plate.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "serving_bowl",
+      "shelf",
+      "trash_can",
+      "vacuum_flask_body"
+    ],
+    "notes": ""
+  },
+  "emptying_trash_can_into_larger_bin-517": {
+    "static_objects": [
+      "larger_bin",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "larger_bin",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "emptying_wash_tub_in_trash_can-957": {
+    "static_objects": [
+      "shelf",
+      "trash_can",
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "trash_can",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "examining_cutting_board-141": {
+    "static_objects": [
+      "cutting_board",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "table"
+    ],
+    "notes": ""
+  },
+  "fasten_screws_of_chair-175": {
+    "static_objects": [
+      "screwdriver",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "screwdriver",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "feeling_basket_90_with_left_hands-197": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90"
+    ],
+    "notes": ""
+  },
+  "filling_mugs_and_talking-377": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table",
+      "utility_cart",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "mug.001"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "mug.001",
+      "side_table",
+      "utility_cart",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "filling_plastic_bowl-641": {
+    "static_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "flipping_pancake_in_frying_pan_with_turner-998": {
+    "static_objects": [
+      "frying_pan",
+      "table",
+      "turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "get_up_from_bed_holding_clothes_hanger-805": {
+    "static_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "get_up_turn_off_table_lamp_choose_clothes_from_cloths_rack-020": {
+    "static_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "getting_off_bed_and_touch_table_lamp_then_grasp_clothes_from_clothes_rack-752": {
+    "static_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "getting_on_and_off_step_stool_raising_right_hand-005": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "getting_the_notebook_and_drinking_from_mug-607": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "notebook",
+      "shelf",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "notebook",
+      "shelf",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "getting_the_notebook_from_the_shelf_with_right_hand-536": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "notebook",
+      "shelf",
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "notebook",
+      "shelf",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "grabbing_and_transferring_side_plate_and_mug_from_utility_cart_and_walking_to_the_table-351": {
+    "static_objects": [
+      "mug",
+      "side_plate",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "side_plate",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "grasp_and_bring_floor_lamp_forward-731": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "grasp_and_lift_deep_plate_with_right_hand_then_shake-268": {
+    "static_objects": [
+      "deep_plate",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "table"
+    ],
+    "notes": ""
+  },
+  "grasp_and_lift_working_chair_with_left_hand_then_with_both_hand-401": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "grasp_and_move_organizer_medium_from_table_and_put_hand_in_it-488": {
+    "static_objects": [
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "grasp_and_pour_soup_with_soup_ladle_from_serving_bowl_to_deep_plate_with_left_hand-600": {
+    "static_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "notes": ""
+  },
+  "grasp_and_touch_notebook_with_right_hand_from_side_table-670": {
+    "static_objects": [
+      "notebook",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "grasp_and_transfer_vase_and_table_lamp_from_woven_basket_to_table-017": {
+    "static_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "grasp_and_transfer_wash_tub_and_basket_from_utility_cart_to_shelf-493": {
+    "static_objects": [
+      "basket",
+      "shelf",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "shelf",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "grasp_and_transfer_woven_basket_from_ground_to_top_shelf-204": {
+    "static_objects": [
+      "organizer_medium",
+      "shelf",
+      "vacuum_flask",
+      "vase",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "shelf",
+      "vacuum_flask",
+      "vase",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "grasp_and_transfer_woven_basket_from_ground_to_top_shelf_while_stretch-482": {
+    "static_objects": [
+      "organizer_medium",
+      "shelf",
+      "vacuum_flask",
+      "vase",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "shelf",
+      "vacuum_flask",
+      "vase",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "grasp_and_transfer_woven_basket_from_top_shelf_to_ground-201": {
+    "static_objects": [
+      "shelf",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "grasp_and_transfer_woven_basket_from_top_shelf_to_ground_while_stretch-767": {
+    "static_objects": [
+      "shelf",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "grasp_and_transfer_woven_basket_from_top_shelf_to_ground_with_lifted_foot-528": {
+    "static_objects": [
+      "shelf",
+      "step_stool",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "step_stool",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "grasp_and_wash_cutting_board-365": {
+    "static_objects": [
+      "cutting_board",
+      "soap_dispenser",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "soap_dispenser",
+      "table"
+    ],
+    "notes": ""
+  },
+  "grasp_notebook_with_both_hands_and_read-912": {
+    "static_objects": [
+      "notebook",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "notebook",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "grasping_organizer_small_with_right_hand_and_take_out_object1-633": {
+    "static_objects": [
+      "organizer_small",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_small",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "hang_clothes_hanger_on_clothes_rack-608": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "hanging_clothes_on_clothes_rack-144": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "hold_and_turn_basket_both_hands_walk_around-359": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90"
+    ],
+    "notes": ""
+  },
+  "hold_basket_both_hands_walk_around-432": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket"
+    ],
+    "all_objects": [
+      "basket"
+    ],
+    "notes": ""
+  },
+  "hold_mixing_bowl_handle_and_mix_with_left_hand-284": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "hold_serving_bowl_both_hands_walk_around-158": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "hold_utility_cart_with_both_hands_and_walk-239": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "hold_wash_tub_both_hands_walk_around-026": {
+    "static_objects": [],
+    "physics_objects": [
+      "wash_tub"
+    ],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "holding_side_table_up_and_down-201": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "holding_the_bottom_of_woven_basket_with_both_hands_while_walking_and_spiraling_inwards-225": {
+    "static_objects": [],
+    "physics_objects": [
+      "woven_basket"
+    ],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "inspecting_serving_bowl-207": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "interacting_with_working_chair-073": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "interacting_with_working_chair-560": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "laying_and_straightening_floor_lamp_to_left_side-768": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "laying_and_straightening_floor_lamp_to_right_side-889": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lean_on_table_and_pour_from_vacuum_flask_to_mug_and_drink-555": {
+    "static_objects": [
+      "mug",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "lean_on_table_and_stir_spoon_in_mug-596": {
+    "static_objects": [
+      "spoon",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug",
+      "spoon",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "leg_to_left_shake_serving_bowl_over_trash_can-149": {
+    "static_objects": [
+      "serving_bowl",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "serving_bowl",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "leg_to_right_shake_vacuum_flask_in_trash_can-800": {
+    "static_objects": [
+      "shelf",
+      "trash_can",
+      "vacuum_flask",
+      "vacuum_flask_cap"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "trash_can",
+      "vacuum_flask",
+      "vacuum_flask_cap"
+    ],
+    "notes": ""
+  },
+  "lift_and_carry_clothes_rack_both_hands_walk_around-134": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "lift_and_carry_shelf_back_and_forth_across_the_room-325": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "lift_and_carry_step_stool_with_both_hands-200": {
+    "static_objects": [],
+    "physics_objects": [
+      "step_stool"
+    ],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "lift_and_hold_wash_tub_both_hands_walk_around-436": {
+    "static_objects": [
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "lift_and_move_floor_lamp_with_left_hand_to_left_side-967": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lift_and_push_utility_cart_and_walk-692": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "lift_and_put_back_tray_on_table-336": {
+    "static_objects": [
+      "mug",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "lift_and_stir_spoon_in_mug-154": {
+    "static_objects": [
+      "mug",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "lift_and_straighten_lying_shelf_to_right_side-859": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "lift_carry_trash_can_and_return-031": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "lift_clothes_rack_up_and_put_on_ground-369": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "lift_clothes_rack_with_both_hands_and_put_on_the_ground-774": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "lift_floor_lamp_with_both_hands_and_put_on_the_ground-562": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lift_floor_lamp_with_right_hand_and_put_on_the_ground-790": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lift_frying_pan_with_right_hand_from_left_side_and_put_on_table-571": {
+    "static_objects": [
+      "frying_pan",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "lift_low_chair_and_put_on_the_ground-931": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "lift_low_chair_from_right_side_and_put_on_the_ground-759": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "lift_low_chair_left_back_and_put_down_with_both_hands-986": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "lift_low_chair_right_back_and_put_on_the_ground_with_both_hands-300": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "lift_phone_work_work_with_laptop_write_on_notebook-586": {
+    "static_objects": [
+      "laptop",
+      "notebook",
+      "organizer_medium",
+      "organizer_medium.001",
+      "organizer_small",
+      "organizer_small.001",
+      "pen",
+      "phone",
+      "table",
+      "table_lamp",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "organizer_medium.001",
+      "organizer_small",
+      "organizer_small.001",
+      "pen",
+      "phone",
+      "table",
+      "table_lamp",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "lift_plastic_bowl_and_walk_across_room-659": {
+    "static_objects": [
+      "plastic_bowl"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "lift_shelf_lie_to_stand-867": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "lift_shelf_upward_with_both_hands-148": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "lift_shelf_with_both_hands_and_put_on_the_ground-259": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "lift_table_with_both_hands_and_put_on_ground-399": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "lift_trash_can_with_both_hands_and_put_on_the_ground-403": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "lift_woven_basket_and_put_further_ahead_on_ground-107": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "lift_woven_basket_and_put_on_ground-599": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "lifting_and_carrying_dining_chair_with_left_hand-400": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_and_carrying_floor_lamp_right_hand-423": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lifting_and_carrying_floor_lamp_with_left_hand-647": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lifting_and_carrying_side_table-157": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "lifting_and_carrying_step_stool-488": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "lifting_and_carrying_table-105": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "lifting_and_carrying_trash_can_with_both_hands-121": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "lifting_and_checking_basket_90-215": {
+    "static_objects": [
+      "basket_90"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket_90"
+    ],
+    "notes": ""
+  },
+  "lifting_and_checking_step_stool-463": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "lifting_and_checking_table_lamp-191": {
+    "static_objects": [
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "lifting_and_lowering_trash_can_with_both_hands-114": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "lifting_and_lowering_utility_cart_with_both_hands-397": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "lifting_and_moving_table_with_both_hands-708": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "lifting_and_placing_dining_chair_on_ground_with_both_hands-326": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_and_putting_down_dining_chair-368": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_and_straightening_working_chair-433": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_and_tilting_table-304": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "lifting_basket_90_and_placing_on_table-604": {
+    "static_objects": [
+      "basket_90",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket_90",
+      "table"
+    ],
+    "notes": ""
+  },
+  "lifting_basket_90_and_placing_on_table-966": {
+    "static_objects": [
+      "basket_90",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket_90",
+      "table"
+    ],
+    "notes": ""
+  },
+  "lifting_basket_between_chest_and_both_arms-595": {
+    "static_objects": [
+      "basket",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "table"
+    ],
+    "notes": ""
+  },
+  "lifting_carrying_and_placing_down_dining_chair-585": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_dining_chair_and_placing_back_with_both_hands_on_ground-648": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_dining_chair_from_backrest_and_placing_back_with_right_hand_on_ground-595": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_dining_chair_with_both_hands-925": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_floor_lamp_and_placing_down-346": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lifting_floor_lamp_with_both_hands-916": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "lifting_frying_pan_and_transferring_eggs_to_side_plate_with_shaky_hands-130": {
+    "static_objects": [
+      "frying_pan",
+      "side_plate",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "side_plate",
+      "table"
+    ],
+    "notes": ""
+  },
+  "lifting_mug_and_drinking-248": {
+    "static_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_side_table_and_putting_down-362": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "lifting_utility_cart-096": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "lifting_working_chair_and_putting_back-778": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "lifting_woven_basket-517": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "look_around_and_stand_up_turn_off_table_lamp_and_move_floor_lamp_with_right_hand-747": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table",
+      "table_lamp",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table",
+      "table_lamp",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "make_food_in_frying_pan-960": {
+    "static_objects": [
+      "frying_pan",
+      "kitchen_counter",
+      "plastic_bowl",
+      "serving_bowl",
+      "wok_turner"
+    ],
+    "physics_objects": [
+      "whisk"
+    ],
+    "all_objects": [
+      "frying_pan",
+      "kitchen_counter",
+      "plastic_bowl",
+      "serving_bowl",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "making_bed_and_flipping_mug-710": {
+    "static_objects": [
+      "bed",
+      "mug",
+      "side_table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bed",
+      "mug",
+      "side_table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "mix_contents_of_deep_plate_with_spoon_pour_in_mixing_bowl-750": {
+    "static_objects": [
+      "deep_plate",
+      "mixing_bowl",
+      "spoon",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "mixing_bowl",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "mixing_content_of_mixing_bowl_with_spatula_on_table-801": {
+    "static_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "notes": ""
+  },
+  "mixing_in_mixing_bowl_with_right_hand-437": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "mixing_inside_of_mixing_bowl_with_left_hand-082": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "move_and_shake_serving_bowl-299": {
+    "static_objects": [
+      "serving_bowl",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "serving_bowl",
+      "table"
+    ],
+    "notes": ""
+  },
+  "move_around_while_playing_ukelele-932": {
+    "static_objects": [],
+    "physics_objects": [
+      "ukelele"
+    ],
+    "all_objects": [
+      "ukelele"
+    ],
+    "notes": ""
+  },
+  "move_clothes_rack_with_both_hands-840": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "move_flower_from_basket_90_to_vase-399": {
+    "static_objects": [
+      "low_chair",
+      "shelf",
+      "side_table",
+      "vase"
+    ],
+    "physics_objects": [
+      "basket_90",
+      "flower"
+    ],
+    "all_objects": [
+      "basket_90",
+      "flower",
+      "low_chair",
+      "shelf",
+      "side_table",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "move_lint_roller_onto_table_and_sweep_right_hand-164": {
+    "static_objects": [
+      "basket",
+      "lint_roller",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "lint_roller",
+      "table"
+    ],
+    "notes": ""
+  },
+  "move_mixing_bowl_on_table-150": {
+    "static_objects": [
+      "mixing_bowl",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "table"
+    ],
+    "notes": ""
+  },
+  "move_plate_and_mug_and_bowl_on_ground-752": {
+    "static_objects": [
+      "deep_plate",
+      "mug",
+      "mug.001",
+      "serving_bowl",
+      "spoon",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "mug",
+      "mug.001",
+      "serving_bowl",
+      "spoon",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "move_serving_bowl_from_front_to_other_side_of_the_table-184": {
+    "static_objects": [
+      "serving_bowl",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "serving_bowl",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "move_soap_dispenser_plastic_bowl_and_organizer_small_between_basket_90_and_shelf-313": {
+    "static_objects": [
+      "organizer_medium",
+      "shelf"
+      
+    ],
+    "physics_objects": ["basket_90","soap_dispenser","plastic_bowl","organizer_small"],
+    "all_objects": [
+      "basket_90",
+      "organizer_medium",
+      "organizer_small",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "move_soup_ladle_to_serving_bowl_and_deep_plate-502": {
+    "static_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "notes": ""
+  },
+  "moving_and_adjusting_table_lamp-917": {
+    "static_objects": [
+      "dining_chair",
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "moving_and_lifting_utility_cart-571": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "moving_dining_chair_with_right_knee_forward-865": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "moving_laundry_from_woven_basket_to_wash_tub-240": {
+    "static_objects": [
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "moving_laundry_from_woven_basket_to_wash_tub-775": {
+    "static_objects": [
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "moving_low_chair_with_both_hands-723": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "moving_organizer_medium_on_table-911": {
+    "static_objects": [
+      "orange",
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "orange",
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "moving_soap_dispenser_and_dispensing_soap_into_left_hand-346": {
+    "static_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "notes": ""
+  },
+  "moving_soap_dispenser_and_dispensing_soap_on_right_hand-951": {
+    "static_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "soap_dispenser",
+      "table"
+    ],
+    "notes": ""
+  },
+  "moving_utility_cart_right-568": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "open_can_with_right_hand-752": {
+    "static_objects": [
+      "can",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "can",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "organize_items_move_chair_next_to_utility_cart-705": {
+    "static_objects": [
+      "basket",
+      "draw_organizer_tray",
+      "hammer",
+      "organizer_medium",
+      "screwdriver",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "draw_organizer_tray",
+      "hammer",
+      "organizer_medium",
+      "screwdriver",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "organizing_and_transferring_cooking_utensils-202": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "knife.001",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "spoon.001",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "knife.001",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "spoon.001",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "organizing_and_transferring_utensils_to_draw_organizer_tray-489": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "organizing_and_transferring_utensils_to_draw_organizer_tray-531": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "organizing_cooking_utensils_and_moving_serving_bowl-428": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "organizing_kitchenware_in_tray-484": {
+    "static_objects": [
+      "dining_chair",
+      "table"
+    ],
+    "physics_objects": [
+      "deep_plate",
+      "mug",
+      "plastic_bowl",
+      "serving_bowl",
+      "tray"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "dining_chair",
+      "mug",
+      "plastic_bowl",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "organizing_kitchenware_on_table_and_tray-978": {
+    "static_objects": [
+      "deep_plate",
+      "mug",
+      "plastic_bowl",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "mug",
+      "plastic_bowl",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "organizing_plastic_bowl_serving_bowl_deep_plate_mug_on_tray-120": {
+    "static_objects": [
+      "deep_plate",
+      "mug",
+      "plastic_bowl",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "mug",
+      "plastic_bowl",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "organizing_utensils_in_draw_organizer_tray-762": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "peel_mango_with_peeler_by_rotating_and_moving_hands_from_left-849": {
+    "static_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "notes": ""
+  },
+  "peel_mango_with_peeler_by_rotating_mango_in_left_hand_from_left-855": {
+    "static_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "notes": ""
+  },
+  "peel_mango_with_peeler_in_right_hand-412": {
+    "static_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "notes": ""
+  },
+  "peeling_mango_with_peeler_by_rotating_mango_in_left_hand_from_front-655": {
+    "static_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mango",
+      "peeler",
+      "table"
+    ],
+    "notes": ""
+  },
+  "pick_up_and_carry_organizer_medium_while_walking-096": {
+    "static_objects": [
+      "organizer_medium"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium"
+    ],
+    "notes": ""
+  },
+  "pick_up_and_put_plastic_bowl_organizer_medium_soap_dispenser_turner_on_the_utility_cart-376": {
+    "static_objects": [
+      "organizer_medium",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "pick_up_dishes_and_utensils_from_table-098": {
+    "static_objects": [
+      "deep_plate",
+      "dining_chair",
+      "fork",
+      "knife",
+      "knife.001",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "dining_chair",
+      "fork",
+      "knife",
+      "knife.001",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pick_up_draw_organizer_tray_and_walk-188": {
+    "static_objects": [
+      "draw_organizer_tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "pick_up_drink_and_put_mug_on_table-699": {
+    "static_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pick_up_drink_and_swivel_mug-605": {
+    "static_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pick_up_fallen_chair_and_place_on_ground-078": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pick_up_woven_basket_with_right_hand_and_put_on_the_ground-267": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "picking_and_carrying_cutting_board-326": {
+    "static_objects": [
+      "cutting_board"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board"
+    ],
+    "notes": ""
+  },
+  "picking_and_putting_plates_and_bowl-960": {
+    "static_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "picking_up_clothes_from_table_putting_in_woven_basket-313": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "picking_up_draw_organizer_tray-298": {
+    "static_objects": [
+      "draw_organizer_tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "picking_up_draw_organizer_tray_from_ground_with_two_hands-632": {
+    "static_objects": [
+      "draw_organizer_tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "picking_up_pen_from_ground_and_write_on_table-916": {
+    "static_objects": [
+      "pen",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "pen",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "picking_up_plastic_bowl_stacked_putting_into_basket-391": {
+    "static_objects": [
+      "basket",
+      "deep_plate",
+      "fork",
+      "mug",
+      "mug.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "serving_bowl",
+      "spoon",
+      "tray",
+      "vacuum_flask"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "deep_plate",
+      "fork",
+      "mug",
+      "mug.001",
+      "organizer_medium",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "serving_bowl",
+      "spoon",
+      "tray",
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "picking_up_the_woven_basket_from_handle_and_walking_from_left_to_right-160": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "picking_up_the_woven_basket_from_middle_and_walking_from_left_to_right-150": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "picking_up_vase_table_lamp_from_table_putting_into_woven_basket-055": {
+    "static_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "picking_wash_tub_and_trash_can_in_woven_basket-678": {
+    "static_objects": [
+      "trash_can",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "picnic_organize_items_peel_mango-943": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket_90",
+      "knife",
+      "mango",
+      "organizer_medium",
+      "peeler",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "soap_dispenser",
+      "spoon",
+      "vacuum_flask"
+    ],
+    "all_objects": [
+      "basket_90",
+      "knife",
+      "mango",
+      "organizer_medium",
+      "peeler",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "soap_dispenser",
+      "spoon",
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "place_plates_and_utensils_on_table-189": {
+    "static_objects": [
+      "deep_plate",
+      "fork",
+      "knife",
+      "knife.001",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "utility_cart",
+      "vase",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "fork",
+      "knife",
+      "knife.001",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "utility_cart",
+      "vase",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "place_tray_on_table-046": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "mug",
+      "serving_bowl",
+      "tray"
+    ],
+    "all_objects": [
+      "mug",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "placing_flower_into_vase-133": {
+    "static_objects": [
+      "flower",
+      "table",
+      "vase",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "flower",
+      "table",
+      "vase",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "placing_phone_laptop_on_table_replacing_notebook_table_lamp_mug-268": {
+    "static_objects": [
+      "mug",
+      "notebook",
+      "shelf",
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "laptop",
+      "phone"
+    ],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "notebook",
+      "phone",
+      "shelf",
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "placing_phone_laptop_on_table_replacing_table_lamp_mug_picking_up_notebook-285": {
+    "static_objects": [
+      "mug",
+      "notebook",
+      "shelf",
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "laptop",
+      "phone"
+    ],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "notebook",
+      "phone",
+      "shelf",
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "placing_trash_can_down_and_putting_trash_inside_trash_can-286": {
+    "static_objects": [
+      "trash"
+    ],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "trash",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "placing_trash_can_down_and_throwing_trash_in_trash_can-237": {
+    "static_objects": [
+      "trash"
+    ],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "trash",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "placing_vase_with_both_hands_on_right_side_of_table-153": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "table",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "play_guitar_sitting_on_low_chair_and_tune_guitar-232": {
+    "static_objects": [
+      "guitar",
+      "low_chair",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "guitar",
+      "low_chair",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "play_guitar_then_bow_and_wave-525": {
+    "static_objects": [],
+    "physics_objects": [
+      "guitar"
+    ],
+    "all_objects": [
+      "guitar"
+    ],
+    "notes": ""
+  },
+  "play_guitar_while_seated_on_working_chair-274": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [
+      "guitar"
+    ],
+    "all_objects": [
+      "guitar",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "play_guitar_while_sitting_on_the_ground-234": {
+    "static_objects": [],
+    "physics_objects": [
+      "guitar"
+    ],
+    "all_objects": [
+      "guitar"
+    ],
+    "notes": ""
+  },
+  "play_ukelele_and_walk_then_sit__on_ground_and_play_ukelele-733": {
+    "static_objects": [],
+    "physics_objects": [
+      "ukelele"
+    ],
+    "all_objects": [
+      "ukelele"
+    ],
+    "notes": ""
+  },
+  "play_ukelele_while_laying_on_ground-125": {
+    "static_objects": [],
+    "physics_objects": [
+      "ukelele"
+    ],
+    "all_objects": [
+      "ukelele"
+    ],
+    "notes": ""
+  },
+  "play_ukelele_while_sitting_on_low_chair-858": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [
+      "ukelele"
+    ],
+    "all_objects": [
+      "low_chair",
+      "ukelele"
+    ],
+    "notes": ""
+  },
+  "plugging_usb_in_back_of_laptop_with_right_hand-792": {
+    "static_objects": [
+      "dining_chair",
+      "laptop",
+      "table",
+      "usb"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "laptop",
+      "table",
+      "usb"
+    ],
+    "notes": ""
+  },
+  "plugging_usb_into_laptop_with_left_hand-221": {
+    "static_objects": [
+      "dining_chair",
+      "laptop",
+      "table",
+      "usb"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "laptop",
+      "table",
+      "usb"
+    ],
+    "notes": ""
+  },
+  "plugging_usb_into_laptop_with_right_hand-270": {
+    "static_objects": [
+      "dining_chair",
+      "laptop",
+      "table",
+      "usb"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "laptop",
+      "table",
+      "usb"
+    ],
+    "notes": ""
+  },
+  "pour_from_can_to_mug_and_drink-186": {
+    "static_objects": [
+      "can",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "can",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pour_from_serving_bowl_and_shake-873": {
+    "static_objects": [
+      "serving_bowl",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "serving_bowl",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "pour_from_vacuum_flask_and_peel_and_cut_mango-117": {
+    "static_objects": [
+      "basket",
+      "knife",
+      "mango",
+      "organizer_medium",
+      "peeler",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "soap_dispenser",
+      "spoon",
+      "vacuum_flask"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "knife",
+      "mango",
+      "organizer_medium",
+      "peeler",
+      "plastic_bowl",
+      "plastic_bowl_stacked",
+      "soap_dispenser",
+      "spoon",
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "pour_from_vacuum_flask_to_mug_and_transfer_to_table-418": {
+    "static_objects": [
+      "mug",
+      "table",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "pour_from_vacuum_flask_to_mug_right_hands-265": {
+    "static_objects": [
+      "mug",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pour_imaginary_soup_with_soup_ladle_into_deep_plate_right_hand-637": {
+    "static_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "notes": ""
+  },
+  "pour_side_plate_and_deep_plate_into_serving_bowl-698": {
+    "static_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate",
+      "table"
+    ],
+    "notes": ""
+  },
+  "pour_water_on_the_ground_from_wash_tub_and_clean_with_shower_squeegee-399": {
+    "static_objects": [],
+    "physics_objects": [
+      "shower_squeegee",
+      "wash_tub"
+    ],
+    "all_objects": [
+      "shower_squeegee",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "pouring_coffee_from_vacuum_flask_into_mug-747": {
+    "static_objects": [
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pouring_contents_of_plastic_bowl_into_trash_can_with_spoon-738": {
+    "static_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "pouring_from_deep_plate_with_won_turner_cooking_in_frying_pan-381": {
+    "static_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "pouring_liquid_from_mug_into_trash_can-696": {
+    "static_objects": [
+      "mug",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "pouring_water_from_vacuum_flask_on_utility_cart_into_mug-609": {
+    "static_objects": [
+      "mug",
+      "table",
+      "utility_cart",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "utility_cart",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "press_soap_dispenser_head-696": {
+    "static_objects": [],
+    "physics_objects": [
+      "soap_dispenser"
+    ],
+    "all_objects": [
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "press_working_chair_with_right_knee-932": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pressing_soap_dispenser_with_right_hand-220": {
+    "static_objects": [],
+    "physics_objects": [
+      "soap_dispenser"
+    ],
+    "all_objects": [
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "pressing_top_switch_of_floor_lamp-028": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "pull_and_push_clothes_rack-434": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "pull_laptop_backward_put_mug_and_organizer_on_utility_cart_move_dining_chair-705": {
+    "static_objects": [
+      "dining_chair",
+      "laptop",
+      "laptop.001",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "table",
+      "trash_can",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "laptop",
+      "laptop.001",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "table",
+      "trash_can",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pull_laptop_backward_put_mug_on_utility_cart_move_dining_chair-891": {
+    "static_objects": [
+      "dining_chair",
+      "laptop",
+      "laptop.001",
+      "mug",
+      "table",
+      "trash_can",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "laptop",
+      "laptop.001",
+      "mug",
+      "table",
+      "trash_can",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "pull_low_chair_from_back_and_front_and_walk_backward-980": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "pull_low_chair_toward_body-027": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "pull_table_backwards-000": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "pull_table_backwards-074": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "pull_table_backwards-877": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "pull_utility_cart_with_right_hand_and_push_with_both_hands-183": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "pulling_and_pushing_the_dining_chair_from_back_post-203": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "pulling_and_pushing_the_dining_chair_from_the_top_rail-420": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "pulling_and_pushing_the_table_with_both_hands_from_the_side_and_center-416": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "pulling_and_pushing_utility_cart_around-707": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "pulling_and_pushing_woven_basket_with_both_hands-957": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "pulling_pushing_shelf_on_ground-824": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "pulling_table_on_ground-058": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "pulling_work_chair_backward-608": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "push_and_drag_trash_can_on_the_ground-152": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "push_and_pull_working_chair_forward_and_backward-755": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "push_shelf_with_foot_forward-354": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "push_table_forward-644": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "push_table_forward_with_both_hands-039": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table"
+    ],
+    "notes": ""
+  },
+  "push_trash_can_with_right_knee_forward-932": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "push_utility_cart_with_both_hands_and_pull_with_right_hand-436": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "push_utility_cart_with_left_foot_and_pull_with_right_hand-643": {
+    "static_objects": [
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "pushing__and_pulling_side_table_with_foot_and_right_hand-284": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "pushing_and_pulling_clothes_rack-475": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "pushing_and_pulling_dining_chair-591": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "pushing_and_pulling_low_chair-557": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "pushing_and_pulling_side_table-297": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "pushing_and_pulling_step_stool_on_ground-312": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "pushing_and_pulling_wash_tub-144": {
+    "static_objects": [
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "pushing_clothes_rack_to_right_side-483": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "pushing_low_chair_with_right_foot-573": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "pushing_low_chair_with_right_foot_forward-803": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "pushing_pulling_floor_lamp_on_ground-936": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "pushing_shelf_forward_knee-898": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "pushing_shelf_with_left_knee-878": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "pushing_trash_can_with_right_foot-610": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "pushing_woven_basket_with_foot_on_ground-840": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "put_basket_on_shelf_and_move_vase-918": {
+    "static_objects": [
+      "low_chair",
+      "shelf",
+      "side_table",
+      "vase"
+    ],
+    "physics_objects": [
+      "basket", "flower"
+    ],
+    "all_objects": [
+      "basket",
+      "flower",
+      "low_chair",
+      "shelf",
+      "side_table",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "put_frying_pan_on_table_and_check_the_temperature-456": {
+    "static_objects": [
+      "frying_pan",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "put_hammer_on_ground_next_to_screwdriver_and_leave-110": {
+    "static_objects": [
+      "hammer",
+      "screwdriver",
+      "screwdriver.001",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "hammer",
+      "screwdriver",
+      "screwdriver.001",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "put_mug_and_side_plate_on_side_table_then_grasp_them_and_turn_around-105": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug",
+      "side_plate"
+    ],
+    "all_objects": [
+      "mug",
+      "side_plate",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "put_pick_up_spoon_knife_in_basket-082": {
+    "static_objects": [
+      "basket"
+    ],
+    "physics_objects": [
+      "knife",
+      "spoon"
+    ],
+    "all_objects": [
+      "basket",
+      "knife",
+      "spoon"
+    ],
+    "notes": ""
+  },
+  "put_plastic_bowl_deep_plate_and_side_plate_into_serving_bowl-722": {
+    "static_objects": [
+      "deep_plate",
+      "dining_chair",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "dining_chair",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "put_plastic_bowl_side_plate_deep_bowl_on_the_table-058": {
+    "static_objects": [
+      "dining_chair",
+      "table"
+    ],
+    "physics_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "side_plate",
+      "spoon"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "dining_chair",
+      "plastic_bowl",
+      "side_plate",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "put_screwdriver_on_the_ground_stand_up_and_lean_against_table-567": {
+    "static_objects": [
+      "hammer",
+      "screwdriver",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "hammer",
+      "screwdriver",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "put_serving_bowl_and_plastic_bowl_on_table-178": {
+    "static_objects": [
+      "deep_plate",
+      "table"
+    ],
+    "physics_objects": [
+      "serving_bowl",
+      "plastic_bowl",
+      "spoon"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "serving_bowl",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "put_tray_on_table_and_pick_up_tray_again-238": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "mug",
+      "serving_bowl",
+      "tray"
+    ],
+    "all_objects": [
+      "mug",
+      "serving_bowl",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "putting_clothes_from_clothes_rack_into_woven_basket-003": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "putting_mug_on_side_table_reading_notebook_under_floor_lamp_on_low_chair-080": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "notebook",
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "putting_organizer_medium_basket_into_woven_basket-915": {
+    "static_objects": [
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "putting_organizer_medium_basket_into_woven_basket-942": {
+    "static_objects": [
+      "basket",
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "putting_organizer_medium_into_trash_can_putting_into_woven_basket-120": {
+    "static_objects": [
+      "organizer_medium",
+      "trash_can",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "trash_can",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "putting_picking_up_table_lamp_vase_from_table_into_woven_basket-948": {
+    "static_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "putting_spoon_knife_and_plastic_bowl_into_the_basket_with_both_hands-842": {
+    "static_objects": [
+      "basket",
+      "knife",
+      "plastic_bowl",
+      "spoon",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "knife",
+      "plastic_bowl",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "read_notebook_on_low_chair_under_table_lamp-738": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "reading_notebook_on_low_chair_in_right_side_of_side_table-922": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "reading_notebook_under_table_lamp_on_low_chair_in_left_side_of_side_table-164": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "reading_notebook_under_table_lamp_on_low_chair_in_left_side_of_table-793": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "reading_notebook_under_table_lamp_on_low_chair_in_right_side_of_table-516": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "rearrange_table_working_chair_shelf_utility_cart_and_draw_organizer_tray-973": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "rearrange_vase_from_bottom_shelf_to_top_shelf-973": {
+    "static_objects": [
+      "shelf",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "rearrange_vase_to_the_two_lower_shelves-801": {
+    "static_objects": [
+      "shelf",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "rearranging_the_vase_from_bottom_shelf_to_top_shelf-377": {
+    "static_objects": [
+      "shelf",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "rearranging_the_vase_from_next_to_last_shelf_to_two_shelves_above-640": {
+    "static_objects": [
+      "shelf",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "rearranging_vase_from_top_shelf_to_two_lower_shelves-421": {
+    "static_objects": [
+      "shelf",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "removing_lint_roller_from_basket_pulling_on_table_putting_into_basket-233": {
+    "static_objects": [
+      "basket",
+      "lint_roller",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "lint_roller",
+      "table"
+    ],
+    "notes": ""
+  },
+  "reposition_organizer_medium_on_table_both_hands-272": {
+    "static_objects": [
+      "orange",
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "orange",
+      "organizer_medium",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "roll_lint_roller_on_body_with_right_hand-967": {
+    "static_objects": [],
+    "physics_objects": [
+      "lint_roller"
+    ],
+    "all_objects": [
+      "lint_roller"
+    ],
+    "notes": ""
+  },
+  "roll_lint_roller_over_body_with_right_hand-787": {
+    "static_objects": [],
+    "physics_objects": [
+      "lint_roller"
+    ],
+    "all_objects": [
+      "lint_roller"
+    ],
+    "notes": ""
+  },
+  "roll_soap_dispenser_head-662": {
+    "static_objects": [],
+    "physics_objects": [
+      "soap_dispenser"
+    ],
+    "all_objects": [
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "rotate_while_sitting_on_working_chair_stand_up_and_put_right_foot_on_working_chair_seat-737": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "scooping_mixture_from_mixing_bowl_to_tray-599": {
+    "static_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table",
+      "tray"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table",
+      "tray"
+    ],
+    "notes": ""
+  },
+  "scooping_transferring_content_of_frying_pan-914": {
+    "static_objects": [
+      "frying_pan",
+      "side_plate",
+      "table"
+    ],
+    "physics_objects": [
+      "turner"
+    ],
+    "all_objects": [
+      "frying_pan",
+      "side_plate",
+      "table",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "scrap_deep_plate_with_left_index_finger-826": {
+    "static_objects": [],
+    "physics_objects": [
+      "deep_plate"
+    ],
+    "all_objects": [
+      "deep_plate"
+    ],
+    "notes": ""
+  },
+  "scraping_mixing_bowl_with_spatula-702": {
+    "static_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "notes": ""
+  },
+  "serving_food_from_frying_pan_and_sit_on_dining_chair-391": {
+    "static_objects": [
+      "deep_plate",
+      "dining_chair",
+      "knife",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "utility_cart",
+      "vase",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "frying_pan",
+      "wok_turner"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "dining_chair",
+      "frying_pan",
+      "knife",
+      "mug",
+      "mug.001",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "utility_cart",
+      "vase",
+      "wok_turner",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "serving_food_from_serving_bowl_to_deep_plate_with_spoon-020": {
+    "static_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "serving_food_from_serving_bowl_to_plastic_bowl_with_spoon_and_pour_in_deep_plate-552": {
+    "static_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "plastic_bowl",
+      "serving_bowl",
+      "side_plate",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "shake_frying_pan_and_transfer_eggs_to_side_plate-070": {
+    "static_objects": [
+      "frying_pan",
+      "side_plate",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "side_plate",
+      "table"
+    ],
+    "notes": ""
+  },
+  "shake_plastic_bowl_stacked-010": {
+    "static_objects": [
+      "plastic_bowl_stacked",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl_stacked",
+      "table"
+    ],
+    "notes": ""
+  },
+  "shifting_dining_chair_with_right_knee-357": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "shifting_shelf_with_left_leg-241": {
+    "static_objects": [
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "sit_and_transfer_wash_tub_and_basket_from_ground_to_utility_cart_with_left_hand-519": {
+    "static_objects": [
+      "basket",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "sit_on_chair_work_with_laptop_organize_notebooks-793": {
+    "static_objects": [
+      "laptop",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "sit_on_dining_chair_and_drink_from_mug_and_shake_mug-654": {
+    "static_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "notes": ""
+  },
+  "sit_on_dining_chair_and_drink_from_mug_with_left_hand-443": {
+    "static_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "notes": ""
+  },
+  "sit_on_dining_chair_and_drink_from_mug_with_right_hand-457": {
+    "static_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "notes": ""
+  },
+  "sit_on_dining_chair_to_drink_from_mug-867": {
+    "static_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "mug",
+      "table"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_and_drink_with_both_hands-947": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_and_drink_with_right_hand-757": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_and_open_laptop_to_work-591": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [
+      "laptop_bottom",
+      "laptop_top"
+    ],
+    "all_objects": [
+      "laptop_bottom",
+      "laptop_top",
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_and_work_with_laptop-388": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [
+      "laptop_bottom",
+      "laptop_top"
+    ],
+    "all_objects": [
+      "laptop_bottom",
+      "laptop_top",
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_and_work_with_laptop-425": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [
+      "laptop"
+    ],
+    "all_objects": [
+      "laptop",
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_cross_right_leg-884": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_drink_grasp_and_release_floor_lamp-418": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_drink_grasp_floor_lamp-940": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_read_notebook_and_drink_from_mug-179": {
+    "static_objects": [
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "physics_objects": [
+      "notebook"
+    ],
+    "all_objects": [
+      "low_chair",
+      "mug",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "sit_on_low_chair_while_reading_and_drink_from_mug-442": {
+    "static_objects": [
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "physics_objects": [
+      "notebook"
+    ],
+    "all_objects": [
+      "low_chair",
+      "mug",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "sit_on_working_chair_and_drink_from_mug_right_hand-419": {
+    "static_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "sit_on_working_chair_and_touch_laptop_then_play_guitar-063": {
+    "static_objects": [
+      "laptop",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "guitar"
+    ],
+    "all_objects": [
+      "guitar",
+      "laptop",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "sitting_and_pulling_the_dining_chair_forward_with_both_hands-947": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "sitting_cross_legged_on_dining_chair-673": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "sitting_on_dining_chair_reading_notebook-324": {
+    "static_objects": [
+      "dining_chair",
+      "notebook",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "notebook",
+      "table"
+    ],
+    "notes": ""
+  },
+  "sitting_on_ground_transferring_basket_and_organizer_medium_from_ground_and_woven_basket-686": {
+    "static_objects": [
+      "basket",
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "sitting_on_low_chair_pick_up_mug_and_notebook_from_side_table-047": {
+    "static_objects": [
+      "low_chair",
+      "mug",
+      "notebook",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "mug",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "sitting_on_lowchair-928": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "sitting_on_lowchair_and_working_with_laptop-564": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [
+      "laptop"
+    ],
+    "all_objects": [
+      "laptop",
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "sitting_on_table_on_table_drinking_coffee_with_mug_in_left_hand_from_vacuum_flask-881": {
+    "static_objects": [
+      "mug",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "table",
+      "vacuum_flask",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "sitting_on_working_chair_at_table_working_with_laptop_drinking_coffee_with_mug_in_left_hand-176": {
+    "static_objects": [
+      "laptop",
+      "phone",
+      "table",
+      "working_chair",
+      "working_chair.001"
+    ],
+    "physics_objects": [
+      "mug","serving_bowl",
+      "spoon"
+    ],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "phone",
+      "serving_bowl",
+      "spoon",
+      "table",
+      "working_chair",
+      "working_chair.001"
+    ],
+    "notes": ""
+  },
+  "sitting_on_working_chair_working_with_laptop_drinking_coffee_with_mug_in_left_hand-529": {
+    "static_objects": [
+      "laptop",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "spilling_water_with_serving_bowl_in_right_hand-847": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "spiraling_in_room_with_mixing_bowl_in_right_hand-776": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "stand_up_and_drag_dining_chair_on_ground-627": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "stand_up_turn_on_floor_lamp-426": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "stand_up_turn_on_floor_lamp_and_sit_down-584": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "step_on_step_stool_and_transfer_woven_basket_from_ground_to_top_shelf-303": {
+    "static_objects": [
+      "shelf",
+      "step_stool",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "step_stool",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "step_on_step_stool_and_transfer_woven_basket_from_top_shelf_to_ground-267": {
+    "static_objects": [
+      "shelf",
+      "step_stool",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "step_stool",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "step_on_step_stool_with_right_foot-932": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "step_on_step_stool_with_right_foot_shaking_left_foot-237": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "stepping_on_step_stool_and_clenching-105": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "stepping_on_step_stool_from_left_side-909": {
+    "static_objects": [
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "stir_food_in_frying_pan_with_wok_turner_and_wash_cutting_board-383": {
+    "static_objects": [
+      "cutting_board",
+      "frying_pan",
+      "kitchen_counter",
+      "soap_dispenser",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "cutting_board",
+      "frying_pan",
+      "kitchen_counter",
+      "soap_dispenser",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "stir_inside_mixing_bowl_using_whisk-305": {
+    "static_objects": [
+      "mixing_bowl",
+      "table",
+      "whisk"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "table",
+      "whisk"
+    ],
+    "notes": ""
+  },
+  "stir_spoon_and_look_into_mug-071": {
+    "static_objects": [
+      "mug",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "stir_spoon_inside_plastic_bowl_and_eat-044": {
+    "static_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "plastic_bowl",
+      "spoon",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "stir_spoon_right_hand_and_drink-582": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "mug",
+      "spoon"
+    ],
+    "all_objects": [
+      "mug",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "stirring_and_drinking_from_mug-748": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "stirring_imaginary_mixture-037": {
+    "static_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "notes": ""
+  },
+  "stirring_spatula_in_mixing_bowl-645": {
+    "static_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "spatula",
+      "table"
+    ],
+    "notes": ""
+  },
+  "subject_carries_low_chair_with_both_hands-763": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "subject_carrying_mug_with_both_hands-844": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "subject_holding_and_looking_at_knife_walk_back_and_fourth-838": {
+    "static_objects": [],
+    "physics_objects": [
+      "knife"
+    ],
+    "all_objects": [
+      "knife"
+    ],
+    "notes": ""
+  },
+  "subject_holding_and_throwing_cutting_board_walk_back_and_fourth-966": {
+    "static_objects": [],
+    "physics_objects": [
+      "cutting_board"
+    ],
+    "all_objects": [
+      "cutting_board"
+    ],
+    "notes": ""
+  },
+  "subject_holding_deep_plate_walk_around-909": {
+    "static_objects": [],
+    "physics_objects": [
+      "deep_plate"
+    ],
+    "all_objects": [
+      "deep_plate"
+    ],
+    "notes": ""
+  },
+  "subject_holding_mug_walk_back_and_fourth-651": {
+    "static_objects": [],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "mug"
+    ],
+    "notes": ""
+  },
+  "subject_holding_organizer_small_walk_back_and_fourth-423": {
+    "static_objects": [],
+    "physics_objects": [
+      "organizer_small"
+    ],
+    "all_objects": [
+      "organizer_small"
+    ],
+    "notes": ""
+  },
+  "subject_holding_plastic_bowl_walk_back_and_fourth-039": {
+    "static_objects": [],
+    "physics_objects": [
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "subject_holding_serving_bowl_walk_around-935": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "subject_holding_whisk_walk_back_and_fourth-297": {
+    "static_objects": [],
+    "physics_objects": [
+      "whisk"
+    ],
+    "all_objects": [
+      "whisk"
+    ],
+    "notes": ""
+  },
+  "subject_holding_working_chair_walk_back_and_fourth-370": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "subject_leaning_against_clothes_rack_sliding_right_then_left-201": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "sweeping_with_lint_roller_on_blouse_on_hanger_on_table_from_top_to_bottom-836": {
+    "static_objects": [
+      "lint_roller",
+      "table"
+    ],
+    "physics_objects": [
+      "clothes_hanger"
+    ],
+    "all_objects": [
+      "clothes_hanger",
+      "lint_roller",
+      "table"
+    ],
+    "notes": ""
+  },
+  "sweeping_with_lint_roller_on_self_from_chest_to_legs_and_lifting_legs-627": {
+    "static_objects": [],
+    "physics_objects": [
+      "lint_roller"
+    ],
+    "all_objects": [
+      "lint_roller"
+    ],
+    "notes": ""
+  },
+  "swinging_the_frying_pan_with_right_hand-111": {
+    "static_objects": [
+      "frying_pan",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table"
+    ],
+    "notes": ""
+  },
+  "swirling_the_deep_plate_with_left_hand-774": {
+    "static_objects": [
+      "deep_plate",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "table"
+    ],
+    "notes": ""
+  },
+  "switching_floor_lamp_with_right_hand-275": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  },
+  "take_off_left_sleeve_and_right_sleeve_place_on_clothes_hanger_turn_off_floor_lamp-752": {
+    "static_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "floor_lamp",
+      "low_chair",
+      "side_table"
+    ],
+    "physics_objects": [
+      "notebook"
+    ],
+    "all_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "floor_lamp",
+      "low_chair",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "take_off_right_sleeve_and_left_sleeve_place_on_clothes_hanger_turn_off_floor_lamp-070": {
+    "static_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "floor_lamp",
+      "low_chair",
+      "side_table"
+    ],
+    "physics_objects": [
+      "notebook"
+    ],
+    "all_objects": [
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "floor_lamp",
+      "low_chair",
+      "notebook",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "take_selfie_with_phone_left_hand-817": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [
+      "mug",
+      "phone"
+    ],
+    "all_objects": [
+      "mug",
+      "phone",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "taking_clothes_hanger_and_wearing_clothes-893": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "taking_off_clothes_and_hanging_on_rack-645": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "taking_photos_and_selfies_-178": {
+    "static_objects": [
+      "deep_plate",
+      "mug",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "phone"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "mug",
+      "phone",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "taking_selfies_in_different_poses-949": {
+    "static_objects": [
+      "working_chair"
+    ],
+    "physics_objects": [
+      "phone"
+    ],
+    "all_objects": [
+      "phone",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "throwing_trashes_from_organizer_medium_on_table_into_trash_can-508": {
+    "static_objects": [
+      "organizer_medium",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "tighten_screws_with_hammer_and_straighten_shelf-008": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "hammer",
+      "shelf",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "hammer",
+      "shelf",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "tilt_serving_bowl_towards_body-141": {
+    "static_objects": [],
+    "physics_objects": [
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "serving_bowl"
+    ],
+    "notes": ""
+  },
+  "tilting_and_moving_the_frying_pan_up_and_down_with_right_hand-013": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "frying_pan"
+    ],
+    "all_objects": [
+      "frying_pan",
+      "table"
+    ],
+    "notes": ""
+  },
+  "tilting_trash_can_with_right_foot-985": {
+    "static_objects": [
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "transfer_and_move_soap_dispenser_plastic_bowl_and_turner_from_shelf_to_basket_with_right_hand-396": {
+    "static_objects": [
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner"
+    ],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "transfer_basket_and_organizer_medium_from_ground_to_woven_basket_then_ground_again-642": {
+    "static_objects": [
+      "basket",
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "organizer_medium",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "transfer_basket_and_wash_tub_from_utility_cart_to_below_and_above_middle_shelf-925": {
+    "static_objects": [
+      "basket",
+      "shelf",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "shelf",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "transfer_basket_from_utility_cart_to_table_then_utility_cart_with_both_hands-240": {
+    "static_objects": [
+      "basket",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_basket_to_forth_shelf_bracket_from_bottom-791": {
+    "static_objects": [
+      "basket",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_basket_to_second_shelf_bracket_from_bottom-092": {
+    "static_objects": [
+      "basket",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_basket_to_third_shelf_bracket_from_bottom-940": {
+    "static_objects": [
+      "basket",
+      "orange",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "orange",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_chair_and_utility_cart_in_front_of_table_and_sit_on_chair-033": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "hammer",
+      "organizer_medium",
+      "screwdriver",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "hammer",
+      "organizer_medium",
+      "screwdriver",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "transfer_clothes_from_woven_basket_onto_table-552": {
+    "static_objects": [
+      "table",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "transfer_clothes_from_woven_basket_to_wash_tub-711": {
+    "static_objects": [
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "transfer_clothes_hanger1_behind_clothes_hanger2_and_clothes_hanger3_with_both_hands-201": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_hanger.001",
+      "clothes_hanger.002",
+      "clothes_rack",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "transfer_deep_plate_and_serving_bowl_and_both_mugs_to_utility_cart_and_walk_backward-416": {
+    "static_objects": [
+      "deep_plate",
+      "mug",
+      "mug.001",
+      "serving_bowl",
+      "spoon",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "mug",
+      "mug.001",
+      "serving_bowl",
+      "spoon",
+      "utility_cart",
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "transfer_deep_plate_and_serving_bowl_to_table_with_both_hands-726": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "deep_plate",
+      "serving_bowl"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "table"
+    ],
+    "notes": ""
+  },
+  "transfer_deep_plate_side_plate_and_serving_bowl_to_table_with_both_hands-922": {
+    "static_objects": [
+      "table"
+    ],
+    "physics_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate"
+    ],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate",
+      "table"
+    ],
+    "notes": ""
+  },
+  "transfer_from_woven_basket_to_wash_tub-105": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [
+      "wash_tub"
+    ],
+    "all_objects": [
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "transfer_frying_pan_from_utility_cart_to_the_table-178": {
+    "static_objects": [
+      "frying_pan",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_kitchen_utensils_to_drawer_then_grasp_utensils_to_plate_and_walk_away-248": {
+    "static_objects": [
+      "deep_plate",
+      "draw_organizer_tray",
+      "drawer",
+      "frying_pan",
+      "kitchen_counter_small",
+      "knife",
+      "soup_ladle",
+      "spatula",
+      "turner"
+    ],
+    "physics_objects": ["spoon"],
+    "all_objects": [
+      "deep_plate",
+      "draw_organizer_tray",
+      "drawer",
+      "frying_pan",
+      "kitchen_counter_small",
+      "knife",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "transfer_mug_and_side_plate_from_side_table_to_utility_cart_and_return-980": {
+    "static_objects": [
+      "mug",
+      "side_plate",
+      "side_table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "side_plate",
+      "side_table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_mug_and_side_plate_from_side_table_to_utility_cart_with_both_hands-646": {
+    "static_objects": [
+      "mug",
+      "side_plate",
+      "side_table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "side_plate",
+      "side_table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_mug_and_side_plate_to_side_table_then_switch_hands_and_grasp_them-826": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug",
+      "side_plate"
+    ],
+    "all_objects": [
+      "mug",
+      "side_plate",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "transfer_object1_to_organizer_small_then_transfer_organizer_small_to_a_lower_shelf_with_right_hand-574": {
+    "static_objects": [
+      "organizer_small",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_small",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_organizer_medium_and_organizer_small_to_second_shelf_from_top-717": {
+    "static_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_organizer_medium_from_top_shelf_to_middle_shelf-867": {
+    "static_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_organizer_medium_to_second_shelf_from_top-254": {
+    "static_objects": [
+      "organizer_medium",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_organizer_medium_to_shelf_above-096": {
+    "static_objects": [
+      "organizer_medium",
+      "shelf"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "shelf"
+    ],
+    "notes": ""
+  },
+  "transfer_organizer_medium_with_left_hand_and_organizer_small_with_right_hand_to_shelf_then_utility_cart-510": {
+    "static_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_organizer_small_and_organizer_medium_from_utility_cart_to_shelf_then_utility_cart-832": {
+    "static_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_organizer_small_turner_soap_dispenser_and_plastic_bowl_from_shelf_to_basket_with_right_hand-235": {
+    "static_objects": [
+      "organizer_small",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner"
+    ],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90",
+      "organizer_small",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "transfer_pen_and_mug_and_notebook_from_shelf_to_utility_cart_and_table-104": {
+    "static_objects": [
+      "basket",
+      "laptop",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "organizer_small",
+      "pen",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "laptop",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "organizer_small",
+      "pen",
+      "shelf",
+      "table",
+      "utility_cart",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "transfer_plastic_bowl_and_mango_from_basket_to_side_table_and_back_while_bending-876": {
+    "static_objects": [
+      "basket_90",
+      "mango",
+      "plastic_bowl",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket_90",
+      "mango",
+      "plastic_bowl",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "transfer_plastic_bowl_and_notebook_from_side_table_to_utility_cart_with_right_hand-349": {
+    "static_objects": [
+      "notebook",
+      "plastic_bowl",
+      "side_table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "notebook",
+      "plastic_bowl",
+      "side_table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_plastic_bowl_and_orange_from_basket_to_table_and_back-784": {
+    "static_objects": [
+      "basket_90",
+      "orange",
+      "plastic_bowl",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket_90",
+      "orange",
+      "plastic_bowl",
+      "table"
+    ],
+    "notes": ""
+  },
+  "transfer_plastic_bowl_and_organizer_small_to_basket_then_to_ground-957": {
+    "static_objects": [
+      "basket",
+      "organizer_small",
+      "plastic_bowl"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "organizer_small",
+      "plastic_bowl"
+    ],
+    "notes": ""
+  },
+  "transfer_side_plate_and_deep_plate_and_bowl_from_utility_cart_to_table_and_back-582": {
+    "static_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "side_plate",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_small_organizer_to_the_second_floor_of_shelf-952": {
+    "static_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "trash",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "shelf",
+      "trash",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "transfer_soap_dispenser_organizer_medium_and_plastic_bowl_from_utility_cart_to_shelf_and_back_to_utility_cart-344": {
+    "static_objects": [
+      "organizer_medium",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_soap_dispenser_plastic_bowl_organizer_small_and_organizer_medium_from_top_shelf_to_basket_then_shelf-998": {
+    "static_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser"
+    ],
+    "physics_objects": [
+      "basket"
+    ],
+    "all_objects": [
+      "basket",
+      "organizer_medium",
+      "organizer_small",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "transfer_spoon_knife_and_plastic_bowl_from_basket_to_the_table-703": {
+    "static_objects": [
+      "basket",
+      "knife",
+      "plastic_bowl",
+      "spoon",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "knife",
+      "plastic_bowl",
+      "spoon",
+      "table"
+    ],
+    "notes": ""
+  },
+  "transfer_trash_can_and_organizer_medium_from_utility_cart_to_ground_on_left_then_utility_cart-783": {
+    "static_objects": [
+      "organizer_medium",
+      "trash_can",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "trash_can",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_trash_can_and_organizer_medium_from_utility_cart_to_ground_then_transfer_trash_can_to_utility_cart-634": {
+    "static_objects": [
+      "organizer_medium",
+      "trash_can",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "trash_can",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transfer_trash_can_and_wash_tub_to_woven_basket_then_lift_and_walk_with_woven_basket-477": {
+    "static_objects": [
+      "trash_can",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "trash_can",
+      "wash_tub",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "transfer_turner_plastic_bowl_and_soap_dispenser_from_shelf_to_basket_and_back-482": {
+    "static_objects": [
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner"
+    ],
+    "physics_objects": [
+      "basket_90"
+    ],
+    "all_objects": [
+      "basket_90",
+      "plastic_bowl",
+      "shelf",
+      "soap_dispenser",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "transfer_vase_from_third_floor_to_fourth_floor-525": {
+    "static_objects": [
+      "shelf",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "transfer_vase_from_utility_cart_to_shelf_then_to_utility_cart_with_both_hands-798": {
+    "static_objects": [
+      "shelf",
+      "utility_cart",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "utility_cart",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "transfer_vase_from_utility_cart_to_shelf_with_left_hand_and_then_to_utility_cart_with_right_hand-037": {
+    "static_objects": [
+      "shelf",
+      "utility_cart",
+      "vase"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "shelf",
+      "utility_cart",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "transfer_vase_to_side_table_then_grasp_vase_and_walk_away-783": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "side_table",
+      "vase"
+    ],
+    "notes": ""
+  },
+  "transfer_wash_tub_and_basket_from_utility_cart_to_ground_with_both_hands-658": {
+    "static_objects": [
+      "basket",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "transferring_eggs_from_frying_pan_with_wok_turner_to_side_plate_on_table-069": {
+    "static_objects": [
+      "frying_pan",
+      "side_plate",
+      "table",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "side_plate",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "transferring_items_from_utility_cart_to_shelf_and_back-651": {
+    "static_objects": [
+      "basket",
+      "shelf",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "shelf",
+      "utility_cart",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "transferring_kitchen_utensils_from_table_to_tray-561": {
+    "static_objects": [
+      "knife",
+      "soup_ladle",
+      "spatula",
+      "table",
+      "tray",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "knife",
+      "soup_ladle",
+      "spatula",
+      "table",
+      "tray",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "transferring_mango_and_plastic_bowl_to_side_table_and_back-339": {
+    "static_objects": [
+      "basket_90",
+      "mango",
+      "plastic_bowl",
+      "side_table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket_90",
+      "mango",
+      "plastic_bowl",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "transferring_organizer_medium_and_organizer_small_from_utility_cart_middle_tray_to_the_table-068": {
+    "static_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "table",
+      "utility_cart"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "organizer_medium",
+      "organizer_small",
+      "table",
+      "utility_cart"
+    ],
+    "notes": ""
+  },
+  "transferring_plastic_bowl_and_orange_from_side_table_to_basket-340": {
+    "static_objects": [
+      "orange",
+      "plastic_bowl",
+      "side_table"
+    ],
+    "physics_objects": [
+      "basket"
+    ],
+    "all_objects": [
+      "basket",
+      "orange",
+      "plastic_bowl",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "transferring_plastic_bowl_and_orange_to_basket-465": {
+    "static_objects": [
+      "side_table"
+    ],
+    "physics_objects": [
+      "basket",
+      "orange",
+      "plastic_bowl"
+    ],
+    "all_objects": [
+      "basket",
+      "orange",
+      "plastic_bowl",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "transferring_soup_ladle_whisk_wok_turner_to_draw_organizer_tray-594": {
+    "static_objects": [
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "draw_organizer_tray",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "spoon.001",
+      "spoon.002",
+      "spoon.003",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "spoon.001",
+      "spoon.002",
+      "spoon.003",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "transferring_spoons_spatula_knife_turner_to_draw_organizer_tray-713": {
+    "static_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "spoon.001",
+      "spoon.002",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "draw_organizer_tray",
+      "knife",
+      "mixing_bowl",
+      "peeler",
+      "serving_bowl",
+      "soup_ladle",
+      "spatula",
+      "spoon",
+      "spoon.001",
+      "spoon.002",
+      "table",
+      "turner",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "turn_on_floor_lamp_while_sitting_on_low_chair_and_drinking_from_mug-457": {
+    "static_objects": [
+      "floor_lamp",
+      "low_chair",
+      "side_table"
+    ],
+    "physics_objects": [
+      "mug"
+    ],
+    "all_objects": [
+      "floor_lamp",
+      "low_chair",
+      "mug",
+      "side_table"
+    ],
+    "notes": ""
+  },
+  "turn_on_table_lamp_and_read_notebook_while_sitting_on_low_chair-550": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "turn_on_table_lamp_sit_on_low_chair_and_read_notebook-528": {
+    "static_objects": [
+      "low_chair",
+      "notebook",
+      "side_table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair",
+      "notebook",
+      "side_table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "turning_food_inside_frying_pan_with_wok_turner-167": {
+    "static_objects": [
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "turning_off_table_lamp_in_left_side_of_table_with_left_hand_while_seated_on_dining_chair-238": {
+    "static_objects": [
+      "dining_chair",
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "turning_with_wok_turner_in_frying_pan_on_table-222": {
+    "static_objects": [
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "frying_pan",
+      "table",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "twist_soap_dispenser_top_with_right_hand-402": {
+    "static_objects": [],
+    "physics_objects": [
+      "soap_dispenser_body",
+      "soap_dispenser_top"
+    ],
+    "all_objects": [
+      "soap_dispenser_body",
+      "soap_dispenser_top"
+    ],
+    "notes": ""
+  },
+  "twist_soap_dispenser_top_with_right_hand_index-345": {
+    "static_objects": [],
+    "physics_objects": [
+      "soap_dispenser_body",
+      "soap_dispenser_top"
+    ],
+    "all_objects": [
+      "soap_dispenser_body",
+      "soap_dispenser_top"
+    ],
+    "notes": ""
+  },
+  "unscrew_and_screw_vacuum_flask_cap-177": {
+    "static_objects": [
+      "table",
+      "vacuum_flask_body",
+      "vacuum_flask_cap"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "vacuum_flask_body",
+      "vacuum_flask_cap"
+    ],
+    "notes": ""
+  },
+  "unscrew_vacuum_flask_cap_to_table_and_screw_back-687": {
+    "static_objects": [
+      "table",
+      "vacuum_flask_body",
+      "vacuum_flask_cap"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "vacuum_flask_body",
+      "vacuum_flask_cap"
+    ],
+    "notes": ""
+  },
+  "use_lint_roller_to_prepare_cloth_and_put_it_back_in_basket-445": {
+    "static_objects": [
+      "basket",
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "lint_roller",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "lint_roller",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "use_shower_squeegee_on_wall-497": {
+    "static_objects": [
+      "bathroomsink",
+      "shelf",
+      "shower_squeegee",
+      "step_stool"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bathroomsink",
+      "shelf",
+      "shower_squeegee",
+      "step_stool"
+    ],
+    "notes": ""
+  },
+  "use_soup_ladle_to_taste_and_pour_soup_into_deep_plate-717": {
+    "static_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "serving_bowl",
+      "soup_ladle",
+      "table"
+    ],
+    "notes": ""
+  },
+  "using_kitchen_items-103": {
+    "static_objects": [
+      "deep_plate",
+      "draw_organizer_tray",
+      "drawer",
+      "frying_pan",
+      "kitchen_counter",
+      "knife",
+      "soup_ladle",
+      "turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "draw_organizer_tray",
+      "drawer",
+      "frying_pan",
+      "kitchen_counter",
+      "knife",
+      "soup_ladle",
+      "turner"
+    ],
+    "notes": ""
+  },
+  "using_lint_roller_to_prepare_cloth-636": {
+    "static_objects": [
+      "basket",
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "lint_roller",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "bed",
+      "clothes_hanger",
+      "clothes_rack",
+      "lint_roller",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "walk_across_room_while_carrying_frying_pan_in_right_hand-890": {
+    "static_objects": [],
+    "physics_objects": [
+      "frying_pan"
+    ],
+    "all_objects": [
+      "frying_pan"
+    ],
+    "notes": ""
+  },
+  "walk_across_room_with_spoon_in_right_hand-004": {
+    "static_objects": [],
+    "physics_objects": [
+      "spoon"
+    ],
+    "all_objects": [
+      "spoon"
+    ],
+    "notes": ""
+  },
+  "walk_across_the_room_while_holding_soup_ladle_in_left_hand-140": {
+    "static_objects": [],
+    "physics_objects": [
+      "soup_ladle"
+    ],
+    "all_objects": [
+      "soup_ladle"
+    ],
+    "notes": ""
+  },
+  "walk_across_the_room_with_spatula_in_right_hand-035": {
+    "static_objects": [],
+    "physics_objects": [
+      "spatula"
+    ],
+    "all_objects": [
+      "spatula"
+    ],
+    "notes": ""
+  },
+  "walk_back_and_forth_while_carrying_cutting_board-648": {
+    "static_objects": [],
+    "physics_objects": [
+      "cutting_board"
+    ],
+    "all_objects": [
+      "cutting_board"
+    ],
+    "notes": ""
+  },
+  "walk_forward_pick_up_and_put_down_woven_basket-897": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "walk_in_circular_path_while_while_carrying_organizer_medium-371": {
+    "static_objects": [],
+    "physics_objects": [
+      "organizer_medium"
+    ],
+    "all_objects": [
+      "organizer_medium"
+    ],
+    "notes": ""
+  },
+  "walk_in_square_path_while_carrying_side_plate_in_left_hand-847": {
+    "static_objects": [],
+    "physics_objects": [
+      "side_plate"
+    ],
+    "all_objects": [
+      "side_plate"
+    ],
+    "notes": ""
+  },
+  "walk_to_large_bin_and_empty_trash_can_in_it-637": {
+    "static_objects": [
+      "larger_bin"
+    ],
+    "physics_objects": [
+      "trash_can"
+    ],
+    "all_objects": [
+      "larger_bin",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "walk_while_caring_cutting_board-021": {
+    "static_objects": [],
+    "physics_objects": [
+      "cutting_board"
+    ],
+    "all_objects": [
+      "cutting_board"
+    ],
+    "notes": ""
+  },
+  "walk_while_carrying_deep_plate_with_both_hands-586": {
+    "static_objects": [],
+    "physics_objects": [
+      "deep_plate"
+    ],
+    "all_objects": [
+      "deep_plate"
+    ],
+    "notes": ""
+  },
+  "walk_with_dining_chair-266": {
+    "static_objects": [],
+    "physics_objects": [
+      "dining_chair"
+    ],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "walk_with_low_chair-308": {
+    "static_objects": [
+      "low_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "low_chair"
+    ],
+    "notes": ""
+  },
+  "walk_with_vase_in_both_hands-120": {
+    "static_objects": [],
+    "physics_objects": [
+      "vase"
+    ],
+    "all_objects": [
+      "vase"
+    ],
+    "notes": ""
+  },
+  "walking_and_rolling_lint_roller_on_clothes_with_left_hand-042": {
+    "static_objects": [],
+    "physics_objects": [
+      "lint_roller"
+    ],
+    "all_objects": [
+      "lint_roller"
+    ],
+    "notes": ""
+  },
+  "walking_and_rolling_lint_roller_on_clothes_with_right_hand-741": {
+    "static_objects": [],
+    "physics_objects": [
+      "lint_roller"
+    ],
+    "all_objects": [
+      "lint_roller"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_and_lifting_and_lowering_the_woven_basket_with_right_hand-777": {
+    "static_objects": [],
+    "physics_objects": [
+      "woven_basket"
+    ],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_and_lifting_the_wash_tub_with_right_hand-667": {
+    "static_objects": [],
+    "physics_objects": [
+      "wash_tub"
+    ],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_and_lifting_the_wok_turner_with_left_hand-193": {
+    "static_objects": [],
+    "physics_objects": [
+      "wok_turner"
+    ],
+    "all_objects": [
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_and_lifting_the_woven_basket_with_left_hand-238": {
+    "static_objects": [],
+    "physics_objects": [
+      "woven_basket"
+    ],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_and_spiraling_while_holding_draw_organizer_tray_sides-322": {
+    "static_objects": [],
+    "physics_objects": [
+      "draw_organizer_tray"
+    ],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_from_right_and_lifting_the_woven_basket_with_right_hand-809": {
+    "static_objects": [
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_while_holding_woven_basket_bottom_and_handle_and_switching_hands-739": {
+    "static_objects": [],
+    "physics_objects": [
+      "woven_basket"
+    ],
+    "all_objects": [
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_while_lifting_the_clothes_rack_center_with_right_hand_then_left_hand-409": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_while_pushing_the_clothes_rack_with_right_hand_then_left_hand-594": {
+    "static_objects": [
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_with_basket_in_right_hand_and_switching_hands_twice-603": {
+    "static_objects": [],
+    "physics_objects": [
+      "basket"
+    ],
+    "all_objects": [
+      "basket"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_with_mixing_bowl_in_right_hand-216": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_with_soap_dispenser_in_left_hand_and_switching_positions-523": {
+    "static_objects": [],
+    "physics_objects": [
+      "soap_dispenser"
+    ],
+    "all_objects": [
+      "soap_dispenser"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_with_table_lamp_in_right_hand_and_switching_hands-446": {
+    "static_objects": [],
+    "physics_objects": [
+      "table_lamp"
+    ],
+    "all_objects": [
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_with_the_draw_organizer_tray_in_left_hand-180": {
+    "static_objects": [],
+    "physics_objects": [
+      "draw_organizer_tray"
+    ],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_with_the_draw_organizer_tray_in_right_hand_while_raising_then_switching_hands-867": {
+    "static_objects": [],
+    "physics_objects": [
+      "draw_organizer_tray"
+    ],
+    "all_objects": [
+      "draw_organizer_tray"
+    ],
+    "notes": ""
+  },
+  "walking_back_and_forth_with_the_vacuum_flask_in_right_hand-180": {
+    "static_objects": [],
+    "physics_objects": [
+      "vacuum_flask"
+    ],
+    "all_objects": [
+      "vacuum_flask"
+    ],
+    "notes": ""
+  },
+  "walking_with_dining_chair_and_placing_down-607": {
+    "static_objects": [
+      "dining_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair"
+    ],
+    "notes": ""
+  },
+  "walking_with_mixing_bowl_while_holding_bottom_with_both_hands-390": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "walking_with_mixing_bowl_while_holding_edge_and_side_and_and_then_bottom-002": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "walking_with_mixing_bowl_while_holding_edge_and_side_and_and_then_bottom-668": {
+    "static_objects": [],
+    "physics_objects": [
+      "mixing_bowl"
+    ],
+    "all_objects": [
+      "mixing_bowl"
+    ],
+    "notes": ""
+  },
+  "walking_with_wash_tub_across_room-930": {
+    "static_objects": [],
+    "physics_objects": [
+      "wash_tub"
+    ],
+    "all_objects": [
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "washing_clothes_with_both_hands_in_wash_tub-036": {
+    "static_objects": [
+      "tap"
+    ],
+    "physics_objects": [
+      "wash_tub"
+    ],
+    "all_objects": [
+      "tap",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "washing_clothes_with_right_hand_in_wash_tub-966": {
+    "static_objects": [
+      "wash_tub"
+    ],
+    "physics_objects": [
+      "tap"
+    ],
+    "all_objects": [
+      "tap",
+      "wash_tub"
+    ],
+    "notes": ""
+  },
+  "washing_hand_in_bathroom-289": {
+    "static_objects": [
+      "bathroomsink",
+      "soap_dispenser",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "bathroomsink",
+      "soap_dispenser",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "washing_mug_with_soap_and_sponge-486": {
+    "static_objects": [
+      "mug",
+      "sink",
+      "soap_dispenser",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mug",
+      "sink",
+      "soap_dispenser",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "washing_soup_ladle_with_soap_and_sponge-578": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "soup_ladle"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "soup_ladle"
+    ],
+    "notes": ""
+  },
+  "washing_vacuum_flask_with_soap_under_water_tap-757": {
+    "static_objects": [
+      "sink",
+      "soap_dispenser",
+      "vacuum_flask_body",
+      "vacuum_flask_cap"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "sink",
+      "soap_dispenser",
+      "vacuum_flask_body",
+      "vacuum_flask_cap"
+    ],
+    "notes": ""
+  },
+  "wearing_clothes_from_clothes_rack_and_fixing_collar-071": {
+    "static_objects": [
+      "clothes_hanger",
+      "clothes_rack"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "clothes_hanger",
+      "clothes_rack"
+    ],
+    "notes": ""
+  },
+  "whisking_in_the_mixing_bowl-804": {
+    "static_objects": [
+      "mixing_bowl",
+      "table",
+      "whisk"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "mixing_bowl",
+      "table",
+      "whisk"
+    ],
+    "notes": ""
+  },
+  "wipe_deep_plate_over_trash_can-109": {
+    "static_objects": [
+      "deep_plate",
+      "table",
+      "trash_can"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "deep_plate",
+      "table",
+      "trash_can"
+    ],
+    "notes": ""
+  },
+  "work_with_laptop_put_pen_and_notebooks_in_organizer-562": {
+    "static_objects": [
+      "laptop",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "organizer_small",
+      "pen",
+      "shelf",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "notebook",
+      "organizer_medium",
+      "organizer_small",
+      "pen",
+      "shelf",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "work_with_notebook_in_both_hands-972": {
+    "static_objects": [
+      "notebook",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "notebook",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "working_with_hammer_in_garage-729": {
+    "static_objects": [
+      "hammer",
+      "screwdriver",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "hammer",
+      "screwdriver",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "working_with_laptop_and_drinking_coffee_with_left_hand-022": {
+    "static_objects": [
+      "laptop",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "working_with_laptop_and_drinking_coffee_with_right_hand-870": {
+    "static_objects": [
+      "laptop",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "laptop",
+      "mug",
+      "table",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "working_with_phone_sitting_working_with_laptop-149": {
+    "static_objects": [
+      "laptop",
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "physics_objects": [
+      "phone"
+    ],
+    "all_objects": [
+      "laptop",
+      "phone",
+      "table",
+      "table_lamp",
+      "working_chair"
+    ],
+    "notes": ""
+  },
+  "write_on_note_book_and_tap_on_table_lamp-561": {
+    "static_objects": [
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [
+      "notebook",
+      "pen"
+    ],
+    "all_objects": [
+      "notebook",
+      "pen",
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "write_on_notebook_with_pen_in_right_hand-329": {
+    "static_objects": [
+      "dining_chair",
+      "notebook",
+      "pen",
+      "table"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "notebook",
+      "pen",
+      "table"
+    ],
+    "notes": ""
+  },
+  "transferring_utensils_from_basket_to_tray_and_back-497": {
+    "static_objects": [
+      "basket",
+      "soup_ladle",
+      "table",
+      "tray",
+      "whisk",
+      "wok_turner"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "basket",
+      "soup_ladle",
+      "table",
+      "tray",
+      "whisk",
+      "wok_turner"
+    ],
+    "notes": ""
+  },
+  "transferring_vase_and_table_lamp_from_woven_basket_to_table-586": {
+    "static_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "table",
+      "table_lamp",
+      "vase",
+      "woven_basket"
+    ],
+    "notes": ""
+  },
+  "turn_off_table_lamp_with_right_hand-638": {
+    "static_objects": [
+      "dining_chair",
+      "table",
+      "table_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "dining_chair",
+      "table",
+      "table_lamp"
+    ],
+    "notes": ""
+  },
+  "turn_on_floor_lamp_and_walk_backwards-654": {
+    "static_objects": [
+      "floor_lamp"
+    ],
+    "physics_objects": [],
+    "all_objects": [
+      "floor_lamp"
+    ],
+    "notes": ""
+  }
+}
