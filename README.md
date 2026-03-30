@@ -14,7 +14,7 @@
       <a href="https://huggingface.co/spaces/sam-motamed/VOID" target="_blank" style="margin: 2px;">
     <img alt="Data" src="https://img.shields.io/badge/🤗Gradio-Demo-AB8165" style="display: inline-block; vertical-align: middle;"/>
   </a>
-  <a href="https://huggingface.co/sam-motamed/VOID" target="_blank" style="margin: 2px;">
+  <a href="https://huggingface.co/netflix/void-model" target="_blank" style="margin: 2px;">
     <img alt="Models" src="https://img.shields.io/badge/🤗%20HuggingFace-Models-orange" style="display: inline-block; vertical-align: middle;"/>
   </a>
 </div>
