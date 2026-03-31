@@ -11,7 +11,7 @@ This repository provides the code to generate **counterfactual paired videos** f
 
 ### 1. HuMoTo Dataset (Required)
 
-You must request access to the HuMoTo dataset directly from the authors at [adobe-research/humoto](https://github.com/adobe-research/humoto). Once approved, download the dataset:
+You must agree to the HuMoTo license terms and download the dataset yourself:
 
 ```bash
 # After obtaining access, download to ./humoto_release/humoto_0805/

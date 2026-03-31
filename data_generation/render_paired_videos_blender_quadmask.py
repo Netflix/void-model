@@ -20,6 +20,12 @@ import pickle
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, script_dir)
 
+# Ensure Blender's Python can find pip-installed packages (e.g., opencv)
+import site
+user_site = site.getusersitepackages()
+if user_site not in sys.path:
+    sys.path.append(user_site)
+
 # Physics configuration file
 PHYSICS_CONFIG_FILE = os.path.join(script_dir, "physics_config.json")
 
@@ -172,7 +178,11 @@ def setup_scene(resolution_x=1600, resolution_y=900, fps=12):
     scene = bpy.context.scene
 
     # Set render settings
-    scene.render.engine = 'BLENDER_EEVEE'  # Fast rendering
+    # BLENDER_EEVEE was renamed to BLENDER_EEVEE_NEXT in Blender 4.2+
+    try:
+        scene.render.engine = 'BLENDER_EEVEE_NEXT'
+    except TypeError:
+        scene.render.engine = 'BLENDER_EEVEE'
     scene.render.resolution_x = resolution_x
     scene.render.resolution_y = resolution_y
     scene.render.resolution_percentage = 100
@@ -976,14 +986,15 @@ def frames_to_video(frames_dir, output_path, fps=12, is_mask=False):
     import subprocess
 
     if is_mask:
-        # Use lossless H.264 RGB encoding for masks to preserve exact pixel values
-        # This avoids YUV color space conversion artifacts while staying in MP4 format
+        # Use near-lossless grayscale encoding for masks
+        # yuv420p ensures broad player compatibility; crf=0 preserves discrete values
         cmd = [
             'ffmpeg', '-y',
             '-framerate', str(fps),
             '-i', os.path.join(frames_dir, 'frame_%04d.png'),
-            '-c:v', 'libx264rgb',
+            '-c:v', 'libx264',
             '-crf', '0',
+            '-pix_fmt', 'yuv420p',
             '-preset', 'veryslow',
             output_path
         ]
@@ -1102,21 +1113,7 @@ def create_trimask_from_frames(frames_with_human, frames_background_original, fr
             k2 = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2*change_erode_px+1, 2*change_erode_px+1))
             change = cv2.morphologyEx(change, cv2.MORPH_OPEN, k2)
 
-        # DEBUG: Save intermediate masks for first frame
         if fn == frames[0]:
-            debug_dir = output_dir + "_debug"
-            os.makedirs(debug_dir, exist_ok=True)
-
-            # Save human mask (binary)
-            cv2.imwrite(os.path.join(debug_dir, "human_mask.png"), human_bin)
-
-            # Save change mask (binary)
-            cv2.imwrite(os.path.join(debug_dir, "change_mask.png"), change)
-
-            # Save diff_scalar for visualization
-            cv2.imwrite(os.path.join(debug_dir, "diff_scalar.png"), diff_scalar)
-
-            print(f"[DEBUG] Saved intermediate masks to {debug_dir}")
             print(f"  Human pixels: {(human_bin > 0).sum():,} ({(human_bin > 0).sum()/human_bin.size*100:.2f}%)")
             print(f"  Change pixels: {(change > 0).sum():,} ({(change > 0).sum()/change.size*100:.2f}%)")
             print(f"  Diff_scalar stats: min={diff_scalar.min()}, max={diff_scalar.max()}, mean={diff_scalar.mean():.1f}")
