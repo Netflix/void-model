@@ -315,18 +315,41 @@ Save overwrites `quadmask_0.mp4` in place. Rerun inference from Pass 1 after sav
 <summary><strong>🏋️ Training</strong></summary>
 
 ### Training Data Generation
+### Training Data Generation
 
 Due to licensing constraints on the underlying datasets, we release the **data generation code** instead of the pre-built training data. The code produces paired counterfactual videos (with/without object, plus quad-masks) from two sources:
 
 #### Source 1: HUMOTO (Human-Object Interaction)
 
-Generates counterfactual videos from the [HUMOTO]([https://4d-humans.github.io/](https://github.com/adobe-research/humoto)) motion capture dataset using Blender. A human (Remy/Sophie character) interacts with objects; removing the human causes objects to fall via physics simulation.
+Generates counterfactual videos from the [HUMOTO](https://github.com/adobe-research/humoto) motion capture dataset using Blender. A human (Remy/Sophie character) interacts with objects; removing the human causes objects to fall via physics simulation.
 
 **Prerequisites:**
-1. Request access to the HUMOTO dataset from the authors at [adobe-research/humoto](https://github.com/adobe-research/humoto) and download it once approved
-2. Install [Blender](https://www.blender.org/download/)
-3. Download Remy and Sophie character models from [Mixamo](https://www.mixamo.com/) (free)
-4. Download PBR textures of your choice (e.g., from [ambientCG](https://ambientcg.com/) or [Poly Haven](https://polyhaven.com/))
+1. **HUMOTO dataset** — Request access from the authors at [adobe-research/humoto](https://github.com/adobe-research/humoto). Once approved, download and place under `data_generation/humoto_release/`
+2. **Blender** — Install [Blender](https://www.blender.org/download/) (tested with 3.x and 4.x). Also install `opencv-python-headless` in Blender's Python (see `data_generation/README.md`)
+3. **Remy & Sophie characters** — Download from [Mixamo](https://www.mixamo.com/) (free Adobe account). Search for "Remy" and "Sophie", download each as FBX, and place at:
+   ```
+   data_generation/human_model/Remy_mixamo_bone.fbx
+   data_generation/human_model/Sophie_mixamo_bone.fbx
+   ```
+4. **PBR textures** (optional) — Download texture packs from [ambientCG](https://ambientcg.com/) or [Poly Haven](https://polyhaven.com/). Without textures, objects render with realistic solid colors as fallback
+
+**Expected directory structure after setup:**
+```
+data_generation/
+├── humoto_release/
+│   ├── humoto_0805/                    # HUMOTO sequences (.pkl, .fbx, .yaml per sequence)
+│   └── humoto_objects_0805/            # Object meshes (.obj, .fbx per object)
+├── human_model/
+│   ├── Remy_mixamo_bone.fbx            # ← download from Mixamo
+│   ├── Sophie_mixamo_bone.fbx          # ← download from Mixamo
+│   ├── bone_names.py                   # included
+│   └── *.json                          # included (bone structure definitions)
+├── textures/                           # ← optional, user-provided PBR textures
+├── physics_config.json                 # included (manual per-sequence physics settings)
+├── render_paired_videos_blender_quadmask.py   # main renderer
+├── convert_split_remy_sophie.sh               # character conversion script
+└── ...
+```
 
 **Pipeline:**
 ```bash
@@ -340,11 +363,13 @@ blender --background --python render_paired_videos_blender_quadmask.py -- \
     -d ./humoto_release/humoto_0805 \
     -o ./output \
     -s <sequence_name> \
-    -m ./humoto_release/humoto_0805 \
-    --use_characters --enable_physics --add_walls
+    -m ./humoto_release/humoto_objects_0805 \
+    --use_characters --enable_physics --add_walls \
+    --target_frames 60 --fps 12
 ```
 
 A pre-configured `physics_config.json` is included specifying which objects are static vs. dynamic per sequence. See `data_generation/README.md` for full details.
+
 
 #### Source 2: Kubric (Object-Only Interaction)
 
