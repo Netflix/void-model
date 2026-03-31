@@ -50,7 +50,7 @@ VOID uses two transformer checkpoints, trained sequentially. You can run inferen
 | **VOID Pass 1** | Base inpainting model | [Download](https://huggingface.co/netflix/void-model/blob/main/void_pass1.safetensors) |
 | **VOID Pass 2** | Warped-noise refinement model | [Download](https://huggingface.co/netflix/void-model/blob/main/void_pass2.safetensors) |
 
-Place checkpoints anywhere and pass the path via `--config.video_model.transformer_path`.
+Place checkpoints anywhere and pass the path via `--config.video_model.transformer_path` (Pass 1) or `--model_checkpoint` (Pass 2).
 
 ---
 
