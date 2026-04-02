@@ -54,6 +54,18 @@ Place checkpoints anywhere and pass the path via `--config.video_model.transform
 
 ---
 
+## ▶️ Quick Start
+
+The fastest way to try VOID is the included notebook — it handles setup, downloads the models, runs inference on a sample video, and displays the result:
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/netflix/void-model/blob/main/notebook.ipynb)
+
+> **Note:** Requires a GPU with 40GB+ VRAM (e.g., A100).
+
+For more control over the pipeline (custom videos, Pass 2 refinement, mask generation), see the full setup and instructions below.
+
+---
+
 ## ⚙️ Setup
 
 ```bash
@@ -156,8 +168,6 @@ The quadmask encodes four semantic regions per pixel:
 ---
 
 ## 🚀 Pipeline
-
-> **Quick start:** For a self-contained end-to-end example, see [`notebook.ipynb`](notebook.ipynb) — it downloads the models, runs Pass 1 inference on a sample video, and displays the result. You can also open it directly in [Google Colab](https://colab.research.google.com/github/netflix/void-model/blob/main/notebook.ipynb) (requires a GPU with 40GB+ VRAM).
 
 <details>
 <summary><strong>🎭 Stage 1 — Generate Masks</strong></summary>
