@@ -157,6 +157,8 @@ The quadmask encodes four semantic regions per pixel:
 
 ## 🚀 Pipeline
 
+> **Quick start:** For a self-contained end-to-end example, see [`notebook.ipynb`](notebook.ipynb) — it downloads the models, runs Pass 1 inference on a sample video, and displays the result. You can also open it directly in [Google Colab](https://colab.research.google.com/github/netflix/void-model/blob/main/notebook.ipynb) (requires a GPU with 40GB+ VRAM).
+
 <details>
 <summary><strong>🎭 Stage 1 — Generate Masks</strong></summary>
 
