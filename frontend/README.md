@@ -28,7 +28,12 @@ Open `http://localhost:3000`.
 - Run launcher forms for:
   - Pass 1 inference
   - Pass 2 refinement
-  - Mask pipeline
+  - Mask pipeline (full or stage-by-stage)
+- Quick launch buttons for:
+  - Point selector GUI
+  - Quadmask editor GUI
+- Full Pass 1 config surface (basic + advanced) mapped to runtime `--config.*` overrides
+- Preset save/load (workflow + params)
 - Run list + status polling
 - Run cancellation
 - Log viewer
@@ -40,3 +45,5 @@ Open `http://localhost:3000`.
 - `POST /runs`
 - `POST /runs/:id/cancel`
 - `GET /runs/:id/logs`
+- `GET /presets`
+- `POST /presets`

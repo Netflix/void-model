@@ -1,4 +1,4 @@
-import type { EnvCheck, RunRecord, Workflow } from "@/lib/types";
+import type { EnvCheck, PresetRecord, RunRecord, Workflow } from "@/lib/types";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://127.0.0.1:8000";
 
@@ -47,4 +47,19 @@ export async function cancelRun(runId: string): Promise<RunRecord> {
 
 export async function getRunLogs(runId: string): Promise<{ lines: string[]; text: string }> {
   return request<{ lines: string[]; text: string }>(`/runs/${runId}/logs`);
+}
+
+export async function listPresets(): Promise<PresetRecord[]> {
+  return request<PresetRecord[]>("/presets");
+}
+
+export async function createPreset(payload: {
+  name: string;
+  workflow: Workflow;
+  params: Record<string, unknown>;
+}): Promise<PresetRecord> {
+  return request<PresetRecord>("/presets", {
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
 }

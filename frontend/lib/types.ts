@@ -1,4 +1,13 @@
-export type Workflow = "pass1_inference" | "pass2_refine" | "mask_pipeline";
+export type Workflow =
+  | "pass1_inference"
+  | "pass2_refine"
+  | "mask_pipeline"
+  | "mask_stage1_sam2"
+  | "mask_stage2_vlm"
+  | "mask_stage3_grey"
+  | "mask_stage4_combine"
+  | "point_selector_gui"
+  | "edit_quadmask_gui";
 
 export type RunStatus = "queued" | "running" | "completed" | "failed" | "cancelled";
 
@@ -16,6 +25,14 @@ export interface RunRecord {
   log_path: string;
   output_dir: string | null;
   error: string | null;
+}
+
+export interface PresetRecord {
+  id: string;
+  name: string;
+  workflow: string;
+  params: Record<string, unknown>;
+  created_at: string;
 }
 
 export interface EnvCheck {
