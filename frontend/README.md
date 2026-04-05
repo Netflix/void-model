@@ -22,6 +22,19 @@ npm run dev
 
 Open `http://localhost:3000`.
 
+### 3) Run tests
+
+```bash
+cd frontend
+npm test
+```
+
+Watch mode:
+
+```bash
+npm run test:watch
+```
+
 ### Implemented in this phase
 
 - Environment checks (`python`, `ffmpeg`, `CUDA`, `GEMINI_API_KEY`)
