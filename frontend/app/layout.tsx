@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VOID Operator",
+  title: "VOID Studio Console",
   description: "Frontend control panel for VOID mask generation and inference workflows",
 };
 

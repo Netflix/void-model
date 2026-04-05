@@ -16,7 +16,7 @@ import {
 import type { ArtifactFile, EnvCheck, PresetRecord, RunRecord, Workflow } from "@/lib/types";
 
 const sectionClass =
-  "rounded-xl border border-slate-200 bg-white/90 p-4 shadow-sm backdrop-blur-sm";
+  "rounded-xl border border-zinc-800 bg-zinc-950/90 p-4 shadow-sm backdrop-blur-sm";
 
 type Pass1Form = {
   configPath: string;
@@ -62,11 +62,11 @@ type Pass1Form = {
 };
 
 function statusClass(status: RunRecord["status"]) {
-  if (status === "completed") return "text-emerald-700";
-  if (status === "failed") return "text-red-700";
-  if (status === "running") return "text-blue-700";
-  if (status === "cancelled") return "text-amber-700";
-  return "text-slate-700";
+  if (status === "completed") return "text-emerald-400";
+  if (status === "failed") return "text-red-400";
+  if (status === "running") return "text-blue-300";
+  if (status === "cancelled") return "text-amber-300";
+  return "text-zinc-300";
 }
 
 function TextField({
@@ -80,7 +80,7 @@ function TextField({
 }) {
   return (
     <input
-      className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+      className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
       value={value}
       onChange={(e) => onChange(e.target.value)}
       placeholder={placeholder}
@@ -99,7 +99,7 @@ function NumberField({
 }) {
   return (
     <input
-      className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+      className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
       type="number"
       value={String(value)}
       onChange={(e) => onChange(Number(e.target.value))}
@@ -525,34 +525,34 @@ export function Dashboard() {
 
   return (
     <div className="mx-auto w-full max-w-7xl space-y-6 px-4 py-8">
-      <header className="rounded-2xl bg-gradient-to-r from-cyan-900 via-sky-800 to-indigo-900 p-6 text-white shadow-lg">
-        <p className="text-xs uppercase tracking-[0.2em] text-cyan-100">VOID Operator</p>
-        <h1 className="mt-2 text-3xl font-semibold">React + FastAPI Control Panel</h1>
-        <p className="mt-1 text-sm text-cyan-100">
+      <header className="rounded-2xl border border-red-700/40 bg-gradient-to-r from-black via-zinc-950 to-red-950 p-6 text-white shadow-lg shadow-red-950/40">
+        <p className="text-xs uppercase tracking-[0.2em] text-red-300">VOID Screening Room</p>
+        <h1 className="mt-2 text-3xl font-semibold">VOID Studio Console</h1>
+        <p className="mt-1 text-sm text-red-200">
           Launch mask generation and inference workflows with reproducible config parameters.
         </p>
       </header>
 
-      {error ? <p className="rounded-lg bg-red-50 p-3 text-sm text-red-800">{error}</p> : null}
+      {error ? <p className="rounded-lg border border-red-700 bg-red-950/60 p-3 text-sm text-red-200">{error}</p> : null}
       {validationWarnings.length > 0 ? (
-        <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800">
+        <p className="rounded-lg border border-amber-700 bg-amber-950/40 p-3 text-sm text-amber-200">
           Validation warnings: {validationWarnings.join(" | ")}
         </p>
       ) : null}
 
       <section className={sectionClass}>
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-medium text-slate-900">Environment Check</h2>
+          <h2 className="text-lg font-medium text-zinc-100">Environment Check</h2>
           <button
             type="button"
             onClick={() => void refreshEnv().catch((e: Error) => setError(e.message))}
-            className="rounded-md border border-slate-300 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
+            className="rounded-md border border-zinc-700 px-3 py-1 text-sm text-zinc-300 hover:bg-zinc-900/60"
           >
             Refresh
           </button>
         </div>
         {env ? (
-          <div className="mt-3 grid gap-2 text-sm text-slate-700 md:grid-cols-2">
+          <div className="mt-3 grid gap-2 text-sm text-zinc-300 md:grid-cols-2">
             <p>
               <span className="font-semibold">Python:</span> {env.python ?? "missing"}
             </p>
@@ -575,22 +575,22 @@ export function Dashboard() {
             </p>
           </div>
         ) : (
-          <p className="mt-3 text-sm text-slate-600">Loading...</p>
+          <p className="mt-3 text-sm text-zinc-400">Loading...</p>
         )}
       </section>
 
       <section className={sectionClass}>
-        <h2 className="text-lg font-medium text-slate-900">Presets</h2>
+        <h2 className="text-lg font-medium text-zinc-100">Presets</h2>
         <div className="mt-3 grid gap-2 md:grid-cols-[1fr_auto]">
           <input
-            className="rounded-md border border-slate-300 px-3 py-2 text-sm"
+            className="rounded-md border border-zinc-700 px-3 py-2 text-sm"
             placeholder="Preset name"
             value={presetName}
             onChange={(e) => setPresetName(e.target.value)}
           />
           <button
             type="button"
-            className="rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-800"
+            className="rounded-md bg-red-700 px-3 py-2 text-sm font-medium text-white hover:bg-red-600"
             onClick={() =>
               void createPreset({
                 name: presetName || `${workflow}-${new Date().toISOString()}`,
@@ -610,7 +610,7 @@ export function Dashboard() {
 
         <div className="mt-2 grid gap-2 md:grid-cols-[1fr_auto]">
           <select
-            className="rounded-md border border-slate-300 px-3 py-2 text-sm"
+            className="rounded-md border border-zinc-700 px-3 py-2 text-sm"
             value={selectedPresetId}
             onChange={(e) => setSelectedPresetId(e.target.value)}
           >
@@ -623,7 +623,7 @@ export function Dashboard() {
           </select>
           <button
             type="button"
-            className="rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
+            className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
             onClick={applySelectedPreset}
             disabled={!selectedPresetId}
           >
@@ -634,14 +634,14 @@ export function Dashboard() {
 
       <div className="grid gap-6 lg:grid-cols-2">
         <section className={sectionClass}>
-          <h2 className="text-lg font-medium text-slate-900">Launch Workflow</h2>
+          <h2 className="text-lg font-medium text-zinc-100">Launch Workflow</h2>
           <form onSubmit={onSubmit} className="mt-4 space-y-4">
-            <label className="block text-sm text-slate-700">
+            <label className="block text-sm text-zinc-300">
               Workflow
               <select
                 value={workflow}
                 onChange={(e) => setWorkflow(e.target.value as Workflow)}
-                className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2"
+                className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2"
               >
                 <option value="pass1_inference">Pass 1 Inference</option>
                 <option value="pass2_refine">Pass 2 Refinement</option>
@@ -703,14 +703,14 @@ export function Dashboard() {
 
                 <button
                   type="button"
-                  className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                  className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
                   onClick={() => setShowAdvancedPass1((v) => !v)}
                 >
                   {showAdvancedPass1 ? "Hide Advanced Pass 1 Controls" : "Show Advanced Pass 1 Controls"}
                 </button>
 
                 {showAdvancedPass1 ? (
-                  <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-3">
+                  <div className="space-y-3 rounded-md border border-zinc-800 bg-zinc-900/60 p-3">
                     <div className="grid grid-cols-2 gap-2">
                       <TextField
                         value={pass1.vaePath}
@@ -748,10 +748,10 @@ export function Dashboard() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-2">
-                      <label className="text-xs text-slate-600">
+                      <label className="text-xs text-zinc-400">
                         sampler
                         <select
-                          className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                          className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
                           value={pass1.samplerName}
                           onChange={(e) =>
                             setPass1((p) => ({
@@ -768,10 +768,10 @@ export function Dashboard() {
                           <option value="PNDM">PNDM</option>
                         </select>
                       </label>
-                      <label className="text-xs text-slate-600">
+                      <label className="text-xs text-zinc-400">
                         gpu memory mode
                         <select
-                          className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                          className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
                           value={pass1.gpuMemoryMode}
                           onChange={(e) =>
                             setPass1((p) => ({
@@ -822,7 +822,7 @@ export function Dashboard() {
                     />
 
                     <div className="grid grid-cols-2 gap-2">
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.useQuadmask}
@@ -830,7 +830,7 @@ export function Dashboard() {
                         />
                         use_quadmask
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.useTrimask}
@@ -838,7 +838,7 @@ export function Dashboard() {
                         />
                         use_trimask
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.useVaeMask}
@@ -846,7 +846,7 @@ export function Dashboard() {
                         />
                         use_vae_mask
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.stackMask}
@@ -854,7 +854,7 @@ export function Dashboard() {
                         />
                         stack_mask
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.zeroOutMaskRegion}
@@ -864,7 +864,7 @@ export function Dashboard() {
                         />
                         zero_out_mask_region
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.skipIfExists}
@@ -872,7 +872,7 @@ export function Dashboard() {
                         />
                         skip_if_exists
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.validation}
@@ -880,7 +880,7 @@ export function Dashboard() {
                         />
                         validation
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.skipUnet}
@@ -888,7 +888,7 @@ export function Dashboard() {
                         />
                         skip_unet
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.maskToVae}
@@ -896,7 +896,7 @@ export function Dashboard() {
                         />
                         mask_to_vae
                       </label>
-                      <label className="flex items-center gap-2 rounded-md border border-slate-300 bg-white p-2 text-xs text-slate-700">
+                      <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
                         <input
                           type="checkbox"
                           checked={pass1.allowSkippingError}
@@ -909,10 +909,10 @@ export function Dashboard() {
                     </div>
 
                     <div className="grid grid-cols-4 gap-2">
-                      <label className="text-xs text-slate-600">
+                      <label className="text-xs text-zinc-400">
                         device
                         <select
-                          className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                          className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
                           value={pass1.device}
                           onChange={(e) =>
                             setPass1((p) => ({
@@ -925,10 +925,10 @@ export function Dashboard() {
                           <option value="cpu">cpu</option>
                         </select>
                       </label>
-                      <label className="text-xs text-slate-600">
+                      <label className="text-xs text-zinc-400">
                         matting mode
                         <select
-                          className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                          className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
                           value={pass1.mattingMode}
                           onChange={(e) =>
                             setPass1((p) => ({
@@ -959,17 +959,17 @@ export function Dashboard() {
 
             {workflow === "pass2_refine" ? (
               <div className="space-y-2">
-                <input className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2VideoNames} onChange={(e) => setPass2VideoNames(e.target.value)} placeholder="video names (comma-separated)" />
-                <input className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2DataRoot} onChange={(e) => setPass2DataRoot(e.target.value)} placeholder="data root" />
-                <input className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2Pass1Dir} onChange={(e) => setPass2Pass1Dir(e.target.value)} placeholder="pass1 output dir" />
-                <input className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2OutputDir} onChange={(e) => setPass2OutputDir(e.target.value)} placeholder="output dir" />
-                <input className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2ModelName} onChange={(e) => setPass2ModelName(e.target.value)} placeholder="base model path" />
-                <input className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2ModelCheckpoint} onChange={(e) => setPass2ModelCheckpoint(e.target.value)} placeholder="pass2 checkpoint" />
+                <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2VideoNames} onChange={(e) => setPass2VideoNames(e.target.value)} placeholder="video names (comma-separated)" />
+                <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2DataRoot} onChange={(e) => setPass2DataRoot(e.target.value)} placeholder="data root" />
+                <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Pass1Dir} onChange={(e) => setPass2Pass1Dir(e.target.value)} placeholder="pass1 output dir" />
+                <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2OutputDir} onChange={(e) => setPass2OutputDir(e.target.value)} placeholder="output dir" />
+                <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2ModelName} onChange={(e) => setPass2ModelName(e.target.value)} placeholder="base model path" />
+                <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2ModelCheckpoint} onChange={(e) => setPass2ModelCheckpoint(e.target.value)} placeholder="pass2 checkpoint" />
                 <div className="grid grid-cols-4 gap-2">
-                  <input className="rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2Height} onChange={(e) => setPass2Height(e.target.value)} placeholder="height" />
-                  <input className="rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2Width} onChange={(e) => setPass2Width(e.target.value)} placeholder="width" />
-                  <input className="rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2GuidanceScale} onChange={(e) => setPass2GuidanceScale(e.target.value)} placeholder="guidance" />
-                  <input className="rounded-md border border-slate-300 px-3 py-2 text-sm" value={pass2Steps} onChange={(e) => setPass2Steps(e.target.value)} placeholder="steps" />
+                  <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Height} onChange={(e) => setPass2Height(e.target.value)} placeholder="height" />
+                  <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Width} onChange={(e) => setPass2Width(e.target.value)} placeholder="width" />
+                  <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2GuidanceScale} onChange={(e) => setPass2GuidanceScale(e.target.value)} placeholder="guidance" />
+                  <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Steps} onChange={(e) => setPass2Steps(e.target.value)} placeholder="steps" />
                 </div>
               </div>
             ) : null}
@@ -982,7 +982,7 @@ export function Dashboard() {
                   placeholder="config_points json"
                 />
                 <select
-                  className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                  className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
                   value={maskExecutionMode}
                   onChange={(e) =>
                     setMaskExecutionMode(
@@ -1005,7 +1005,7 @@ export function Dashboard() {
                       placeholder="sam2 checkpoint"
                     />
                     <select
-                      className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                      className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
                       value={maskDevice}
                       onChange={(e) => setMaskDevice(e.target.value as "cuda" | "cpu")}
                     >
@@ -1025,7 +1025,7 @@ export function Dashboard() {
 
                 {maskExecutionMode === "stage3" ? (
                   <select
-                    className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                    className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
                     value={maskSegmentationModel}
                     onChange={(e) => setMaskSegmentationModel(e.target.value as "langsam" | "sam3")}
                   >
@@ -1037,7 +1037,7 @@ export function Dashboard() {
                 <div className="grid grid-cols-2 gap-2 pt-1">
                   <button
                     type="button"
-                    className="rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                    className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
                     onClick={() =>
                       void createRun({
                         workflow: "point_selector_gui",
@@ -1054,7 +1054,7 @@ export function Dashboard() {
                   </button>
                   <button
                     type="button"
-                    className="rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                    className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
                     onClick={() =>
                       void createRun({
                         workflow: "edit_quadmask_gui",
@@ -1075,7 +1075,7 @@ export function Dashboard() {
 
             <button
               disabled={loading}
-              className="w-full rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 disabled:opacity-60"
+              className="w-full rounded-md bg-red-700 px-4 py-2 text-sm font-medium text-white hover:bg-red-600 disabled:opacity-60"
             >
               {loading ? "Launching..." : "Launch Run"}
             </button>
@@ -1084,11 +1084,11 @@ export function Dashboard() {
 
         <section className={sectionClass}>
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-medium text-slate-900">Runs</h2>
+            <h2 className="text-lg font-medium text-zinc-100">Runs</h2>
             <button
               type="button"
               onClick={() => void refreshRuns().catch((e: Error) => setError(e.message))}
-              className="rounded-md border border-slate-300 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
+              className="rounded-md border border-zinc-700 px-3 py-1 text-sm text-zinc-300 hover:bg-zinc-900/60"
             >
               Refresh
             </button>
@@ -1104,25 +1104,25 @@ export function Dashboard() {
                   void refreshArtifacts(run.id).catch(() => {});
                 }}
                 className={`w-full rounded-md border p-3 text-left ${
-                  activeRunId === run.id ? "border-sky-400 bg-sky-50" : "border-slate-200 bg-white"
+                  activeRunId === run.id ? "border-red-500 bg-red-950/40" : "border-zinc-800 bg-zinc-900"
                 }`}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <span className="text-sm font-medium text-slate-900">{run.workflow}</span>
+                  <span className="text-sm font-medium text-zinc-100">{run.workflow}</span>
                   <span className={`text-xs font-semibold uppercase ${statusClass(run.status)}`}>{run.status}</span>
                 </div>
-                <p className="mt-1 text-xs text-slate-600">id: {run.id}</p>
-                <p className="text-xs text-slate-500">created: {new Date(run.created_at).toLocaleString()}</p>
+                <p className="mt-1 text-xs text-zinc-400">id: {run.id}</p>
+                <p className="text-xs text-zinc-500">created: {new Date(run.created_at).toLocaleString()}</p>
               </button>
             ))}
-            {runs.length === 0 ? <p className="text-sm text-slate-600">No runs yet.</p> : null}
+            {runs.length === 0 ? <p className="text-sm text-zinc-400">No runs yet.</p> : null}
           </div>
         </section>
       </div>
 
       <section className={sectionClass}>
         <div className="flex items-center justify-between gap-3">
-          <h2 className="text-lg font-medium text-slate-900">Run Details</h2>
+          <h2 className="text-lg font-medium text-zinc-100">Run Details</h2>
           {activeRun?.status === "running" ? (
             <button
               type="button"
@@ -1139,7 +1139,7 @@ export function Dashboard() {
         </div>
 
         {activeRun ? (
-          <div className="mt-3 space-y-3 text-sm text-slate-700">
+          <div className="mt-3 space-y-3 text-sm text-zinc-300">
             <p>
               <span className="font-semibold">Run:</span> {activeRun.id}
             </p>
@@ -1157,31 +1157,31 @@ export function Dashboard() {
               {logs || "No logs yet."}
             </pre>
 
-            <div className="rounded-md border border-slate-200 bg-slate-50 p-3">
+            <div className="rounded-md border border-zinc-800 bg-zinc-900/60 p-3">
               <div className="mb-2 flex items-center justify-between">
-                <p className="font-semibold text-slate-900">Artifacts</p>
+                <p className="font-semibold text-zinc-100">Artifacts</p>
                 <button
                   type="button"
-                  className="rounded-md border border-slate-300 px-2 py-1 text-xs text-slate-700 hover:bg-white"
+                  className="rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-300 hover:bg-zinc-900"
                   onClick={() => void refreshArtifacts(activeRun.id).catch((e: Error) => setError(e.message))}
                 >
                   Refresh Artifacts
                 </button>
               </div>
               {activeRun.output_dir ? (
-                <p className="mb-2 text-xs text-slate-600">Output dir: {activeRun.output_dir}</p>
+                <p className="mb-2 text-xs text-zinc-400">Output dir: {activeRun.output_dir}</p>
               ) : (
-                <p className="mb-2 text-xs text-slate-600">This workflow does not declare an output directory.</p>
+                <p className="mb-2 text-xs text-zinc-400">This workflow does not declare an output directory.</p>
               )}
-              <div className="max-h-48 space-y-1 overflow-auto rounded-md bg-white p-2">
+              <div className="max-h-48 space-y-1 overflow-auto rounded-md bg-zinc-900 p-2">
                 {artifacts.length === 0 ? (
-                  <p className="text-xs text-slate-500">No artifact files found yet.</p>
+                  <p className="text-xs text-zinc-500">No artifact files found yet.</p>
                 ) : (
                   artifacts.map((file) => (
-                    <div key={file.path} className="rounded border border-slate-200 p-2">
-                      <p className="text-xs font-medium text-slate-900">{file.relative}</p>
-                      <p className="text-[11px] text-slate-600">{Math.round(file.size_bytes / 1024)} KB</p>
-                      <p className="truncate text-[11px] text-slate-500">{file.path}</p>
+                    <div key={file.path} className="rounded border border-zinc-800 p-2">
+                      <p className="text-xs font-medium text-zinc-100">{file.relative}</p>
+                      <p className="text-[11px] text-zinc-400">{Math.round(file.size_bytes / 1024)} KB</p>
+                      <p className="truncate text-[11px] text-zinc-500">{file.path}</p>
                     </div>
                   ))
                 )}
@@ -1189,7 +1189,7 @@ export function Dashboard() {
             </div>
           </div>
         ) : (
-          <p className="mt-3 text-sm text-slate-600">Select a run to inspect logs.</p>
+          <p className="mt-3 text-sm text-zinc-400">Select a run to inspect logs.</p>
         )}
       </section>
     </div>
