@@ -8,10 +8,12 @@ import {
   createRun,
   getEnvCheck,
   getRunLogs,
+  listArtifacts,
   listPresets,
   listRuns,
+  validateConfig,
 } from "@/lib/api";
-import type { EnvCheck, PresetRecord, RunRecord, Workflow } from "@/lib/types";
+import type { ArtifactFile, EnvCheck, PresetRecord, RunRecord, Workflow } from "@/lib/types";
 
 const sectionClass =
   "rounded-xl border border-slate-200 bg-white/90 p-4 shadow-sm backdrop-blur-sm";
@@ -118,6 +120,8 @@ export function Dashboard() {
   const [presets, setPresets] = useState<PresetRecord[]>([]);
   const [selectedPresetId, setSelectedPresetId] = useState("");
   const [presetName, setPresetName] = useState("");
+  const [artifacts, setArtifacts] = useState<ArtifactFile[]>([]);
+  const [validationWarnings, setValidationWarnings] = useState<string[]>([]);
 
   const [pass1, setPass1] = useState<Pass1Form>({
     configPath: "config/quadmask_cogvideox.py",
@@ -202,6 +206,10 @@ export function Dashboard() {
     setPresets(await listPresets());
   }, []);
 
+  const refreshArtifacts = useCallback(async (runId: string) => {
+    setArtifacts(await listArtifacts(runId));
+  }, []);
+
   useEffect(() => {
     void refreshEnv().catch((e: Error) => setError(e.message));
     void refreshRuns().catch((e: Error) => setError(e.message));
@@ -213,10 +221,19 @@ export function Dashboard() {
       void refreshRuns().catch(() => {});
       if (activeRunId) {
         void refreshLogs(activeRunId).catch(() => {});
+        void refreshArtifacts(activeRunId).catch(() => {});
       }
     }, 2500);
     return () => window.clearInterval(id);
-  }, [activeRunId, refreshLogs, refreshRuns]);
+  }, [activeRunId, refreshArtifacts, refreshLogs, refreshRuns]);
+
+  useEffect(() => {
+    if (!activeRunId) {
+      setArtifacts([]);
+      return;
+    }
+    void refreshArtifacts(activeRunId).catch(() => {});
+  }, [activeRunId, refreshArtifacts]);
 
   const currentWorkflowParams = useCallback((): Record<string, unknown> => {
     if (workflow === "pass1_inference") {
@@ -315,74 +332,71 @@ export function Dashboard() {
     setError("");
 
     try {
+      let submitWorkflow: Workflow = workflow;
+      let submitParams: Record<string, unknown> = {};
+
       if (workflow === "pass1_inference") {
-        const run = await createRun({
-          workflow,
-          params: {
-            config_path: pass1.configPath,
-            config_overrides: {
-              "config.data.data_rootdir": pass1.dataRootdir,
-              "config.experiment.run_seqs": pass1.runSeqs,
-              "config.experiment.save_path": pass1.savePath,
-              "config.video_model.model_name": pass1.modelName,
-              "config.video_model.transformer_path": pass1.transformerPath,
-              "config.video_model.vae_path": pass1.vaePath,
-              "config.video_model.lora_path": pass1.loraPath,
-              "config.data.sample_size": pass1.sampleSize,
-              "config.data.dilate_width": pass1.dilateWidth,
-              "config.data.max_video_length": pass1.maxVideoLength,
-              "config.data.fps": pass1.fps,
-              "config.video_model.temporal_window_size": pass1.temporalWindowSize,
-              "config.video_model.temproal_multidiffusion_stride":
-                pass1.temproalMultidiffusionStride,
-              "config.video_model.sampler_name": pass1.samplerName,
-              "config.video_model.denoise_strength": pass1.denoiseStrength,
-              "config.video_model.guidance_scale": pass1.guidanceScale,
-              "config.video_model.num_inference_steps": pass1.numInferenceSteps,
-              "config.video_model.negative_prompt": pass1.negativePrompt,
-              "config.video_model.lora_weight": pass1.loraWeight,
-              "config.video_model.use_quadmask": pass1.useQuadmask,
-              "config.video_model.use_trimask": pass1.useTrimask,
-              "config.video_model.use_vae_mask": pass1.useVaeMask,
-              "config.video_model.stack_mask": pass1.stackMask,
-              "config.video_model.zero_out_mask_region": pass1.zeroOutMaskRegion,
-              "config.experiment.matting_mode": pass1.mattingMode,
-              "config.experiment.skip_if_exists": pass1.skipIfExists,
-              "config.experiment.validation": pass1.validation,
-              "config.experiment.skip_unet": pass1.skipUnet,
-              "config.experiment.mask_to_vae": pass1.maskToVae,
-              "config.system.seed": pass1.seed,
-              "config.system.device": pass1.device,
-              "config.system.gpu_memory_mode": pass1.gpuMemoryMode,
-              "config.system.ulysses_degree": pass1.ulyssesDegree,
-              "config.system.ring_degree": pass1.ringDegree,
-              "config.system.allow_skipping_error": pass1.allowSkippingError,
-            },
+        submitWorkflow = workflow;
+        submitParams = {
+          config_path: pass1.configPath,
+          config_overrides: {
+            "config.data.data_rootdir": pass1.dataRootdir,
+            "config.experiment.run_seqs": pass1.runSeqs,
+            "config.experiment.save_path": pass1.savePath,
+            "config.video_model.model_name": pass1.modelName,
+            "config.video_model.transformer_path": pass1.transformerPath,
+            "config.video_model.vae_path": pass1.vaePath,
+            "config.video_model.lora_path": pass1.loraPath,
+            "config.data.sample_size": pass1.sampleSize,
+            "config.data.dilate_width": pass1.dilateWidth,
+            "config.data.max_video_length": pass1.maxVideoLength,
+            "config.data.fps": pass1.fps,
+            "config.video_model.temporal_window_size": pass1.temporalWindowSize,
+            "config.video_model.temproal_multidiffusion_stride":
+              pass1.temproalMultidiffusionStride,
+            "config.video_model.sampler_name": pass1.samplerName,
+            "config.video_model.denoise_strength": pass1.denoiseStrength,
+            "config.video_model.guidance_scale": pass1.guidanceScale,
+            "config.video_model.num_inference_steps": pass1.numInferenceSteps,
+            "config.video_model.negative_prompt": pass1.negativePrompt,
+            "config.video_model.lora_weight": pass1.loraWeight,
+            "config.video_model.use_quadmask": pass1.useQuadmask,
+            "config.video_model.use_trimask": pass1.useTrimask,
+            "config.video_model.use_vae_mask": pass1.useVaeMask,
+            "config.video_model.stack_mask": pass1.stackMask,
+            "config.video_model.zero_out_mask_region": pass1.zeroOutMaskRegion,
+            "config.experiment.matting_mode": pass1.mattingMode,
+            "config.experiment.skip_if_exists": pass1.skipIfExists,
+            "config.experiment.validation": pass1.validation,
+            "config.experiment.skip_unet": pass1.skipUnet,
+            "config.experiment.mask_to_vae": pass1.maskToVae,
+            "config.system.seed": pass1.seed,
+            "config.system.device": pass1.device,
+            "config.system.gpu_memory_mode": pass1.gpuMemoryMode,
+            "config.system.ulysses_degree": pass1.ulyssesDegree,
+            "config.system.ring_degree": pass1.ringDegree,
+            "config.system.allow_skipping_error": pass1.allowSkippingError,
           },
-        });
-        setActiveRunId(run.id);
+        };
       }
 
       if (workflow === "pass2_refine") {
-        const run = await createRun({
-          workflow,
-          params: {
-            video_names: pass2VideoNames
-              .split(",")
-              .map((v) => v.trim())
-              .filter(Boolean),
-            data_rootdir: pass2DataRoot,
-            pass1_dir: pass2Pass1Dir,
-            output_dir: pass2OutputDir,
-            model_name: pass2ModelName,
-            model_checkpoint: pass2ModelCheckpoint,
-            height: Number(pass2Height),
-            width: Number(pass2Width),
-            guidance_scale: Number(pass2GuidanceScale),
-            num_inference_steps: Number(pass2Steps),
-          },
-        });
-        setActiveRunId(run.id);
+        submitWorkflow = workflow;
+        submitParams = {
+          video_names: pass2VideoNames
+            .split(",")
+            .map((v) => v.trim())
+            .filter(Boolean),
+          data_rootdir: pass2DataRoot,
+          pass1_dir: pass2Pass1Dir,
+          output_dir: pass2OutputDir,
+          model_name: pass2ModelName,
+          model_checkpoint: pass2ModelCheckpoint,
+          height: Number(pass2Height),
+          width: Number(pass2Width),
+          guidance_scale: Number(pass2GuidanceScale),
+          num_inference_steps: Number(pass2Steps),
+        };
       }
 
       if (workflow === "mask_pipeline") {
@@ -418,12 +432,25 @@ export function Dashboard() {
           };
         }
 
-        const run = await createRun({
-          workflow: selectedWorkflow,
-          params,
-        });
-        setActiveRunId(run.id);
+        submitWorkflow = selectedWorkflow;
+        submitParams = params;
       }
+
+      const validation = await validateConfig({
+        workflow: submitWorkflow,
+        params: submitParams,
+      });
+      setValidationWarnings(validation.warnings);
+      if (!validation.valid) {
+        setError(`Validation failed: ${validation.errors.join(" | ")}`);
+        return;
+      }
+
+      const run = await createRun({
+        workflow: submitWorkflow,
+        params: submitParams,
+      });
+      setActiveRunId(run.id);
 
       await refreshRuns();
     } catch (e) {
@@ -507,6 +534,11 @@ export function Dashboard() {
       </header>
 
       {error ? <p className="rounded-lg bg-red-50 p-3 text-sm text-red-800">{error}</p> : null}
+      {validationWarnings.length > 0 ? (
+        <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800">
+          Validation warnings: {validationWarnings.join(" | ")}
+        </p>
+      ) : null}
 
       <section className={sectionClass}>
         <div className="flex items-center justify-between">
@@ -1069,6 +1101,7 @@ export function Dashboard() {
                 onClick={() => {
                   setActiveRunId(run.id);
                   void refreshLogs(run.id).catch(() => {});
+                  void refreshArtifacts(run.id).catch(() => {});
                 }}
                 className={`w-full rounded-md border p-3 text-left ${
                   activeRunId === run.id ? "border-sky-400 bg-sky-50" : "border-slate-200 bg-white"
@@ -1123,6 +1156,37 @@ export function Dashboard() {
             <pre className="max-h-[420px] overflow-auto rounded-md bg-slate-950 p-4 text-xs text-slate-100">
               {logs || "No logs yet."}
             </pre>
+
+            <div className="rounded-md border border-slate-200 bg-slate-50 p-3">
+              <div className="mb-2 flex items-center justify-between">
+                <p className="font-semibold text-slate-900">Artifacts</p>
+                <button
+                  type="button"
+                  className="rounded-md border border-slate-300 px-2 py-1 text-xs text-slate-700 hover:bg-white"
+                  onClick={() => void refreshArtifacts(activeRun.id).catch((e: Error) => setError(e.message))}
+                >
+                  Refresh Artifacts
+                </button>
+              </div>
+              {activeRun.output_dir ? (
+                <p className="mb-2 text-xs text-slate-600">Output dir: {activeRun.output_dir}</p>
+              ) : (
+                <p className="mb-2 text-xs text-slate-600">This workflow does not declare an output directory.</p>
+              )}
+              <div className="max-h-48 space-y-1 overflow-auto rounded-md bg-white p-2">
+                {artifacts.length === 0 ? (
+                  <p className="text-xs text-slate-500">No artifact files found yet.</p>
+                ) : (
+                  artifacts.map((file) => (
+                    <div key={file.path} className="rounded border border-slate-200 p-2">
+                      <p className="text-xs font-medium text-slate-900">{file.relative}</p>
+                      <p className="text-[11px] text-slate-600">{Math.round(file.size_bytes / 1024)} KB</p>
+                      <p className="truncate text-[11px] text-slate-500">{file.path}</p>
+                    </div>
+                  ))
+                )}
+              </div>
+            </div>
           </div>
         ) : (
           <p className="mt-3 text-sm text-slate-600">Select a run to inspect logs.</p>

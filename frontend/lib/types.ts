@@ -35,6 +35,19 @@ export interface PresetRecord {
   created_at: string;
 }
 
+export interface ArtifactFile {
+  path: string;
+  relative: string;
+  size_bytes: number;
+}
+
+export interface ValidationResult {
+  valid: boolean;
+  errors: string[];
+  warnings: string[];
+  command_preview: string[];
+}
+
 export interface EnvCheck {
   project_root: string;
   python: string | null;

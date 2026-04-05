@@ -37,6 +37,8 @@ Open `http://localhost:3000`.
 - Run list + status polling
 - Run cancellation
 - Log viewer
+- Artifact browser (per selected run)
+- Preflight validation before run launch (`/validate/config`)
 
 ### Backend API expected
 
@@ -47,3 +49,4 @@ Open `http://localhost:3000`.
 - `GET /runs/:id/logs`
 - `GET /presets`
 - `POST /presets`
+- `POST /validate/config`
