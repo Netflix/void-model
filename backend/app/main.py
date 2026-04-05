@@ -119,6 +119,11 @@ class ValidateConfigRequest(BaseModel):
     params: dict[str, Any]
 
 
+class PromptUpdateRequest(BaseModel):
+    sequence_path: str
+    bg: str
+
+
 @dataclass
 class RunRecord:
     id: str
@@ -248,6 +253,15 @@ def safe_path(path_value: str) -> str:
     if path.is_absolute():
         return str(path)
     return str((PROJECT_ROOT / path).resolve())
+
+
+def path_under_project(path_value: str) -> Path:
+    resolved = Path(safe_path(path_value)).resolve()
+    try:
+        resolved.relative_to(PROJECT_ROOT.resolve())
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Path must be inside project root")
+    return resolved
 
 
 def validate_paths(
@@ -731,3 +745,54 @@ def artifacts(runId: str) -> dict[str, Any]:
             )
 
     return {"files": sorted(files, key=lambda x: x["relative"])}
+
+
+@app.get("/data/sequences")
+def list_sequences(root: str) -> dict[str, Any]:
+    root_path = path_under_project(root)
+    if not root_path.exists() or not root_path.is_dir():
+        raise HTTPException(status_code=400, detail=f"Invalid data root directory: {root}")
+
+    sequences: list[dict[str, Any]] = []
+    for child in sorted(root_path.iterdir()):
+        if not child.is_dir():
+            continue
+
+        input_video = child / "input_video.mp4"
+        quadmask = child / "quadmask_0.mp4"
+        prompt_json = child / "prompt.json"
+        first_frame = child / "first_frame.jpg"
+
+        prompt_bg: Optional[str] = None
+        if prompt_json.exists():
+            try:
+                payload = json.loads(prompt_json.read_text(encoding="utf-8"))
+                prompt_bg = payload.get("bg")
+            except Exception:
+                prompt_bg = None
+
+        sequences.append(
+            {
+                "name": child.name,
+                "path": str(child),
+                "has_input_video": input_video.exists(),
+                "has_quadmask": quadmask.exists(),
+                "has_prompt": prompt_json.exists(),
+                "has_first_frame": first_frame.exists(),
+                "prompt_bg": prompt_bg,
+            }
+        )
+
+    return {"root": str(root_path), "sequences": sequences}
+
+
+@app.post("/data/prompt")
+def update_prompt(req: PromptUpdateRequest) -> dict[str, Any]:
+    sequence_path = path_under_project(req.sequence_path)
+    if not sequence_path.exists() or not sequence_path.is_dir():
+        raise HTTPException(status_code=400, detail="Sequence folder not found")
+
+    prompt_path = sequence_path / "prompt.json"
+    payload = {"bg": req.bg.strip()}
+    prompt_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    return {"ok": True, "path": str(prompt_path), "prompt": payload}
