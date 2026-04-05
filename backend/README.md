@@ -9,6 +9,14 @@ pip install -r backend/requirements.txt
 uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
+## Tests
+
+From repository root:
+
+```bash
+python -m unittest discover -s backend/tests -p "test_*.py" -v
+```
+
 ## What it does
 
 - Launches allowlisted VOID workflows:
