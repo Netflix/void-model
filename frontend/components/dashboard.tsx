@@ -539,10 +539,10 @@ export function Dashboard() {
   return (
     <div className="mx-auto w-full max-w-7xl space-y-6 px-4 py-8">
       <header className="rounded-2xl border border-red-700/40 bg-gradient-to-r from-black via-zinc-950 to-red-950 p-6 text-white shadow-lg shadow-red-950/40">
-        <p className="text-xs uppercase tracking-[0.2em] text-red-300">VOID Screening Room</p>
-        <h1 className="mt-2 text-3xl font-semibold">VOID Studio Console</h1>
+        <p className="text-xs uppercase tracking-[0.2em] text-red-300">VOID Workflow Ops</p>
+        <h1 className="mt-2 text-3xl font-semibold">VOID Production Bay</h1>
         <p className="mt-1 text-sm text-red-200">
-          Launch mask generation and inference workflows with reproducible config parameters.
+          Launch, monitor, and rerun workflows with consistent configuration.
         </p>
       </header>
 
@@ -644,10 +644,10 @@ export function Dashboard() {
           </button>
         </div>
 
-        <div className="mt-2 grid gap-2 md:grid-cols-3">
+        <div className="mt-2 grid gap-2 md:grid-cols-2">
           <button
             type="button"
-            className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
+            className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
             onClick={() =>
               exportConfigFile(
                 { workflow, params: currentWorkflowParams() },
@@ -659,7 +659,7 @@ export function Dashboard() {
           </button>
           <button
             type="button"
-            className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
+            className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
             onClick={() => document.getElementById("config-import-input")?.click()}
           >
             Import Config File

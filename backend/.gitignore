@@ -12,4 +12,5 @@ env/
 .coverage
 htmlcov/
 .DS_Store
-state/logs/
+state/runs.json
+state/logs/*
