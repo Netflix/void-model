@@ -1,5 +1,6 @@
 import type {
   ArtifactFile,
+  DataSequence,
   EnvCheck,
   PresetRecord,
   RunRecord,
@@ -99,5 +100,22 @@ export async function validateConfig(payload: {
   return request<ValidationResult>("/validate/config", {
     method: "POST",
     body: JSON.stringify(payload),
+  });
+}
+
+export async function listDataSequences(root: string): Promise<DataSequence[]> {
+  const data = await request<{ root: string; sequences: DataSequence[] }>(
+    `/data/sequences?root=${encodeURIComponent(root)}`,
+  );
+  return data.sequences;
+}
+
+export async function updatePromptBg(sequencePath: string, bg: string): Promise<void> {
+  await request<{ ok: boolean; path: string; prompt: { bg: string } }>("/data/prompt", {
+    method: "POST",
+    body: JSON.stringify({
+      sequence_path: sequencePath,
+      bg,
+    }),
   });
 }

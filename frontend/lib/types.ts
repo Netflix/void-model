@@ -48,6 +48,16 @@ export interface ValidationResult {
   command_preview: string[];
 }
 
+export interface DataSequence {
+  name: string;
+  path: string;
+  has_input_video: boolean;
+  has_quadmask: boolean;
+  has_prompt: boolean;
+  has_first_frame: boolean;
+  prompt_bg: string | null;
+}
+
 export interface EnvCheck {
   project_root: string;
   python: string | null;

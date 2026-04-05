@@ -8,12 +8,21 @@ import {
   createRun,
   getEnvCheck,
   getRunLogs,
+  listDataSequences,
   listArtifacts,
   listPresets,
   listRuns,
+  updatePromptBg,
   validateConfig,
 } from "@/lib/api";
-import type { ArtifactFile, EnvCheck, PresetRecord, RunRecord, Workflow } from "@/lib/types";
+import type {
+  ArtifactFile,
+  DataSequence,
+  EnvCheck,
+  PresetRecord,
+  RunRecord,
+  Workflow,
+} from "@/lib/types";
 
 const sectionClass =
   "rounded-xl border border-zinc-800 bg-zinc-950/90 p-4 shadow-sm backdrop-blur-sm";
@@ -122,6 +131,9 @@ export function Dashboard() {
   const [presetName, setPresetName] = useState("");
   const [artifacts, setArtifacts] = useState<ArtifactFile[]>([]);
   const [validationWarnings, setValidationWarnings] = useState<string[]>([]);
+  const [sequenceRoot, setSequenceRoot] = useState("./sample");
+  const [sequences, setSequences] = useState<DataSequence[]>([]);
+  const [promptDrafts, setPromptDrafts] = useState<Record<string, string>>({});
 
   const [pass1, setPass1] = useState<Pass1Form>({
     configPath: "config/quadmask_cogvideox.py",
@@ -210,6 +222,20 @@ export function Dashboard() {
     setArtifacts(await listArtifacts(runId));
   }, []);
 
+  const refreshSequences = useCallback(async () => {
+    const data = await listDataSequences(sequenceRoot);
+    setSequences(data);
+    setPromptDrafts((prev) => {
+      const next = { ...prev };
+      for (const seq of data) {
+        if (next[seq.path] === undefined) {
+          next[seq.path] = seq.prompt_bg ?? "";
+        }
+      }
+      return next;
+    });
+  }, [sequenceRoot]);
+
   useEffect(() => {
     void refreshEnv().catch((e: Error) => setError(e.message));
     void refreshRuns().catch((e: Error) => setError(e.message));
@@ -234,6 +260,10 @@ export function Dashboard() {
     }
     void refreshArtifacts(activeRunId).catch(() => {});
   }, [activeRunId, refreshArtifacts]);
+
+  useEffect(() => {
+    setSequenceRoot(pass1.dataRootdir);
+  }, [pass1.dataRootdir]);
 
   const currentWorkflowParams = useCallback((): Record<string, unknown> => {
     if (workflow === "pass1_inference") {
@@ -523,6 +553,27 @@ export function Dashboard() {
     setMaskSegmentationModel(String(params.segmentation_model ?? maskSegmentationModel) as "langsam" | "sam3");
   };
 
+  const selectedSeqs = useMemo(
+    () =>
+      new Set(
+        pass1.runSeqs
+          .split(",")
+          .map((v) => v.trim())
+          .filter(Boolean),
+      ),
+    [pass1.runSeqs],
+  );
+
+  const toggleRunSequence = (name: string) => {
+    const current = new Set(selectedSeqs);
+    if (current.has(name)) {
+      current.delete(name);
+    } else {
+      current.add(name);
+    }
+    setPass1((p) => ({ ...p, runSeqs: Array.from(current).join(",") }));
+  };
+
   return (
     <div className="mx-auto w-full max-w-7xl space-y-6 px-4 py-8">
       <header className="rounded-2xl border border-red-700/40 bg-gradient-to-r from-black via-zinc-950 to-red-950 p-6 text-white shadow-lg shadow-red-950/40">
@@ -629,6 +680,79 @@ export function Dashboard() {
           >
             Load Preset
           </button>
+        </div>
+      </section>
+
+      <section className={sectionClass}>
+        <h2 className="text-lg font-medium text-zinc-100">Data & Inputs</h2>
+        <div className="mt-3 grid gap-2 md:grid-cols-[1fr_auto]">
+          <input
+            className="rounded-md border border-zinc-700 px-3 py-2 text-sm"
+            value={sequenceRoot}
+            onChange={(e) => setSequenceRoot(e.target.value)}
+            placeholder="data root directory (for example ./sample)"
+          />
+          <button
+            type="button"
+            className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
+            onClick={() => void refreshSequences().catch((e: Error) => setError(e.message))}
+          >
+            Load Sequences
+          </button>
+        </div>
+        <p className="mt-2 text-xs text-zinc-500">
+          Toggle sequences to update Pass 1 <code>run_seqs</code>, and edit each <code>prompt.json</code> bg
+          text in place.
+        </p>
+
+        <div className="mt-3 max-h-72 space-y-2 overflow-auto rounded-md border border-zinc-800 bg-zinc-900 p-2">
+          {sequences.length === 0 ? (
+            <p className="text-xs text-zinc-500">No sequences loaded.</p>
+          ) : (
+            sequences.map((seq) => (
+              <div key={seq.path} className="rounded border border-zinc-800 bg-black/30 p-2">
+                <div className="flex items-center justify-between gap-2">
+                  <div>
+                    <p className="text-sm font-medium text-zinc-100">{seq.name}</p>
+                    <p className="text-[11px] text-zinc-500">
+                      {seq.has_input_video ? "input_video" : "no input_video"} •{" "}
+                      {seq.has_quadmask ? "quadmask" : "no quadmask"} •{" "}
+                      {seq.has_prompt ? "prompt" : "no prompt"}
+                    </p>
+                  </div>
+                  <label className="flex items-center gap-2 text-xs text-zinc-300">
+                    <input
+                      type="checkbox"
+                      checked={selectedSeqs.has(seq.name)}
+                      onChange={() => toggleRunSequence(seq.name)}
+                    />
+                    run
+                  </label>
+                </div>
+                <div className="mt-2 grid gap-2 md:grid-cols-[1fr_auto]">
+                  <input
+                    className="rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-200"
+                    value={promptDrafts[seq.path] ?? ""}
+                    placeholder='prompt bg text, e.g. "A table with a cup on it."'
+                    onChange={(e) =>
+                      setPromptDrafts((prev) => ({ ...prev, [seq.path]: e.target.value }))
+                    }
+                  />
+                  <button
+                    type="button"
+                    className="rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-300 hover:bg-zinc-900/60"
+                    onClick={() =>
+                      void updatePromptBg(seq.path, promptDrafts[seq.path] ?? "")
+                        .then(() => refreshSequences())
+                        .catch((err: Error) => setError(err.message))
+                    }
+                  >
+                    Save Prompt
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </section>
 
