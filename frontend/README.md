@@ -1,0 +1,42 @@
+## VOID Frontend (Next.js)
+
+This app is the UI layer for running VOID workflows through the FastAPI backend.
+
+### 1) Start backend
+
+From repo root:
+
+```bash
+pip install -r backend/requirements.txt
+uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+### 2) Start frontend
+
+```bash
+cd frontend
+cp .env.example .env.local
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+### Implemented in this phase
+
+- Environment checks (`python`, `ffmpeg`, `CUDA`, `GEMINI_API_KEY`)
+- Run launcher forms for:
+  - Pass 1 inference
+  - Pass 2 refinement
+  - Mask pipeline
+- Run list + status polling
+- Run cancellation
+- Log viewer
+
+### Backend API expected
+
+- `GET /env/check`
+- `GET /runs`
+- `POST /runs`
+- `POST /runs/:id/cancel`
+- `GET /runs/:id/logs`
