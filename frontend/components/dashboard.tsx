@@ -111,6 +111,9 @@ export function Dashboard() {
   const [pass2ModelName, setPass2ModelName] = useState("./CogVideoX-Fun-V1.5-5b-InP");
   const [pass2Height, setPass2Height] = useState("384");
   const [pass2Width, setPass2Width] = useState("672");
+  const [pass2MaxVideoLength, setPass2MaxVideoLength] = useState("197");
+  const [pass2TemporalWindowSize, setPass2TemporalWindowSize] = useState("85");
+  const [pass2Seed, setPass2Seed] = useState("42");
   const [pass2GuidanceScale, setPass2GuidanceScale] = useState("6.0");
   const [pass2Steps, setPass2Steps] = useState("50");
   const [pass2WarpedNoiseCacheDir, setPass2WarpedNoiseCacheDir] = useState("./pass1_warped_noise_cache");
@@ -257,8 +260,11 @@ export function Dashboard() {
         output_dir: pass2OutputDir,
         model_name: pass2ModelName,
         model_checkpoint: pass2ModelCheckpoint,
+        max_video_length: Number(pass2MaxVideoLength),
+        temporal_window_size: Number(pass2TemporalWindowSize),
         height: Number(pass2Height),
         width: Number(pass2Width),
+        seed: Number(pass2Seed),
         guidance_scale: Number(pass2GuidanceScale),
         num_inference_steps: Number(pass2Steps),
         warped_noise_cache_dir: pass2WarpedNoiseCacheDir,
@@ -284,8 +290,11 @@ export function Dashboard() {
     pass2OutputDir,
     pass2ModelName,
     pass2ModelCheckpoint,
+    pass2MaxVideoLength,
+    pass2TemporalWindowSize,
     pass2Height,
     pass2Width,
+    pass2Seed,
     pass2GuidanceScale,
     pass2Steps,
     pass2WarpedNoiseCacheDir,
@@ -365,8 +374,11 @@ export function Dashboard() {
           output_dir: pass2OutputDir,
           model_name: pass2ModelName,
           model_checkpoint: pass2ModelCheckpoint,
+          max_video_length: Number(pass2MaxVideoLength),
+          temporal_window_size: Number(pass2TemporalWindowSize),
           height: Number(pass2Height),
           width: Number(pass2Width),
+          seed: Number(pass2Seed),
           guidance_scale: Number(pass2GuidanceScale),
           num_inference_steps: Number(pass2Steps),
           warped_noise_cache_dir: pass2WarpedNoiseCacheDir,
@@ -466,8 +478,11 @@ export function Dashboard() {
       setPass2OutputDir(String(params.output_dir ?? pass2OutputDir));
       setPass2ModelName(String(params.model_name ?? pass2ModelName));
       setPass2ModelCheckpoint(String(params.model_checkpoint ?? pass2ModelCheckpoint));
+      setPass2MaxVideoLength(String(params.max_video_length ?? pass2MaxVideoLength));
+      setPass2TemporalWindowSize(String(params.temporal_window_size ?? pass2TemporalWindowSize));
       setPass2Height(String(params.height ?? pass2Height));
       setPass2Width(String(params.width ?? pass2Width));
+      setPass2Seed(String(params.seed ?? pass2Seed));
       setPass2GuidanceScale(String(params.guidance_scale ?? pass2GuidanceScale));
       setPass2Steps(String(params.num_inference_steps ?? pass2Steps));
       setPass2WarpedNoiseCacheDir(String(params.warped_noise_cache_dir ?? pass2WarpedNoiseCacheDir));
@@ -595,12 +610,15 @@ export function Dashboard() {
       <section className={sectionClass}>
         <h2 className="text-lg font-medium text-zinc-100">Presets</h2>
         <div className="mt-3 grid gap-2 md:grid-cols-[1fr_auto]">
-          <input
-            className="rounded-md border border-zinc-700 px-3 py-2 text-sm"
-            placeholder="Preset name"
-            value={presetName}
-            onChange={(e) => setPresetName(e.target.value)}
-          />
+          <label className="block text-xs text-zinc-400">
+            Preset Name
+            <input
+              className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
+              placeholder="Preset name"
+              value={presetName}
+              onChange={(e) => setPresetName(e.target.value)}
+            />
+          </label>
           <button
             type="button"
             className="rounded-md bg-red-700 px-3 py-2 text-sm font-medium text-white hover:bg-red-600"
@@ -622,18 +640,21 @@ export function Dashboard() {
         </div>
 
         <div className="mt-2 grid gap-2 md:grid-cols-[1fr_auto]">
-          <select
-            className="rounded-md border border-zinc-700 px-3 py-2 text-sm"
-            value={selectedPresetId}
-            onChange={(e) => setSelectedPresetId(e.target.value)}
-          >
-            <option value="">Select preset to load</option>
-            {presets.map((p) => (
-              <option key={p.id} value={p.id}>
-                {p.name} ({p.workflow})
-              </option>
-            ))}
-          </select>
+          <label className="block text-xs text-zinc-400">
+            Saved Presets
+            <select
+              className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
+              value={selectedPresetId}
+              onChange={(e) => setSelectedPresetId(e.target.value)}
+            >
+              <option value="">Select preset to load</option>
+              {presets.map((p) => (
+                <option key={p.id} value={p.id}>
+                  {p.name} ({p.workflow})
+                </option>
+              ))}
+            </select>
+          </label>
           <button
             type="button"
             className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
@@ -682,12 +703,15 @@ export function Dashboard() {
       <section className={sectionClass}>
         <h2 className="text-lg font-medium text-zinc-100">Data & Inputs</h2>
         <div className="mt-3 grid gap-2 md:grid-cols-[1fr_auto]">
-          <input
-            className="rounded-md border border-zinc-700 px-3 py-2 text-sm"
-            value={sequenceRoot}
-            onChange={(e) => setSequenceRoot(e.target.value)}
-            placeholder="data root directory (for example ./sample)"
-          />
+          <label className="block text-xs text-zinc-400">
+            Data Root Directory
+            <input
+              className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
+              value={sequenceRoot}
+              onChange={(e) => setSequenceRoot(e.target.value)}
+              placeholder="data root directory (for example ./sample)"
+            />
+          </label>
           <button
             type="button"
             className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
@@ -726,14 +750,17 @@ export function Dashboard() {
                   </label>
                 </div>
                 <div className="mt-2 grid gap-2 md:grid-cols-[1fr_auto]">
-                  <input
-                    className="rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-200"
-                    value={promptDrafts[seq.path] ?? ""}
-                    placeholder='prompt bg text, e.g. "A table with a cup on it."'
-                    onChange={(e) =>
-                      setPromptDrafts((prev) => ({ ...prev, [seq.path]: e.target.value }))
-                    }
-                  />
+                  <label className="block text-[11px] text-zinc-400">
+                    Prompt Background
+                    <input
+                      className="mt-1 w-full rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-200"
+                      value={promptDrafts[seq.path] ?? ""}
+                      placeholder='prompt bg text, e.g. "A table with a cup on it."'
+                      onChange={(e) =>
+                        setPromptDrafts((prev) => ({ ...prev, [seq.path]: e.target.value }))
+                      }
+                    />
+                  </label>
                   <button
                     type="button"
                     className="rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-300 hover:bg-zinc-900/60"
@@ -796,6 +823,12 @@ export function Dashboard() {
                 setPass2Height={setPass2Height}
                 pass2Width={pass2Width}
                 setPass2Width={setPass2Width}
+                pass2MaxVideoLength={pass2MaxVideoLength}
+                setPass2MaxVideoLength={setPass2MaxVideoLength}
+                pass2TemporalWindowSize={pass2TemporalWindowSize}
+                setPass2TemporalWindowSize={setPass2TemporalWindowSize}
+                pass2Seed={pass2Seed}
+                setPass2Seed={setPass2Seed}
                 pass2GuidanceScale={pass2GuidanceScale}
                 setPass2GuidanceScale={setPass2GuidanceScale}
                 pass2Steps={pass2Steps}

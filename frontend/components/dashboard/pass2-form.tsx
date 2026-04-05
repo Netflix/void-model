@@ -1,5 +1,29 @@
 import type { CacheInfo } from "@/lib/types";
 
+function LabeledInput({
+  label,
+  value,
+  onChange,
+  placeholder,
+}: {
+  label: string;
+  value: string;
+  onChange: (v: string) => void;
+  placeholder: string;
+}) {
+  return (
+    <label className="block text-xs text-zinc-400">
+      {label}
+      <input
+        className="mt-1 w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={placeholder}
+      />
+    </label>
+  );
+}
+
 export function Pass2FormPanel({
   pass2VideoNames,
   setPass2VideoNames,
@@ -79,27 +103,27 @@ export function Pass2FormPanel({
 }) {
   return (
     <div className="space-y-2">
-      <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2VideoNames} onChange={(e) => setPass2VideoNames(e.target.value)} placeholder="video names (comma-separated)" />
-      <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2DataRoot} onChange={(e) => setPass2DataRoot(e.target.value)} placeholder="data root" />
-      <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Pass1Dir} onChange={(e) => setPass2Pass1Dir(e.target.value)} placeholder="pass1 output dir" />
-      <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2OutputDir} onChange={(e) => setPass2OutputDir(e.target.value)} placeholder="output dir" />
-      <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2ModelName} onChange={(e) => setPass2ModelName(e.target.value)} placeholder="base model path" />
-      <input className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2ModelCheckpoint} onChange={(e) => setPass2ModelCheckpoint(e.target.value)} placeholder="pass2 checkpoint" />
+      <LabeledInput label="Video Names (Comma-Separated)" value={pass2VideoNames} onChange={setPass2VideoNames} placeholder="video names (comma-separated)" />
+      <LabeledInput label="Data Root Directory" value={pass2DataRoot} onChange={setPass2DataRoot} placeholder="data root" />
+      <LabeledInput label="Pass 1 Output Directory" value={pass2Pass1Dir} onChange={setPass2Pass1Dir} placeholder="pass1 output dir" />
+      <LabeledInput label="Output Directory" value={pass2OutputDir} onChange={setPass2OutputDir} placeholder="output dir" />
+      <LabeledInput label="Base Model Path" value={pass2ModelName} onChange={setPass2ModelName} placeholder="base model path" />
+      <LabeledInput label="Pass 2 Checkpoint Path" value={pass2ModelCheckpoint} onChange={setPass2ModelCheckpoint} placeholder="pass2 checkpoint" />
       <div className="grid grid-cols-4 gap-2">
-        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Height} onChange={(e) => setPass2Height(e.target.value)} placeholder="height" />
-        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Width} onChange={(e) => setPass2Width(e.target.value)} placeholder="width" />
-        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2GuidanceScale} onChange={(e) => setPass2GuidanceScale(e.target.value)} placeholder="guidance" />
-        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Steps} onChange={(e) => setPass2Steps(e.target.value)} placeholder="steps" />
+        <LabeledInput label="Height" value={pass2Height} onChange={setPass2Height} placeholder="height" />
+        <LabeledInput label="Width" value={pass2Width} onChange={setPass2Width} placeholder="width" />
+        <LabeledInput label="Guidance Scale" value={pass2GuidanceScale} onChange={setPass2GuidanceScale} placeholder="guidance" />
+        <LabeledInput label="Inference Steps" value={pass2Steps} onChange={setPass2Steps} placeholder="steps" />
       </div>
       <div className="grid grid-cols-3 gap-2">
-        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2MaxVideoLength} onChange={(e) => setPass2MaxVideoLength(e.target.value)} placeholder="max video length" />
-        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2TemporalWindowSize} onChange={(e) => setPass2TemporalWindowSize(e.target.value)} placeholder="temporal window" />
-        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Seed} onChange={(e) => setPass2Seed(e.target.value)} placeholder="seed" />
+        <LabeledInput label="Max Video Length" value={pass2MaxVideoLength} onChange={setPass2MaxVideoLength} placeholder="max video length" />
+        <LabeledInput label="Temporal Window Size" value={pass2TemporalWindowSize} onChange={setPass2TemporalWindowSize} placeholder="temporal window" />
+        <LabeledInput label="Seed" value={pass2Seed} onChange={setPass2Seed} placeholder="seed" />
       </div>
-      <input
-        className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
+      <LabeledInput
+        label="Warped Noise Cache Directory"
         value={pass2WarpedNoiseCacheDir}
-        onChange={(e) => setPass2WarpedNoiseCacheDir(e.target.value)}
+        onChange={setPass2WarpedNoiseCacheDir}
         placeholder="warped noise cache dir"
       />
       <div className="grid grid-cols-2 gap-2">
@@ -123,12 +147,15 @@ export function Pass2FormPanel({
       <div className="rounded-md border border-zinc-800 bg-zinc-900/60 p-2">
         <p className="mb-2 text-xs font-semibold text-zinc-300">Cache Manager</p>
         <div className="grid grid-cols-2 gap-2">
-          <input
-            className="rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-200"
-            value={cachePath}
-            onChange={(e) => setCachePath(e.target.value)}
-            placeholder="cache path"
-          />
+          <label className="block text-xs text-zinc-400">
+            Cache Path
+            <input
+              className="mt-1 w-full rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-200"
+              value={cachePath}
+              onChange={(e) => setCachePath(e.target.value)}
+              placeholder="cache path"
+            />
+          </label>
           <div className="flex gap-2">
             <button
               type="button"
