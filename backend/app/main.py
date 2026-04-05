@@ -24,6 +24,7 @@ PROJECT_ROOT = BACKEND_ROOT.parent
 STATE_DIR = BACKEND_ROOT / "state"
 LOG_DIR = STATE_DIR / "logs"
 RUNS_FILE = STATE_DIR / "runs.json"
+PRESETS_FILE = STATE_DIR / "presets.json"
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 STATE_DIR.mkdir(parents=True, exist_ok=True)
@@ -64,10 +65,53 @@ class MaskPipelineParams(BaseModel):
     device: Literal["cuda", "cpu"] = "cuda"
 
 
+class MaskStage2Params(BaseModel):
+    config_points_json: str
+    model: str = "gemini-3-pro-preview"
+
+
+class MaskStage3Params(BaseModel):
+    config_points_json: str
+    segmentation_model: Literal["langsam", "sam3"] = "sam3"
+
+
+class MaskStage4Params(BaseModel):
+    config_points_json: str
+
+
+class PointSelectorParams(BaseModel):
+    config_points_json: Optional[str] = None
+
+
 class RunCreateRequest(BaseModel):
-    workflow: Literal["pass1_inference", "pass2_refine", "mask_pipeline"]
+    workflow: Literal[
+        "pass1_inference",
+        "pass2_refine",
+        "mask_pipeline",
+        "mask_stage1_sam2",
+        "mask_stage2_vlm",
+        "mask_stage3_grey",
+        "mask_stage4_combine",
+        "point_selector_gui",
+        "edit_quadmask_gui",
+    ]
     params: dict[str, Any]
     name: Optional[str] = None
+
+
+@dataclass
+class PresetRecord:
+    id: str
+    name: str
+    workflow: str
+    params: dict[str, Any]
+    created_at: str
+
+
+class PresetCreateRequest(BaseModel):
+    name: str
+    workflow: str
+    params: dict[str, Any]
 
 
 @dataclass
@@ -148,7 +192,40 @@ class RunStore:
             self._save()
 
 
+class PresetStore:
+    def __init__(self) -> None:
+        self._lock = threading.Lock()
+        self._presets: dict[str, PresetRecord] = {}
+        self._load()
+
+    def _load(self) -> None:
+        if not PRESETS_FILE.exists():
+            return
+        try:
+            payload = json.loads(PRESETS_FILE.read_text())
+            for item in payload:
+                record = PresetRecord(**item)
+                self._presets[record.id] = record
+        except Exception:
+            self._presets = {}
+
+    def _save(self) -> None:
+        PRESETS_FILE.write_text(
+            json.dumps([asdict(v) for v in self._presets.values()], indent=2)
+        )
+
+    def list(self) -> list[PresetRecord]:
+        with self._lock:
+            return sorted(self._presets.values(), key=lambda p: p.created_at, reverse=True)
+
+    def create(self, preset: PresetRecord) -> None:
+        with self._lock:
+            self._presets[preset.id] = preset
+            self._save()
+
+
 store = RunStore()
+preset_store = PresetStore()
 
 
 app = FastAPI(title="VOID Frontend Backend", version="0.1.0")
@@ -255,6 +332,65 @@ def build_command(workflow: str, params: dict[str, Any]) -> tuple[list[str], Opt
             "--device",
             p.device,
         ]
+        return cmd, None
+
+    if workflow == "mask_stage1_sam2":
+        p = MaskPipelineParams(**params)
+        cmd = [
+            "python",
+            "VLM-MASK-REASONER/stage1_sam2_segmentation.py",
+            "--config",
+            p.config_points_json,
+            "--sam2-checkpoint",
+            p.sam2_checkpoint,
+            "--device",
+            p.device,
+        ]
+        return cmd, None
+
+    if workflow == "mask_stage2_vlm":
+        p = MaskStage2Params(**params)
+        cmd = [
+            "python",
+            "VLM-MASK-REASONER/stage2_vlm_analysis.py",
+            "--config",
+            p.config_points_json,
+            "--model",
+            p.model,
+        ]
+        return cmd, None
+
+    if workflow == "mask_stage3_grey":
+        p = MaskStage3Params(**params)
+        cmd = [
+            "python",
+            "VLM-MASK-REASONER/stage3a_generate_grey_masks_v2.py",
+            "--config",
+            p.config_points_json,
+            "--segmentation-model",
+            p.segmentation_model,
+        ]
+        return cmd, None
+
+    if workflow == "mask_stage4_combine":
+        p = MaskStage4Params(**params)
+        cmd = [
+            "python",
+            "VLM-MASK-REASONER/stage4_combine_masks.py",
+            "--config",
+            p.config_points_json,
+        ]
+        return cmd, None
+
+    if workflow == "point_selector_gui":
+        p = PointSelectorParams(**params)
+        cmd = ["python", "VLM-MASK-REASONER/point_selector_gui.py"]
+        if p.config_points_json:
+            cmd.extend(["--config", p.config_points_json])
+        return cmd, None
+
+    if workflow == "edit_quadmask_gui":
+        cmd = ["python", "VLM-MASK-REASONER/edit_quadmask.py"]
         return cmd, None
 
     raise HTTPException(status_code=400, detail=f"Unsupported workflow: {workflow}")
@@ -385,6 +521,25 @@ def create_run(req: RunCreateRequest) -> dict[str, Any]:
     thread.start()
 
     return asdict(record)
+
+
+@app.get("/presets")
+def list_presets() -> list[dict[str, Any]]:
+    return [asdict(p) for p in preset_store.list()]
+
+
+@app.post("/presets")
+def create_preset(req: PresetCreateRequest) -> dict[str, Any]:
+    preset_id = uuid.uuid4().hex[:12]
+    preset = PresetRecord(
+        id=preset_id,
+        name=req.name.strip(),
+        workflow=req.workflow,
+        params=req.params,
+        created_at=now_iso(),
+    )
+    preset_store.create(preset)
+    return asdict(preset)
 
 
 @app.post("/runs/{run_id}/cancel")
