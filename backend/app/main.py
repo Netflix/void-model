@@ -124,6 +124,10 @@ class PromptUpdateRequest(BaseModel):
     bg: str
 
 
+class CachePathRequest(BaseModel):
+    path: str
+
+
 @dataclass
 class RunRecord:
     id: str
@@ -328,6 +332,20 @@ def validate_paths(
                 warnings.append(f"SAM2 checkpoint not found yet: {sam2}")
 
     return errors, warnings
+
+
+def directory_stats(path: Path) -> dict[str, Any]:
+    if not path.exists() or not path.is_dir():
+        return {"exists": False, "files": 0, "bytes": 0}
+
+    files = 0
+    total_bytes = 0
+    for node in path.rglob("*"):
+        if node.is_file():
+            files += 1
+            total_bytes += node.stat().st_size
+
+    return {"exists": True, "files": files, "bytes": total_bytes}
 
 
 def override_args(config_overrides: dict[str, Any]) -> list[str]:
@@ -796,3 +814,26 @@ def update_prompt(req: PromptUpdateRequest) -> dict[str, Any]:
     payload = {"bg": req.bg.strip()}
     prompt_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return {"ok": True, "path": str(prompt_path), "prompt": payload}
+
+
+@app.get("/cache/info")
+def cache_info(path: str) -> dict[str, Any]:
+    cache_path = path_under_project(path)
+    stats = directory_stats(cache_path)
+    return {"path": str(cache_path), **stats}
+
+
+@app.post("/cache/clear")
+def clear_cache(req: CachePathRequest) -> dict[str, Any]:
+    cache_path = path_under_project(req.path)
+    if cache_path.exists() and cache_path.is_dir():
+        for child in cache_path.iterdir():
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink(missing_ok=True)
+    else:
+        cache_path.mkdir(parents=True, exist_ok=True)
+
+    stats = directory_stats(cache_path)
+    return {"ok": True, "path": str(cache_path), **stats}
