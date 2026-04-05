@@ -35,6 +35,14 @@ Watch mode:
 npm run test:watch
 ```
 
+E2E smoke scaffolding (Playwright):
+
+```bash
+cd frontend
+npx playwright install
+npm run test:e2e
+```
+
 ### Implemented in this phase
 
 - Environment checks (`python`, `ffmpeg`, `CUDA`, `GEMINI_API_KEY`)

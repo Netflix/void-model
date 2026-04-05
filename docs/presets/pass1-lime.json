@@ -1,0 +1,17 @@
+{
+  "workflow": "pass1_inference",
+  "params": {
+    "config_path": "config/quadmask_cogvideox.py",
+    "config_overrides": {
+      "config.data.data_rootdir": "./sample",
+      "config.experiment.run_seqs": "lime",
+      "config.experiment.save_path": "./outputs",
+      "config.video_model.model_name": "./CogVideoX-Fun-V1.5-5b-InP",
+      "config.video_model.transformer_path": "./void_pass1.safetensors",
+      "config.data.sample_size": "384x672",
+      "config.video_model.guidance_scale": 1.0,
+      "config.video_model.num_inference_steps": 50,
+      "config.video_model.use_quadmask": true
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "workflow": "mask_pipeline",
+  "params": {
+    "config_points_json": "my_config_points.json",
+    "sam2_checkpoint": "../sam2_hiera_large.pt",
+    "device": "cuda"
+  }
+}

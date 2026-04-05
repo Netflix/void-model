@@ -17,6 +17,12 @@ export function Pass2FormPanel({
   setPass2Height,
   pass2Width,
   setPass2Width,
+  pass2MaxVideoLength,
+  setPass2MaxVideoLength,
+  pass2TemporalWindowSize,
+  setPass2TemporalWindowSize,
+  pass2Seed,
+  setPass2Seed,
   pass2GuidanceScale,
   setPass2GuidanceScale,
   pass2Steps,
@@ -49,6 +55,12 @@ export function Pass2FormPanel({
   setPass2Height: (v: string) => void;
   pass2Width: string;
   setPass2Width: (v: string) => void;
+  pass2MaxVideoLength: string;
+  setPass2MaxVideoLength: (v: string) => void;
+  pass2TemporalWindowSize: string;
+  setPass2TemporalWindowSize: (v: string) => void;
+  pass2Seed: string;
+  setPass2Seed: (v: string) => void;
   pass2GuidanceScale: string;
   setPass2GuidanceScale: (v: string) => void;
   pass2Steps: string;
@@ -78,6 +90,11 @@ export function Pass2FormPanel({
         <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Width} onChange={(e) => setPass2Width(e.target.value)} placeholder="width" />
         <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2GuidanceScale} onChange={(e) => setPass2GuidanceScale(e.target.value)} placeholder="guidance" />
         <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Steps} onChange={(e) => setPass2Steps(e.target.value)} placeholder="steps" />
+      </div>
+      <div className="grid grid-cols-3 gap-2">
+        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2MaxVideoLength} onChange={(e) => setPass2MaxVideoLength(e.target.value)} placeholder="max video length" />
+        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2TemporalWindowSize} onChange={(e) => setPass2TemporalWindowSize(e.target.value)} placeholder="temporal window" />
+        <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Seed} onChange={(e) => setPass2Seed(e.target.value)} placeholder="seed" />
       </div>
       <input
         className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"

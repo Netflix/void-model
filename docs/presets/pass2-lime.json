@@ -1,0 +1,20 @@
+{
+  "workflow": "pass2_refine",
+  "params": {
+    "video_names": [
+      "lime"
+    ],
+    "data_rootdir": "./sample",
+    "pass1_dir": "./outputs",
+    "output_dir": "./inference_with_warped_noise",
+    "model_name": "./CogVideoX-Fun-V1.5-5b-InP",
+    "model_checkpoint": "./void_pass2.safetensors",
+    "height": 384,
+    "width": 672,
+    "guidance_scale": 6.0,
+    "num_inference_steps": 50,
+    "warped_noise_cache_dir": "./pass1_warped_noise_cache",
+    "skip_noise_generation": false,
+    "use_quadmask": true
+  }
+}
