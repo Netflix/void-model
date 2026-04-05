@@ -11,7 +11,7 @@ import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Literal, Optional
+from typing import Any, Literal, Optional
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -110,6 +110,11 @@ class PresetRecord:
 
 class PresetCreateRequest(BaseModel):
     name: str
+    workflow: str
+    params: dict[str, Any]
+
+
+class ValidateConfigRequest(BaseModel):
     workflow: str
     params: dict[str, Any]
 
@@ -243,6 +248,72 @@ def safe_path(path_value: str) -> str:
     if path.is_absolute():
         return str(path)
     return str((PROJECT_ROOT / path).resolve())
+
+
+def validate_paths(
+    workflow: str, params: dict[str, Any], command: list[str]
+) -> tuple[list[str], list[str]]:
+    errors: list[str] = []
+    warnings: list[str] = []
+
+    # Validate target script path.
+    if len(command) >= 2 and command[0] in {"python", "bash"}:
+        script_path = PROJECT_ROOT / command[1]
+        if not script_path.exists():
+            errors.append(f"Script not found: {command[1]}")
+
+    # Workflow-specific checks.
+    if workflow == "pass1_inference":
+        p = Pass1Params(**params)
+        cfg = PROJECT_ROOT / p.config_path
+        if not cfg.exists():
+            errors.append(f"Config file not found: {p.config_path}")
+
+        data_root = p.config_overrides.get("config.data.data_rootdir")
+        if data_root and not Path(safe_path(str(data_root))).exists():
+            errors.append(f"Data rootdir not found: {data_root}")
+
+        model_name = p.config_overrides.get("config.video_model.model_name")
+        if model_name and not Path(safe_path(str(model_name))).exists():
+            warnings.append(f"Base model path not found yet: {model_name}")
+
+        transformer_path = p.config_overrides.get("config.video_model.transformer_path")
+        if transformer_path and not Path(safe_path(str(transformer_path))).exists():
+            warnings.append(f"Transformer checkpoint not found yet: {transformer_path}")
+
+        run_seqs = str(p.config_overrides.get("config.experiment.run_seqs", "")).strip()
+        if not run_seqs:
+            warnings.append("No run sequences configured (config.experiment.run_seqs is empty).")
+
+    elif workflow == "pass2_refine":
+        p = Pass2Params(**params)
+        if not Path(safe_path(p.model_checkpoint)).exists():
+            errors.append(f"Pass2 model checkpoint not found: {p.model_checkpoint}")
+        if not Path(safe_path(p.data_rootdir)).exists():
+            errors.append(f"Data rootdir not found: {p.data_rootdir}")
+        if not Path(safe_path(p.pass1_dir)).exists():
+            errors.append(f"Pass1 output dir not found: {p.pass1_dir}")
+        if not p.video_name and not p.video_names:
+            errors.append("Provide video_name or video_names.")
+
+    elif workflow in {
+        "mask_pipeline",
+        "mask_stage1_sam2",
+        "mask_stage2_vlm",
+        "mask_stage3_grey",
+        "mask_stage4_combine",
+        "point_selector_gui",
+    }:
+        cfg_path = params.get("config_points_json")
+        if cfg_path and not Path(safe_path(str(cfg_path))).exists():
+            errors.append(f"Config points JSON not found: {cfg_path}")
+
+        if workflow in {"mask_pipeline", "mask_stage1_sam2"}:
+            sam2 = params.get("sam2_checkpoint")
+            if sam2 and not Path(safe_path(str(sam2))).exists():
+                warnings.append(f"SAM2 checkpoint not found yet: {sam2}")
+
+    return errors, warnings
 
 
 def override_args(config_overrides: dict[str, Any]) -> list[str]:
@@ -397,32 +468,42 @@ def build_command(workflow: str, params: dict[str, Any]) -> tuple[list[str], Opt
 
 
 def run_worker(run_id: str, cmd: list[str], log_path: Path) -> None:
-    store.patch(run_id, status="running", started_at=now_iso())
     env = os.environ.copy()
 
-    with log_path.open("a", encoding="utf-8") as log_file:
-        log_file.write(f"$ {' '.join(cmd)}\n\n")
-        log_file.flush()
+    try:
+        with log_path.open("a", encoding="utf-8") as log_file:
+            log_file.write(f"$ {' '.join(cmd)}\n\n")
+            log_file.flush()
 
-        proc = subprocess.Popen(
-            cmd,
-            cwd=PROJECT_ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            env=env,
-            bufsize=1,
+            proc = subprocess.Popen(
+                cmd,
+                cwd=PROJECT_ROOT,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                env=env,
+                bufsize=1,
+            )
+            store.patch(run_id, status="running", started_at=now_iso())
+            store.set_proc(run_id, proc)
+
+            try:
+                assert proc.stdout is not None
+                for line in proc.stdout:
+                    log_file.write(line)
+                    log_file.flush()
+                exit_code = proc.wait()
+            finally:
+                store.clear_proc(run_id)
+    except Exception as exc:
+        store.patch(
+            run_id,
+            status="failed",
+            ended_at=now_iso(),
+            exit_code=-1,
+            error=f"Failed to launch process: {exc}",
         )
-        store.set_proc(run_id, proc)
-
-        try:
-            assert proc.stdout is not None
-            for line in proc.stdout:
-                log_file.write(line)
-                log_file.flush()
-            exit_code = proc.wait()
-        finally:
-            store.clear_proc(run_id)
+        return
 
     if store.get(run_id) and store.get(run_id).status == "cancelled":
         return
@@ -497,6 +578,12 @@ def get_run(run_id: str) -> dict[str, Any]:
 def create_run(req: RunCreateRequest) -> dict[str, Any]:
     run_id = uuid.uuid4().hex[:12]
     command, output_dir = build_command(req.workflow, req.params)
+    errors, warnings = validate_paths(req.workflow, req.params, command)
+    if errors:
+        raise HTTPException(
+            status_code=400,
+            detail={"errors": errors, "warnings": warnings, "command": command},
+        )
     log_path = LOG_DIR / f"{run_id}.log"
     log_path.touch()
 
@@ -521,6 +608,18 @@ def create_run(req: RunCreateRequest) -> dict[str, Any]:
     thread.start()
 
     return asdict(record)
+
+
+@app.post("/validate/config")
+def validate_config(req: ValidateConfigRequest) -> dict[str, Any]:
+    command, _ = build_command(req.workflow, req.params)
+    errors, warnings = validate_paths(req.workflow, req.params, command)
+    return {
+        "valid": len(errors) == 0,
+        "errors": errors,
+        "warnings": warnings,
+        "command_preview": command,
+    }
 
 
 @app.get("/presets")
