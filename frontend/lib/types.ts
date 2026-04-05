@@ -58,6 +58,18 @@ export interface DataSequence {
   prompt_bg: string | null;
 }
 
+export interface CacheInfo {
+  path: string;
+  exists: boolean;
+  files: number;
+  bytes: number;
+}
+
+export interface WorkflowConfig {
+  workflow: Workflow;
+  params: Record<string, unknown>;
+}
+
 export interface EnvCheck {
   project_root: string;
   python: string | null;

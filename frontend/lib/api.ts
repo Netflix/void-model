@@ -1,5 +1,6 @@
 import type {
   ArtifactFile,
+  CacheInfo,
   DataSequence,
   EnvCheck,
   PresetRecord,
@@ -117,5 +118,16 @@ export async function updatePromptBg(sequencePath: string, bg: string): Promise<
       sequence_path: sequencePath,
       bg,
     }),
+  });
+}
+
+export async function getCacheInfo(path: string): Promise<CacheInfo> {
+  return request<CacheInfo>(`/cache/info?path=${encodeURIComponent(path)}`);
+}
+
+export async function clearCache(path: string): Promise<CacheInfo> {
+  return request<CacheInfo>("/cache/clear", {
+    method: "POST",
+    body: JSON.stringify({ path }),
   });
 }

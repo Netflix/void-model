@@ -34,11 +34,14 @@ Open `http://localhost:3000`.
   - Quadmask editor GUI
 - Full Pass 1 config surface (basic + advanced) mapped to runtime `--config.*` overrides
 - Preset save/load (workflow + params)
+- Run cloning from run history (clone to form / clone and launch)
+- Config export/import (JSON)
 - Run list + status polling
 - Run cancellation
 - Log viewer
 - Artifact browser (per selected run)
 - Preflight validation before run launch (`/validate/config`)
+- Pass 2 cache management UX (inspect/clear cache dir)
 
 ### Backend API expected
 

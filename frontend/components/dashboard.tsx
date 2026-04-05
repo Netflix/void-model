@@ -4,8 +4,10 @@ import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 
 import {
   cancelRun,
+  clearCache,
   createPreset,
   createRun,
+  getCacheInfo,
   getEnvCheck,
   getRunLogs,
   listDataSequences,
@@ -17,10 +19,12 @@ import {
 } from "@/lib/api";
 import type {
   ArtifactFile,
+  CacheInfo,
   DataSequence,
   EnvCheck,
   PresetRecord,
   RunRecord,
+  WorkflowConfig,
   Workflow,
 } from "@/lib/types";
 
@@ -134,6 +138,8 @@ export function Dashboard() {
   const [sequenceRoot, setSequenceRoot] = useState("./sample");
   const [sequences, setSequences] = useState<DataSequence[]>([]);
   const [promptDrafts, setPromptDrafts] = useState<Record<string, string>>({});
+  const [cachePath, setCachePath] = useState("./pass1_warped_noise_cache");
+  const [cacheInfo, setCacheInfo] = useState<CacheInfo | null>(null);
 
   const [pass1, setPass1] = useState<Pass1Form>({
     configPath: "config/quadmask_cogvideox.py",
@@ -185,6 +191,9 @@ export function Dashboard() {
   const [pass2Width, setPass2Width] = useState("672");
   const [pass2GuidanceScale, setPass2GuidanceScale] = useState("6.0");
   const [pass2Steps, setPass2Steps] = useState("50");
+  const [pass2WarpedNoiseCacheDir, setPass2WarpedNoiseCacheDir] = useState("./pass1_warped_noise_cache");
+  const [pass2SkipNoiseGeneration, setPass2SkipNoiseGeneration] = useState(false);
+  const [pass2UseQuadmask, setPass2UseQuadmask] = useState(true);
 
   const [maskConfigPath, setMaskConfigPath] = useState("my_config_points.json");
   const [maskSam2Checkpoint, setMaskSam2Checkpoint] = useState("../sam2_hiera_large.pt");
@@ -221,6 +230,10 @@ export function Dashboard() {
   const refreshArtifacts = useCallback(async (runId: string) => {
     setArtifacts(await listArtifacts(runId));
   }, []);
+
+  const refreshCacheInfo = useCallback(async () => {
+    setCacheInfo(await getCacheInfo(cachePath));
+  }, [cachePath]);
 
   const refreshSequences = useCallback(async () => {
     const data = await listDataSequences(sequenceRoot);
@@ -264,6 +277,10 @@ export function Dashboard() {
   useEffect(() => {
     setSequenceRoot(pass1.dataRootdir);
   }, [pass1.dataRootdir]);
+
+  useEffect(() => {
+    setCachePath(pass2WarpedNoiseCacheDir);
+  }, [pass2WarpedNoiseCacheDir]);
 
   const currentWorkflowParams = useCallback((): Record<string, unknown> => {
     if (workflow === "pass1_inference") {
@@ -324,6 +341,9 @@ export function Dashboard() {
         width: Number(pass2Width),
         guidance_scale: Number(pass2GuidanceScale),
         num_inference_steps: Number(pass2Steps),
+        warped_noise_cache_dir: pass2WarpedNoiseCacheDir,
+        skip_noise_generation: pass2SkipNoiseGeneration,
+        use_quadmask: pass2UseQuadmask,
       };
     }
 
@@ -348,6 +368,9 @@ export function Dashboard() {
     pass2Width,
     pass2GuidanceScale,
     pass2Steps,
+    pass2WarpedNoiseCacheDir,
+    pass2SkipNoiseGeneration,
+    pass2UseQuadmask,
     maskConfigPath,
     maskExecutionMode,
     maskSam2Checkpoint,
@@ -426,6 +449,9 @@ export function Dashboard() {
           width: Number(pass2Width),
           guidance_scale: Number(pass2GuidanceScale),
           num_inference_steps: Number(pass2Steps),
+          warped_noise_cache_dir: pass2WarpedNoiseCacheDir,
+          skip_noise_generation: pass2SkipNoiseGeneration,
+          use_quadmask: pass2UseQuadmask,
         };
       }
 
@@ -490,40 +516,30 @@ export function Dashboard() {
     }
   };
 
-  const applySelectedPreset = () => {
-    const preset = presets.find((p) => p.id === selectedPresetId);
-    if (!preset) return;
+  const applyWorkflowConfig = (targetWorkflow: Workflow, params: Record<string, unknown>) => {
+    setWorkflow(targetWorkflow);
 
-    const presetWorkflow = preset.workflow as Workflow;
-    setWorkflow(presetWorkflow);
-
-    if (presetWorkflow === "pass1_inference") {
-      const params = preset.params as {
-        config_path?: string;
-        config_overrides?: Record<string, unknown>;
-      };
-      const o = params.config_overrides ?? {};
-      setPass1((p) => ({
-        ...p,
-        configPath: String(params.config_path ?? p.configPath),
-        dataRootdir: String(o["config.data.data_rootdir"] ?? p.dataRootdir),
-        runSeqs: String(o["config.experiment.run_seqs"] ?? p.runSeqs),
-        savePath: String(o["config.experiment.save_path"] ?? p.savePath),
-        modelName: String(o["config.video_model.model_name"] ?? p.modelName),
-        transformerPath: String(o["config.video_model.transformer_path"] ?? p.transformerPath),
-        vaePath: String(o["config.video_model.vae_path"] ?? p.vaePath),
-        loraPath: String(o["config.video_model.lora_path"] ?? p.loraPath),
-        sampleSize: String(o["config.data.sample_size"] ?? p.sampleSize),
-        guidanceScale: Number(o["config.video_model.guidance_scale"] ?? p.guidanceScale),
-        numInferenceSteps: Number(
-          o["config.video_model.num_inference_steps"] ?? p.numInferenceSteps,
-        ),
+    if (targetWorkflow === "pass1_inference") {
+      const p = params as { config_path?: string; config_overrides?: Record<string, unknown> };
+      const o = p.config_overrides ?? {};
+      setPass1((prev) => ({
+        ...prev,
+        configPath: String(p.config_path ?? prev.configPath),
+        dataRootdir: String(o["config.data.data_rootdir"] ?? prev.dataRootdir),
+        runSeqs: String(o["config.experiment.run_seqs"] ?? prev.runSeqs),
+        savePath: String(o["config.experiment.save_path"] ?? prev.savePath),
+        modelName: String(o["config.video_model.model_name"] ?? prev.modelName),
+        transformerPath: String(o["config.video_model.transformer_path"] ?? prev.transformerPath),
+        vaePath: String(o["config.video_model.vae_path"] ?? prev.vaePath),
+        loraPath: String(o["config.video_model.lora_path"] ?? prev.loraPath),
+        sampleSize: String(o["config.data.sample_size"] ?? prev.sampleSize),
+        guidanceScale: Number(o["config.video_model.guidance_scale"] ?? prev.guidanceScale),
+        numInferenceSteps: Number(o["config.video_model.num_inference_steps"] ?? prev.numInferenceSteps),
       }));
       return;
     }
 
-    if (presetWorkflow === "pass2_refine") {
-      const params = preset.params as Record<string, unknown>;
+    if (targetWorkflow === "pass2_refine") {
       setPass2VideoNames(((params.video_names as string[]) ?? []).join(","));
       setPass2DataRoot(String(params.data_rootdir ?? pass2DataRoot));
       setPass2Pass1Dir(String(params.pass1_dir ?? pass2Pass1Dir));
@@ -534,23 +550,51 @@ export function Dashboard() {
       setPass2Width(String(params.width ?? pass2Width));
       setPass2GuidanceScale(String(params.guidance_scale ?? pass2GuidanceScale));
       setPass2Steps(String(params.num_inference_steps ?? pass2Steps));
+      setPass2WarpedNoiseCacheDir(String(params.warped_noise_cache_dir ?? pass2WarpedNoiseCacheDir));
+      setPass2SkipNoiseGeneration(Boolean(params.skip_noise_generation ?? pass2SkipNoiseGeneration));
+      setPass2UseQuadmask(Boolean(params.use_quadmask ?? pass2UseQuadmask));
       return;
     }
 
-    const params = preset.params as Record<string, unknown>;
     setMaskConfigPath(String(params.config_points_json ?? maskConfigPath));
     setMaskExecutionMode(
-      String(params.execution_mode ?? maskExecutionMode) as
-        | "full"
-        | "stage1"
-        | "stage2"
-        | "stage3"
-        | "stage4",
+      String(params.execution_mode ?? maskExecutionMode) as "full" | "stage1" | "stage2" | "stage3" | "stage4",
     );
     setMaskSam2Checkpoint(String(params.sam2_checkpoint ?? maskSam2Checkpoint));
     setMaskDevice(String(params.device ?? maskDevice) as "cuda" | "cpu");
     setMaskVlmModel(String(params.model ?? maskVlmModel));
-    setMaskSegmentationModel(String(params.segmentation_model ?? maskSegmentationModel) as "langsam" | "sam3");
+    setMaskSegmentationModel(
+      String(params.segmentation_model ?? maskSegmentationModel) as "langsam" | "sam3",
+    );
+  };
+
+  const applySelectedPreset = () => {
+    const preset = presets.find((p) => p.id === selectedPresetId);
+    if (!preset) return;
+    applyWorkflowConfig(preset.workflow as Workflow, preset.params);
+  };
+
+  const exportConfigFile = (cfg: WorkflowConfig, name: string) => {
+    const blob = new Blob([JSON.stringify(cfg, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${name}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const onImportConfigFile = async (file: File) => {
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text) as WorkflowConfig;
+      if (!parsed.workflow || !parsed.params) {
+        throw new Error("Invalid config file format");
+      }
+      applyWorkflowConfig(parsed.workflow, parsed.params);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Failed to import config");
+    }
   };
 
   const selectedSeqs = useMemo(
@@ -680,6 +724,40 @@ export function Dashboard() {
           >
             Load Preset
           </button>
+        </div>
+
+        <div className="mt-2 grid gap-2 md:grid-cols-3">
+          <button
+            type="button"
+            className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
+            onClick={() =>
+              exportConfigFile(
+                { workflow, params: currentWorkflowParams() },
+                `workflow-config-${workflow}`,
+              )
+            }
+          >
+            Export Current Config
+          </button>
+          <button
+            type="button"
+            className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/60"
+            onClick={() => document.getElementById("config-import-input")?.click()}
+          >
+            Import Config File
+          </button>
+          <input
+            id="config-import-input"
+            type="file"
+            accept="application/json"
+            className="hidden"
+            onChange={(e) => {
+              const file = e.target.files?.[0];
+              if (!file) return;
+              void onImportConfigFile(file);
+              e.currentTarget.value = "";
+            }}
+          />
         </div>
       </section>
 
@@ -1095,6 +1173,67 @@ export function Dashboard() {
                   <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2GuidanceScale} onChange={(e) => setPass2GuidanceScale(e.target.value)} placeholder="guidance" />
                   <input className="rounded-md border border-zinc-700 px-3 py-2 text-sm" value={pass2Steps} onChange={(e) => setPass2Steps(e.target.value)} placeholder="steps" />
                 </div>
+                <input
+                  className="w-full rounded-md border border-zinc-700 px-3 py-2 text-sm"
+                  value={pass2WarpedNoiseCacheDir}
+                  onChange={(e) => setPass2WarpedNoiseCacheDir(e.target.value)}
+                  placeholder="warped noise cache dir"
+                />
+                <div className="grid grid-cols-2 gap-2">
+                  <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
+                    <input
+                      type="checkbox"
+                      checked={pass2SkipNoiseGeneration}
+                      onChange={(e) => setPass2SkipNoiseGeneration(e.target.checked)}
+                    />
+                    skip_noise_generation
+                  </label>
+                  <label className="flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-2 text-xs text-zinc-300">
+                    <input
+                      type="checkbox"
+                      checked={pass2UseQuadmask}
+                      onChange={(e) => setPass2UseQuadmask(e.target.checked)}
+                    />
+                    use_quadmask
+                  </label>
+                </div>
+                <div className="rounded-md border border-zinc-800 bg-zinc-900/60 p-2">
+                  <p className="mb-2 text-xs font-semibold text-zinc-300">Cache Manager</p>
+                  <div className="grid grid-cols-2 gap-2">
+                    <input
+                      className="rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-200"
+                      value={cachePath}
+                      onChange={(e) => setCachePath(e.target.value)}
+                      placeholder="cache path"
+                    />
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        className="w-full rounded-md border border-zinc-700 px-2 py-1 text-xs text-zinc-300 hover:bg-zinc-900/60"
+                        onClick={() => void refreshCacheInfo().catch((e: Error) => setError(e.message))}
+                      >
+                        Check
+                      </button>
+                      <button
+                        type="button"
+                        className="w-full rounded-md border border-red-700 px-2 py-1 text-xs text-red-300 hover:bg-red-950/30"
+                        onClick={() =>
+                          void clearCache(cachePath)
+                            .then((info) => setCacheInfo(info))
+                            .catch((e: Error) => setError(e.message))
+                        }
+                      >
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+                  {cacheInfo ? (
+                    <p className="mt-2 text-xs text-zinc-400">
+                      {cacheInfo.exists ? "exists" : "missing"} • {cacheInfo.files} files •{" "}
+                      {Math.round(cacheInfo.bytes / 1024)} KB
+                    </p>
+                  ) : null}
+                </div>
               </div>
             ) : null}
 
@@ -1247,19 +1386,73 @@ export function Dashboard() {
       <section className={sectionClass}>
         <div className="flex items-center justify-between gap-3">
           <h2 className="text-lg font-medium text-zinc-100">Run Details</h2>
-          {activeRun?.status === "running" ? (
-            <button
-              type="button"
-              onClick={() =>
-                void cancelRun(activeRun.id)
-                  .then(() => refreshRuns())
-                  .catch((e: Error) => setError(e.message))
-              }
-              className="rounded-md border border-red-300 px-3 py-1 text-sm text-red-700 hover:bg-red-50"
-            >
-              Cancel Run
-            </button>
-          ) : null}
+          <div className="flex gap-2">
+            {activeRun ? (
+              <>
+                <button
+                  type="button"
+                  className="rounded-md border border-zinc-700 px-3 py-1 text-xs text-zinc-300 hover:bg-zinc-900/60"
+                  onClick={() => applyWorkflowConfig(activeRun.workflow, activeRun.params)}
+                >
+                  Clone To Form
+                </button>
+                <button
+                  type="button"
+                  className="rounded-md border border-zinc-700 px-3 py-1 text-xs text-zinc-300 hover:bg-zinc-900/60"
+                  onClick={() =>
+                    void validateConfig({
+                      workflow: activeRun.workflow,
+                      params: activeRun.params,
+                    })
+                      .then((v) => {
+                        if (!v.valid) {
+                          setError(`Validation failed: ${v.errors.join(" | ")}`);
+                          return null;
+                        }
+                        setValidationWarnings(v.warnings);
+                        return createRun({
+                          workflow: activeRun.workflow,
+                          params: activeRun.params,
+                        });
+                      })
+                      .then((run) => {
+                        if (!run) return;
+                        setActiveRunId(run.id);
+                        return refreshRuns();
+                      })
+                      .catch((e: Error) => setError(e.message))
+                  }
+                >
+                  Clone & Run
+                </button>
+                <button
+                  type="button"
+                  className="rounded-md border border-zinc-700 px-3 py-1 text-xs text-zinc-300 hover:bg-zinc-900/60"
+                  onClick={() =>
+                    exportConfigFile(
+                      { workflow: activeRun.workflow, params: activeRun.params },
+                      `run-config-${activeRun.id}`,
+                    )
+                  }
+                >
+                  Export Run Config
+                </button>
+              </>
+            ) : null}
+            {activeRun?.status === "running" ? (
+              <button
+                type="button"
+                onClick={() =>
+                  void cancelRun(activeRun.id)
+                    .then(() => refreshRuns())
+                    .catch((e: Error) => setError(e.message))
+                }
+                className="rounded-md border border-red-700 px-3 py-1 text-sm text-red-300 hover:bg-red-950/30"
+              >
+                Cancel Run
+              </button>
+            ) : null}
+          </div>
         </div>
 
         {activeRun ? (
