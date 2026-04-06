@@ -331,8 +331,6 @@ Save overwrites `quadmask_0.mp4` in place. Rerun inference from Pass 1 after sav
 
 <details>
 <summary><strong>🏋️ Training</strong></summary>
-
-### Training Data Generation
 ### Training Data Generation
 
 Due to licensing constraints on the underlying datasets, we release the **data generation code** instead of the pre-built training data. The code produces paired counterfactual videos (with/without object, plus quad-masks) from two sources:
