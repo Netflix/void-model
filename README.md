@@ -480,9 +480,13 @@ If you’ve built something using VOID, feel free to submit a PR to add it here.
 
 ### 🌐 Demos & Projects
 
-- ⭐ **Gradio Demo** — @sam-motamed  
-  Interactive demo for trying VOID in the browser:  
+- ⭐ **Gradio Demo** — @sam-motamed
+  Interactive demo for trying VOID in the browser:
   👉 https://huggingface.co/spaces/sam-motamed/VOID
+
+- ⭐ **VOID Frontend** — @jdcodes1
+  Open-source BYOK web frontend for VOID with live SAM2 mask preview, step-by-step wizard UI, and Modal/Replicate GPU backend support:
+  👉 https://github.com/jdcodes1/Void-Frontend
 
 ## 🙏 Acknowledgements
 
