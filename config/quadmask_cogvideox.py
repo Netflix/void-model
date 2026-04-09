@@ -49,7 +49,7 @@ def get_video_model_config():
     config.num_inference_steps = 50
     config.lora_weight = 0.55
     config.temporal_window_size = 85
-    config.temproal_multidiffusion_stride = 16
+    config.temporal_multidiffusion_stride = 16
     config.use_vae_mask = True
     config.stack_mask = False
     return config
