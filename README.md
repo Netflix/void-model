@@ -47,6 +47,12 @@ VOID removes objects from videos along with all interactions they induce on the 
 
 ---
 
+## TODO 📋
+
+- [ ] 🤗 Diffusers pipeline support 
+
+---
+
 ## 🤖 Models
 
 VOID uses two transformer checkpoints, trained sequentially. You can run inference with Pass 1 alone or chain both passes for higher temporal consistency.
