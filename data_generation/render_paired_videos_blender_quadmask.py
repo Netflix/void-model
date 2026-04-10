@@ -2082,7 +2082,7 @@ def process_sequence(sequence_path, output_dir, args):
                 if not attr.startswith('_') and attr not in ['location', 'width', 'height']:
                     try:
                         setattr(new_node, attr, getattr(node, attr))
-                    except:
+                    except (AttributeError, TypeError):
                         pass
 
     scene.view_settings.view_transform = orig_view_transform
