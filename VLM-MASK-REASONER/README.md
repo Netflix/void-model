@@ -45,8 +45,7 @@ Optional flags:
 
 ```bash
 bash run_pipeline.sh <config_points.json> \
-    --sam2-checkpoint ../sam2_hiera_large.pt \
-    --device cuda
+    --sam2-checkpoint ../sam2_hiera_large.pt \    --stage3-segmentation-model langsam \    --device cuda
 ```
 
 This runs four stages automatically:
@@ -84,7 +83,7 @@ Install the main requirements from the repo root:
 pip install -r requirements.txt
 ```
 
-### 2. SAM2
+### 2. SAM2 (Stage 1)
 
 SAM2 must be installed separately (it is not on PyPI):
 
@@ -98,6 +97,30 @@ Then download the SAM2 checkpoint. The pipeline defaults to `sam2_hiera_large.pt
 # from the repo root (or wherever you want to store it)
 wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
 ```
+
+### 3. SAM3 or LangSAM (Stage 3a)
+
+Stage 3a uses text-prompted segmentation to identify affected objects. You need **either** SAM3 or LangSAM:
+
+**Option A: SAM3**
+
+```bash
+pip install git+https://github.com/facebookresearch/segment-anything-3.git
+```
+
+Download the SAM3 checkpoint:
+```bash
+# Check SAM3 repo for latest checkpoint URLs
+wget https://dl.fbaipublicfiles.com/segment_anything_3/sam3_hiera_large.pt
+```
+
+**Option B: LangSAM (alternative)**
+
+```bash
+pip install lang-sam
+```
+
+To use LangSAM instead of SAM3, pass `--stage3-segmentation-model langsam` to `run_pipeline.sh`.
 
 If you place the checkpoint elsewhere, pass it explicitly:
 
