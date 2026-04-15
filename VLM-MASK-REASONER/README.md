@@ -102,25 +102,39 @@ wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.p
 
 Stage 3a uses text-prompted segmentation to identify affected objects. You need **either** SAM3 or LangSAM:
 
-**Option A: SAM3**
+**Option A: SAM3 (default, recommended)**
+
+SAM3 requires Python 3.12+, PyTorch 2.7+, and HuggingFace authentication:
 
 ```bash
-pip install git+https://github.com/facebookresearch/segment-anything-3.git
+# Install SAM3
+git clone https://github.com/facebookresearch/sam3.git
+cd sam3
+pip install -e .
+cd ..
 ```
 
-Download the SAM3 checkpoint:
-```bash
-# Check SAM3 repo for latest checkpoint URLs
-wget https://dl.fbaipublicfiles.com/segment_anything_3/sam3_hiera_large.pt
-```
+**Checkpoint access:** SAM3 checkpoints are hosted on HuggingFace and require authentication:
+
+1. Request access at https://huggingface.co/facebook/sam3.1
+2. Once approved, authenticate:
+   ```bash
+   pip install -U "huggingface_hub[cli]"
+   huggingface-cli login  # Enter your HF token
+   ```
+3. The model will auto-download checkpoints on first use
+
+See the [SAM3 repo](https://github.com/facebookresearch/sam3) for full installation details.
 
 **Option B: LangSAM (alternative)**
 
+LangSAM combines SAM 2.1 with GroundingDINO for text-prompted segmentation. Requires Python 3.10+:
+
 ```bash
-pip install lang-sam
+pip install -U git+https://github.com/luca-medeiros/lang-segment-anything.git
 ```
 
-To use LangSAM instead of SAM3, pass `--stage3-segmentation-model langsam` to `run_pipeline.sh`.
+LangSAM auto-downloads its checkpoints (GroundingDINO + SAM 2.1) and doesn't require authentication. To use it, pass `--stage3-segmentation-model langsam` to `run_pipeline.sh`.
 
 If you place the checkpoint elsewhere, pass it explicitly:
 
