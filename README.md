@@ -483,6 +483,9 @@ If you’ve built something using VOID, feel free to submit a PR to add it here.
 - ⭐ **Gradio Demo** — @sam-motamed  
   Interactive demo for trying VOID in the browser:  
   👉 https://huggingface.co/spaces/sam-motamed/VOID
+- ⭐ **Runpod Template** — @Square-Zero-Labs
+  Runpod template with Gradio app for getting going with VOID quickly (including quadmask generation):  
+  👉 https://github.com/Square-Zero-Labs/VOID-on-Runpod
 
 ## 🙏 Acknowledgements
 
