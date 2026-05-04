@@ -95,6 +95,9 @@ Also install [SAM2](https://github.com/facebookresearch/sam2?tab=readme-ov-file#
 ```bash
 git clone https://github.com/facebookresearch/sam2.git
 cd sam2 && pip install -e .
+
+git clone https://github.com/facebookresearch/sam3.git
+cd sam3 && pip install -e .
 ```
 
 Download the pretrained base inpainting model from HuggingFace:
