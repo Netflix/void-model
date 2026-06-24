@@ -45,8 +45,7 @@ Optional flags:
 
 ```bash
 bash run_pipeline.sh <config_points.json> \
-    --sam2-checkpoint ../sam2_hiera_large.pt \
-    --device cuda
+    --sam2-checkpoint ../sam2_hiera_large.pt \    --stage3-segmentation-model langsam \    --device cuda
 ```
 
 This runs four stages automatically:
@@ -84,7 +83,7 @@ Install the main requirements from the repo root:
 pip install -r requirements.txt
 ```
 
-### 2. SAM2
+### 2. SAM2 (Stage 1)
 
 SAM2 must be installed separately (it is not on PyPI):
 
@@ -98,6 +97,44 @@ Then download the SAM2 checkpoint. The pipeline defaults to `sam2_hiera_large.pt
 # from the repo root (or wherever you want to store it)
 wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
 ```
+
+### 3. SAM3 or LangSAM (Stage 3a)
+
+Stage 3a uses text-prompted segmentation to identify affected objects. You need **either** SAM3 or LangSAM:
+
+**Option A: SAM3 (default, recommended)**
+
+SAM3 requires Python 3.12+, PyTorch 2.7+, and HuggingFace authentication:
+
+```bash
+# Install SAM3
+git clone https://github.com/facebookresearch/sam3.git
+cd sam3
+pip install -e .
+cd ..
+```
+
+**Checkpoint access:** SAM3 checkpoints are hosted on HuggingFace and require authentication:
+
+1. Request access at https://huggingface.co/facebook/sam3.1
+2. Once approved, authenticate:
+   ```bash
+   pip install -U "huggingface_hub[cli]"
+   huggingface-cli login  # Enter your HF token
+   ```
+3. The model will auto-download checkpoints on first use
+
+See the [SAM3 repo](https://github.com/facebookresearch/sam3) for full installation details.
+
+**Option B: LangSAM (alternative)**
+
+LangSAM combines SAM 2.1 with GroundingDINO for text-prompted segmentation. Requires Python 3.10+:
+
+```bash
+pip install -U git+https://github.com/luca-medeiros/lang-segment-anything.git
+```
+
+LangSAM auto-downloads its checkpoints (GroundingDINO + SAM 2.1) and doesn't require authentication. To use it, pass `--stage3-segmentation-model langsam` to `run_pipeline.sh`.
 
 If you place the checkpoint elsewhere, pass it explicitly:
 

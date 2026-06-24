@@ -45,13 +45,6 @@ from typing import Dict, List, Tuple, Optional
 from PIL import Image
 import subprocess
 
-# SAM2 for video tracking
-try:
-    from sam2.build_sam import build_sam2_video_predictor
-    SAM2_AVAILABLE = True
-except ImportError:
-    SAM2_AVAILABLE = False
-
 # SAM3 for single-frame segmentation
 try:
     from sam3.model_builder import build_sam3_image_model
