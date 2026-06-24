@@ -47,12 +47,12 @@ def cleanup_scene():
     """Clean up Blender and PyBullet to prevent memory leaks"""
     try:
         pb.disconnect()
-    except:
+    except Exception:
         pass
     gc.collect()
     try:
         bpy.ops.wm.read_factory_settings(use_empty=True)
-    except:
+    except Exception:
         pass
 
 def apply_camera_motion(camera, motion_type, cam_distance, cam_angle, cam_height,

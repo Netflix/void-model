@@ -59,11 +59,7 @@ def run_blender_script(script_path, args):
     # Check if blender command exists, if not use python directly with bpy
     if subprocess.run(["which", "blender"], capture_output=True).returncode != 0:
         # Use python with bpy import instead
-        cmd = ["python", "-c", f"""
-import sys
-sys.argv = {['script'] + args}
-exec(open('{script_path}').read())
-"""]
+        cmd = ["python", script_path] + args
 
     result = subprocess.run(cmd, capture_output=True, text=True)
     return result.returncode == 0, result.stdout, result.stderr

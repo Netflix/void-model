@@ -14,9 +14,9 @@ from .api import (encode_file_to_base64, save_base64_image, save_base64_video,
 
 try:
     import ray
-except:
+except ImportError:
     print("Ray is not installed. If you want to use multi gpus api. Please install it by running 'pip install ray'.")
-    ray =  None
+    ray = None
 
 if ray is not None:
     @ray.remote(num_gpus=1)
