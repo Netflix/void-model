@@ -86,7 +86,10 @@ def save_videos_grid(videos: torch.Tensor, path: str, rescale=False, n_rows=6, f
     else:
         if path.endswith("mp4"):
             path = path.replace('.mp4', '.gif')
-        outputs[0].save(path, format='GIF', append_images=outputs, save_all=True, duration=100, loop=0)
+        outputs[0].save(
+            path, format='GIF', append_images=outputs[1:], save_all=True,
+            duration=round(1000 / fps), loop=0,
+        )
 
 
 def save_inout_row(input_video, input_mask, output_video, video_path, fps=16, visualize_masked_video=False, visualize_error=True):
